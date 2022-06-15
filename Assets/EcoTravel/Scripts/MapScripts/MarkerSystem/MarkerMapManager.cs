@@ -15,45 +15,41 @@ namespace Map.MarkerSystem
 		AbstractMap _map;
 
 		[Geocode]
+		[SerializeField]
 		List<string> _locationStrings;
 		List<Vector2d> _locations;
+		[SerializeField] List<GameObject> _spawnedObjects;
 
-
-		float _spawnScale;
+		[SerializeField]float _spawnScale;
 
 		GameObject _markerPrefab;
 
-		List<GameObject> spawnedObjects;
+		//List<GameObject> spawnedObjects;
 
-		/*
+		
 		void Start()
 		{
 			_locations = new List<Vector2d>();
-			spawnedObjects = new List<GameObject>();
+			//spawnedObjects = new List<GameObject>();
 
-			for (int i = 0; i < _locationStrings.Length; i++)
+			for (int i = 0; i < _locationStrings.Count; i++)
 			{
 				var locationString = _locationStrings[i];
-				_locations[i] = Conversions.StringToLatLon(locationString);
-				var instance = Instantiate(_markerPrefab);
-				instance.transform.localPosition = _map.GeoToWorldPosition(_locations[i], true);
-				instance.transform.localScale = new Vector3(_spawnScale, _spawnScale, _spawnScale);
-				_spawnedObjects.Add(instance);
+				_locations.Add(Conversions.StringToLatLon(locationString));
+				//var instance = Instantiate(_markerPrefab);
+				SetMapTransform(_spawnedObjects[i], _locations[i], _spawnScale);
 			}
 		}
-
+		
 		private void Update()
 		{
 			int count = _spawnedObjects.Count;
 			for (int i = 0; i < count; i++)
 			{
-				var spawnedObject = _spawnedObjects[i];
-				var location = _locations[i];
-				spawnedObject.transform.localPosition = _map.GeoToWorldPosition(location, true);
-				spawnedObject.transform.localScale = new Vector3(_spawnScale, _spawnScale, _spawnScale);
+				SetMapTransform(_spawnedObjects[i], _locations[i], _spawnScale);
 			}
 		}
-		*/
+		/*
 		private void LoadStartMarkers()
         {
 			
@@ -71,6 +67,7 @@ namespace Map.MarkerSystem
 			
         
 		}
+		*/
 		private void SetMapTransform(GameObject obj, Vector2d location, float scale)
         {
 			obj.transform.localPosition = _map.GeoToWorldPosition(location, true);

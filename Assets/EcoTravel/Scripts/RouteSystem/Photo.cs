@@ -3,11 +3,13 @@ using UnityEngine;
 namespace routeSystem
 {
     [System.Serializable]
-    public class Photo : MonoBehaviour
+    [CreateAssetMenu(fileName = "Photo", menuName = "RouteSystem/Photo", order = 1)]
+
+    public class Photo : ScriptableObject
     {
-        string url { get; set; } 
-        string path { get; set; }
-        Texture2D texture { get; set; }
+        public string url;
+        public string path;
+        public Texture2D texture;
 
   
     }

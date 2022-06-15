@@ -1,13 +1,16 @@
 using System.Collections.Generic;
+using UnityEngine;
 
 namespace routeSystem
 {
     [System.Serializable]
-    public class ScreenInfo 
+    [CreateAssetMenu(fileName = "ScreenInfo", menuName = "RouteSystem/ScreenInfo", order = 1)]
+
+    public class ScreenInfo: ScriptableObject
     {
-        public string _name { get; set; }
-        public string description { get; set; }
-        public List<Photo> photos { get; set; }
+        public string _name;
+        public string description;
+        public List<Photo> photos;
 
         public ScreenInfo()
         {
