@@ -9,5 +9,13 @@ namespace routeSystem
             roateID = roateId;
             locationString = _locationString;
         }
+        public Road(int id)
+        {
+            ID = id;
+        }
+        public Road(int id, int roateId) {
+            ID = id;
+            roateID = roateId;
+        }
     }
 }

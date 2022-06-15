@@ -8,14 +8,15 @@ namespace routeSystem
 {
     public class RouteStoreEditor : MonoBehaviour
     {
+        #region Set variables
         [SerializeField] RouteEditor routeEditor;
-        [SerializeField] int roatID;
-        [SerializeField] bool getRoat;
-        [SerializeField] bool setRoat;
-        
+        [SerializeField] int routID;
+        [SerializeField] bool getRout;
+        [SerializeField] bool setRout;
+
         [Space]
         [Space]
-        
+
         [SerializeField] PointEditor pointEditor;
         [SerializeField] int pointID;
         [SerializeField] bool getPoint;
@@ -23,126 +24,89 @@ namespace routeSystem
 
         [Space]
         [Space]
-        
+
         [SerializeField] RoadEditor roadEditor;
         [SerializeField] int roadID;
         [SerializeField] bool getRoad;
         [SerializeField] bool setRoad;
+        #endregion variables
 
-
-
-
-        /*
-        [SerializeField] private bool get;
-        [SerializeField] private bool set;
-
-        [Space]
-
-        [SerializeField] int ID;
-        [SerializeField] private DataType dataType;
-
-        [Space]
-        [Space]
-        [Header("ScreenInfo")]
-        [Space]
-
-        [SerializeField] private string _name;
-        [SerializeField] private string description;
-        [SerializeField] private List<Texture> photos;
-
-        [Space]
-
-        [Header("MapInfo")]
-        [Space]
-
-        [SerializeField]
-        [Geocode]
-        private string locationStrings;
-        [SerializeField] private float scale;
-        [SerializeField] private bool interactivity;
-        [SerializeField] private bool onScene;
-        [SerializeField] private GameObject markerGameObject;
-
-        enum DataType
-        {
-            Marker,
-            ScreenInfo,
-            MapInfo
-        }
+        #region GetSetMethods
         private void Update()
         {
-            if (get)
-            {
-                GetInfo(dataType);
-                get = false;
-            }
-            if (set)
-            {
-                SetInfo(dataType);
-                set = false;
-            }
+            if (getRout) GetRout();
+            else if (setRout) SetRout();
+            else if (getPoint) GetPoint();
+            else if (setPoint) SetPoint();
+            else if (getRoad) GetRoad();
+            else if (setRoad) SetRoad();
+        }
+        private void GetRout()
+        {
+            Route route = RouteStore.RoutesData[routID];
+            routeEditor.ID = route.ID;
+            routeEditor.pointList = route.pointList;
+            routeEditor.roadList = route.roadList;
 
-        }
-        private void GetInfo(DataType _dataType)
-        {
-            switch (_dataType)
-            {
-                case DataType.Marker:
-                    GetInfo(DataType.ScreenInfo);
-                    GetInfo(DataType.MapInfo);
-                    break;
+            routeEditor._name = route.screenInfo._name;
+            routeEditor.description = route.screenInfo.description;
+            routeEditor.photos = route.screenInfo.photos;
 
-                case DataType.ScreenInfo:
-                    MarkerScreenInfo markerScreenInfo = MarkerStore.getMarkerScreenInfo(ID);
-                    _name = markerScreenInfo._name;
-                    description = markerScreenInfo.description;
-                    photos = markerScreenInfo.photos;
-                    break;
+            getRout = false;
+        }
+        private void GetRoad()
+        {
+            Road road = RouteStore.RoutesData[roadID].roadList[roadID];
+            roadEditor.ID = road.ID;
+            roadEditor.roateID = road.roateID;
+            roadEditor.locationString = road.locationString;
 
-                case DataType.MapInfo:
-                    MarkerMapInfo markerMapInfo = MarkerStore.getMarkerMapInfo(ID);
-                    locationStrings = markerMapInfo._locationStrings;
-                    scale = markerMapInfo.scale;
-                    interactivity = markerMapInfo.interactivity;
-                    onScene = markerMapInfo.onScene;
-                    markerGameObject = markerMapInfo.markerGameObject;
-                    break;
-            }
+            getRoad = false;
         }
-        private void SetInfo(DataType _dataType)
+        private void GetPoint()
         {
-            switch (_dataType)
-            {
-                case DataType.Marker:
-                    SetInfo(DataType.ScreenInfo);
-                    SetInfo(DataType.MapInfo);
-                    break;
-                case DataType.ScreenInfo:
-                    ID = MarkerStore.setMarkerScreenInfo(ID, CreateMarkerScreenInfo());
-                    break;
-                case DataType.MapInfo:
-                    ID = MarkerStore.setMarkerMapInfo(ID, CreateMarkerMapInfo());
-                    break;
-            }
+            Point point = RouteStore.RoutesData[routID].pointList[pointID];
+            pointEditor.ID = point.ID;
+            pointEditor.roateID = point.roateID;
+            pointEditor.locationString = point.locationString;
+            pointEditor.visible = point.visible;
+            pointEditor.gameObject = point.gameObject;
+
+            pointEditor.size = point.size;
+            pointEditor.interactive = point.interactive;
+
+            pointEditor._name = point.screenInfo._name;
+            pointEditor.description = point.screenInfo.description;
+            pointEditor.photos = point.screenInfo.photos;
+            getPoint = false;
         }
-        private MarkerMapInfo CreateMarkerMapInfo()
+
+        private void SetRout()
         {
-            MarkerMapInfo markerMapInfo = new MarkerMapInfo();
-            markerMapInfo._locationStrings = locationStrings;
-            markerMapInfo.scale = scale;
-            markerMapInfo.interactivity = interactivity;
-            markerMapInfo.onScene = onScene;
-            markerMapInfo.markerGameObject = markerGameObject;
-            return markerMapInfo;
-        }
-        private MarkerScreenInfo CreateMarkerScreenInfo()
+            Route route = new Route(routID, routeEditor.pointList, routeEditor.roadList
+                ,new ScreenInfo(routeEditor._name, routeEditor.description, routeEditor.photos));
+            RouteStore.SetRoute(roadID, route);
+            setRout = false;
+        }  
+        private void SetPoint()
         {
-            MarkerScreenInfo markerScreenInfo = new MarkerScreenInfo();
-            markerScreenInfo._name = _name;
-            markerScreenInfo.description = description;
-            markerScreenInfo.photos = photos;
-            return markerScreenInfo;
+            Point point = new Point(pointID, routID,
+                pointEditor.locationString, pointEditor.visible,
+                pointEditor.gameObject, pointEditor.size,
+                pointEditor.interactive, 
+                new ScreenInfo(pointEditor._name, pointEditor.description
+                , pointEditor.photos));
+            RouteStore.SetPoint(ref routID,ref pointID, point);
+            setPoint = false;   
         }
-        */
+        private void SetRoad()
+        {
+            Road road = new Road(roadID, routID);
+            RouteStore.SetRoad(ref routID, ref roadID, road);
+            setRoad = false;
+        }
+        #endregion GetSetMethods
+        
+        
     }
 }

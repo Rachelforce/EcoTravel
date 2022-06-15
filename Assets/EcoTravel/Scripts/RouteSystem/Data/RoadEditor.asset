@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: RoadEditor
   m_EditorClassIdentifier: 
   ID: 0
-  roateID: 0
+  roateID: 1
   locationString: 
-  visible: 0
+  visible: 1
   gameObject: {fileID: 0}
