@@ -3,9 +3,8 @@ using UnityEngine;
 namespace routeSystem
 {
     [System.Serializable]
-    [CreateAssetMenu(fileName = "Photo", menuName = "RouteSystem/Photo", order = 1)]
-
-    public class Photo : ScriptableObject
+    
+    public class Photo 
     {
         public string url;
         public string path;

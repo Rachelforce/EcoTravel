@@ -4,9 +4,8 @@ using UnityEngine;
 namespace routeSystem
 {
     [System.Serializable]
-    [CreateAssetMenu(fileName = "ScreenInfo", menuName = "RouteSystem/ScreenInfo", order = 1)]
-
-    public class ScreenInfo: ScriptableObject
+    
+    public class ScreenInfo
     {
         public string _name;
         public string description;

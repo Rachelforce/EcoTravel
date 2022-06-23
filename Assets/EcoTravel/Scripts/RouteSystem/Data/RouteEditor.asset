@@ -15,7 +15,9 @@ MonoBehaviour:
   ID: 1
   pointList: []
   roadList: []
-  _name: TestName01
+  _name: Route00
   description: I hope it work
   photos:
-  - {fileID: 0}
+  - url: 
+    path: 
+    texture: {fileID: 0}

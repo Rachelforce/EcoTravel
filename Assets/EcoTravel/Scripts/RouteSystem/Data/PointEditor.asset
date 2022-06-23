@@ -13,14 +13,22 @@ MonoBehaviour:
   m_Name: PointEditor
   m_EditorClassIdentifier: 
   ID: 0
-  roateID: 1
+  roateID: 0
   locationString: 53.195878, 50.100202
-  visible: 0
+  visible: 1
   gameObject: {fileID: 0}
-  _name: Test Point Name01
-  description: i Hope it Work Pint
+  _name: Test Point Name00
+  description: i Hope it Work Pint00
   photos:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - url: 
+    path: 
+    texture: {fileID: 0}
+  - url: 
+    path: 
+    texture: {fileID: 0}
+  - url: 
+    path: 
+    texture: {fileID: 0}
+  - url: 
+    path: 
+    texture: {fileID: 0}

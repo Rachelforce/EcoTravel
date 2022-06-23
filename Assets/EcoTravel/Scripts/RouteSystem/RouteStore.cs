@@ -6,9 +6,12 @@ using UnityEngine;
 namespace routeSystem
 {
     [System.Serializable]
-    public class RouteStore : MonoBehaviour
+    public class RouteStore : MonoBehaviour, ISerializationCallbackReceiver
     {
         static public Dictionary<int, Route> RoutesData { get; private set; }
+        static public Dictionary<string, Colection> Colections;
+
+        
 
         public static int SetRoute(int index, Route route)
         {
@@ -55,5 +58,43 @@ namespace routeSystem
 
         }
 
+
+
+        #region ISerialize
+        [SerializeField]   List<int>rotesDataKey;
+        [SerializeField]   List<Route> routesDataValue;
+        [SerializeField]   List<string> colectionsDataKey;
+        [SerializeField]   List<Colection> colectionsDataValue;
+        public void OnBeforeSerialize()
+        {
+            try
+            {
+                rotesDataKey = new List<int>(RoutesData.Keys);
+                routesDataValue = new List<Route>(RoutesData.Values);
+                colectionsDataKey = new List<string>(Colections.Keys);
+                colectionsDataValue = new List<Colection>(Colections.Values);
+            }
+            catch { return; }
+        }
+
+        public void OnAfterDeserialize()
+        {
+            if(rotesDataKey.Count != routesDataValue.Count)
+            throw new System.IndexOutOfRangeException("Size for key and value");
+            if (colectionsDataKey.Count != colectionsDataValue.Count)
+                throw new System.IndexOutOfRangeException("Size for key and value");
+            RoutesData = new Dictionary<int, Route>();
+            for (int i = 0; i < rotesDataKey.Count; i++)
+            {
+                RoutesData.Add(rotesDataKey[i], routesDataValue[i]);
+            }
+
+            Colections = new Dictionary<string, Colection>();
+            for (int i = 0; i < colectionsDataKey.Count; i++)
+            {
+                Colections.Add(colectionsDataKey[i], colectionsDataValue[i]);
+            }
+        }
+        #endregion ISerialize
     }
 }
