@@ -1,14 +1,15 @@
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 namespace routeSystem
 {
     [System.Serializable]
-    public class Route : MonoBehaviour
+    public class Route
     {
-        public List<Point> pointList { get; set; }
-        public List<Road> roadList { get; set; }
-        public ScreenInfo screenInfo { get; set; }
-        public int ID { get; set; }
+        [NonSerialized] public List<Point> pointList;
+        [NonSerialized] public List<Road> roadList;
+        [NonSerialized] public ScreenInfo screenInfo;
+        public int ID;
         public Route()
         {
             pointList = new List<Point>();

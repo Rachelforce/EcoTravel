@@ -33,6 +33,7 @@ namespace GoToApps.Serialization
             using (FileStream stream = new FileStream(path, FileMode.Open))
             {
                 BinaryFormatter formatter = new BinaryFormatter();
+                stream.Position = 0;
                 T data = (T) formatter.Deserialize(stream);
                 return data;
             }

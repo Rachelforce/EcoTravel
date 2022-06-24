@@ -2,16 +2,15 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Newtonsoft.Json;
 
 namespace routeSystem
 {
-    [System.Serializable]
-    public class RouteStore : MonoBehaviour, ISerializationCallbackReceiver
+    
+    public class RouteStore 
     {
-        static public Dictionary<int, Route> RoutesData { get; private set; }
+        static public Dictionary<int, Route> RoutesData;
         static public Dictionary<string, Colection> Colections;
-
-        
 
         public static int SetRoute(int index, Route route)
         {
@@ -57,44 +56,57 @@ namespace routeSystem
             return true;
 
         }
+        
+    }
 
+    [System.Serializable]
+    public class RouteStoreSerialize: ISerializationCallbackReceiver
+    {
+        
+        public List<int> rotesDataKey;
+        public List<Route> routesDataValue;
+        public List<string> colectionsDataKey;
+        public List<Colection> colectionsDataValue;
+        public RouteStoreSerialize()
+        {
 
-
-        #region ISerialize
-        [SerializeField]   List<int>rotesDataKey;
-        [SerializeField]   List<Route> routesDataValue;
-        [SerializeField]   List<string> colectionsDataKey;
-        [SerializeField]   List<Colection> colectionsDataValue;
+        }
+        public RouteStoreSerialize(int i)
+        {
+            OnBeforeSerialize();
+        }
         public void OnBeforeSerialize()
         {
-            try
-            {
-                rotesDataKey = new List<int>(RoutesData.Keys);
-                routesDataValue = new List<Route>(RoutesData.Values);
-                colectionsDataKey = new List<string>(Colections.Keys);
-                colectionsDataValue = new List<Colection>(Colections.Values);
-            }
-            catch { return; }
+            Debug.Log("IHre");
+            rotesDataKey = new List<int>(RouteStore.RoutesData.Keys);
+            routesDataValue = new List<Route>(RouteStore.RoutesData.Values);
+            //colectionsDataKey = new List<string>(RouteStore.Colections.Keys);
+            //colectionsDataValue = new List<Colection>(RouteStore.Colections.Values);
+            
         }
 
         public void OnAfterDeserialize()
         {
-            if(rotesDataKey.Count != routesDataValue.Count)
-            throw new System.IndexOutOfRangeException("Size for key and value");
-            if (colectionsDataKey.Count != colectionsDataValue.Count)
-                throw new System.IndexOutOfRangeException("Size for key and value");
-            RoutesData = new Dictionary<int, Route>();
-            for (int i = 0; i < rotesDataKey.Count; i++)
+            if (rotesDataKey != null)
             {
-                RoutesData.Add(rotesDataKey[i], routesDataValue[i]);
-            }
+                if (rotesDataKey.Count != routesDataValue.Count)
+                    throw new System.IndexOutOfRangeException("Size for key and value");
+                if (colectionsDataKey)
+                    throw new System.IndexOutOfRangeException("Size for key and value");
+                RouteStore.RoutesData = new Dictionary<int, Route>();
+                for (int i = 0; i < rotesDataKey.Count; i++)
+                {
+                    RouteStore.RoutesData.Add(rotesDataKey[i], routesDataValue[i]);
+                }
 
-            Colections = new Dictionary<string, Colection>();
-            for (int i = 0; i < colectionsDataKey.Count; i++)
-            {
-                Colections.Add(colectionsDataKey[i], colectionsDataValue[i]);
+                RouteStore.Colections = new Dictionary<string, Colection>();
+                for (int i = 0; i < colectionsDataKey.Count; i++)
+                {
+                    RouteStore.Colections.Add(colectionsDataKey[i], colectionsDataValue[i]);
+                }
             }
+            else Debug.Log("Dont Work");
         }
-        #endregion ISerialize
+
     }
 }

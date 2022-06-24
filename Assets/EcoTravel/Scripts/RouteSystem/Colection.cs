@@ -1,13 +1,15 @@
 ﻿using System.Collections.Generic;
+using System;
 
 namespace routeSystem
 {
     [System.Serializable]
     public class Colection
     {
-        string key;
-        ScreenInfo screenInfo;
-        List<int> routeIDs;
+        [NonSerialized] string key;
+        [NonSerialized] ScreenInfo screenInfo;
+        [NonSerialized] List<int> routeIDs;
+
 
         public List<Route> GetRoutes()
         {
