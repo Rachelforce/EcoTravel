@@ -12,12 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddb3333131aea9b44bfb88430ff8a8ae, type: 3}
   m_Name: RouteEditor
   m_EditorClassIdentifier: 
-  ID: 1
-  pointList: []
-  roadList: []
-  _name: Route00
-  description: I hope it work
-  photos:
-  - url: 
-    path: 
-    texture: {fileID: 0}
+  ID: 3
+  _name: 04RouteName
+  description: SomeDescription
+  photos: []

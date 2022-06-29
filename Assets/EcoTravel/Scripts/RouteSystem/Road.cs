@@ -3,6 +3,10 @@ namespace routeSystem
     [System.Serializable]
     public class Road : Marker
     {
+        public Road()
+        {
+
+        }
         public Road(int id, int roateId, string _locationString)
         {
             ID = id;

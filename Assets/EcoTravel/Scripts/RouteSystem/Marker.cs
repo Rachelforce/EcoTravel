@@ -1,17 +1,22 @@
 using UnityEngine;
 using Mapbox.Unity.Utilities;
 using Mapbox.Utils;
+using System;
 namespace routeSystem
 {
     [System.Serializable]
     public class Marker
     {
-        public int ID { get; set; }
-        public int roateID { get; set; }
-        public string locationString { get; set; }
-        public Vector2d location {get => Conversions.StringToLatLon(locationString);}
-        public bool visible { get; set; }
-        public GameObject gameObject { get; set; }
+        public int ID;
+        public int roateID;
+        public string locationString;
+        
+        public bool visible;
+        [NonSerialized]public GameObject gameObject;
+        public Vector2d GetLocation()
+        {
+            return Conversions.StringToLatLon(locationString); 
+        }
         
     }
 }

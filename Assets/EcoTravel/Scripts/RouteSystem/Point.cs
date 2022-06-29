@@ -1,15 +1,20 @@
 using UnityEngine;
+using System;
 namespace routeSystem
 {
     [System.Serializable]
     public class Point : Marker
     {
 
-        public ScreenInfo screenInfo { get; set; }
-        public int size { get; set; }
-        public bool interactive { get; set; }
+        public ScreenInfo screenInfo;
+        public int size;
+        public bool interactive;
 
         #region Constructor
+        public Point()
+        {
+
+        }
         public Point(int id)
         {
             ID = id;

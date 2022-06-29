@@ -12,8 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6db844f9d48c0f04cbb4e2dff5c73e9a, type: 3}
   m_Name: PointEditor
   m_EditorClassIdentifier: 
+  ListInRoute:
+  - ID: 0
+    roateID: 0
+    locationString: 53.195878, 50.100202
+    visible: 1
+    screenInfo:
+      _name: Test Point Name00
+      description: i Hope it Work Pint00
+      photos:
+      - url: 
+        path: 
+      - url: 
+        path: 
+    size: 0
+    interactive: 0
   ID: 0
-  roateID: 0
+  routeID: 0
   locationString: 53.195878, 50.100202
   visible: 1
   gameObject: {fileID: 0}
@@ -22,13 +37,5 @@ MonoBehaviour:
   photos:
   - url: 
     path: 
-    texture: {fileID: 0}
   - url: 
     path: 
-    texture: {fileID: 0}
-  - url: 
-    path: 
-    texture: {fileID: 0}
-  - url: 
-    path: 
-    texture: {fileID: 0}

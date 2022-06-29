@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 
 namespace routeSystem
 {
@@ -8,7 +9,7 @@ namespace routeSystem
     {
         public string url;
         public string path;
-        public Texture2D texture;
+        [NonSerialized]public Texture2D texture;
 
   
     }

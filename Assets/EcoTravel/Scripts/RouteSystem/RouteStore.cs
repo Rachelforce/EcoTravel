@@ -10,53 +10,28 @@ namespace routeSystem
     public class RouteStore 
     {
         static public Dictionary<int, Route> RoutesData;
+        static public List<int> RouteID;
         static public Dictionary<string, Colection> Colections;
-
-        public static int SetRoute(int index, Route route)
-        {
-            if (RoutesData == null)
-            {
-                RoutesData = new Dictionary<int, Route>();
-                index = 0;
-                SetRoute(index, route);
-                return index;
-            }
-            else if (RoutesData.ContainsKey(index)) SetRoute(index + 1, route);
-            else { 
-                route.ID = index;
-                RoutesData[index] = route; 
-                }
-            return index;
-        }
-        public static bool SetPoint( ref int routeID, ref int pointID, Point point)
-        {
-            if (!RoutesData.ContainsKey(routeID)) routeID = SetRoute(routeID, new Route());
-            else if (RoutesData[routeID].pointList.Count > pointID)
-                pointID = RoutesData[routeID].pointList.Count;
-            else if (RoutesData[routeID].pointList.Count < pointID)
-            {
-                RoutesData[routeID].pointList[pointID] = point;
-                return true;
-            }
-            RoutesData[routeID].pointList.Add(point);
-            return true;
-
-        }
-        public static bool SetRoad(ref int routeID, ref int roadID, Road road)
-        {
-            if (!RoutesData.ContainsKey(routeID)) routeID = SetRoute(routeID, new Route());
-            else if (RoutesData[routeID].roadList.Count > roadID)
-                roadID = RoutesData[routeID].roadList.Count;
-            else if (RoutesData[routeID].roadList.Count < roadID)
-            {
-                RoutesData[routeID].roadList[roadID] = road;
-                return true;
-            }
-            RoutesData[routeID].roadList.Add(road);
-            return true;
-
-        }
         
+
+       
+
+
+        public static bool ContainsRoute(int i)
+        {
+            return RoutesData.ContainsKey(i);
+        }
+        public static int EmptyRouteIndex(int Index = -1)
+        {
+            if (Index == -1)
+                Index = RouteID[RouteID.Count - 1] + 1;
+    
+            if (!ContainsRoute(Index))
+                return Index;
+            else EmptyRouteIndex(Index + 1);
+            return -1;
+        }
+
     }
 
     [System.Serializable]
@@ -91,19 +66,20 @@ namespace routeSystem
             {
                 if (rotesDataKey.Count != routesDataValue.Count)
                     throw new System.IndexOutOfRangeException("Size for key and value");
-                if (colectionsDataKey)
-                    throw new System.IndexOutOfRangeException("Size for key and value");
+                //if (colectionsDataKey)
+                  //  throw new System.IndexOutOfRangeException("Size for key and value");
                 RouteStore.RoutesData = new Dictionary<int, Route>();
                 for (int i = 0; i < rotesDataKey.Count; i++)
                 {
                     RouteStore.RoutesData.Add(rotesDataKey[i], routesDataValue[i]);
                 }
-
+                /*
                 RouteStore.Colections = new Dictionary<string, Colection>();
                 for (int i = 0; i < colectionsDataKey.Count; i++)
                 {
                     RouteStore.Colections.Add(colectionsDataKey[i], colectionsDataValue[i]);
                 }
+                */
             }
             else Debug.Log("Dont Work");
         }

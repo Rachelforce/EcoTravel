@@ -6,9 +6,9 @@ namespace routeSystem
     [System.Serializable]
     public class Route
     {
-        [NonSerialized] public List<Point> pointList;
-        [NonSerialized] public List<Road> roadList;
-        [NonSerialized] public ScreenInfo screenInfo;
+        public List<Point> pointList;
+        public List<Road> roadList;
+        public ScreenInfo screenInfo;
         public int ID;
         public Route()
         {
@@ -23,13 +23,28 @@ namespace routeSystem
             roadList = new List<Road>();
             screenInfo = new ScreenInfo();
         }
-        public Route(int id, List<Point> points, List<Road> roads, ScreenInfo _screenInfo)
+        public Route(int id, ScreenInfo _screenInfo)
         {
             ID=id;
-            pointList = points;
-            roadList = roads;
             screenInfo = _screenInfo;
 
+        }
+
+        public int EmptyRoadIndex()
+        {
+            return roadList.Count;
+        }
+        public int EmptyPointIndex()
+        {
+            return pointList.Count;
+        }
+        public bool ContainsRoadIndex( int i)
+        {
+            return i < roadList.Count;
+        }
+        public bool ContainsPointIndex(int i)
+        {
+            return i < pointList.Count;
         }
     }
 }

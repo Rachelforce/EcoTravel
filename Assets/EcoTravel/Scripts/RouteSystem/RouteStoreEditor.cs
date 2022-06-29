@@ -10,7 +10,6 @@ namespace routeSystem
     {
         #region Set variables
         [SerializeField] RouteEditor routeEditor;
-        [SerializeField] int routID;
         [SerializeField] bool getRout;
         [SerializeField] bool setRout;
 
@@ -18,7 +17,6 @@ namespace routeSystem
         [Space]
 
         [SerializeField] PointEditor pointEditor;
-        [SerializeField] int pointID;
         [SerializeField] bool getPoint;
         [SerializeField] bool setPoint;
 
@@ -26,7 +24,6 @@ namespace routeSystem
         [Space]
 
         [SerializeField] RoadEditor roadEditor;
-        [SerializeField] int roadID;
         [SerializeField] bool getRoad;
         [SerializeField] bool setRoad;
         #endregion variables
@@ -43,70 +40,39 @@ namespace routeSystem
         }
         private void GetRout()
         {
-            Route route = RouteStore.RoutesData[routID];
-            routeEditor.ID = route.ID;
-            routeEditor.pointList = route.pointList;
-            routeEditor.roadList = route.roadList;
-
-            routeEditor._name = route.screenInfo._name;
-            routeEditor.description = route.screenInfo.description;
-            routeEditor.photos = route.screenInfo.photos;
-
+            routeEditor.GetRout();
             getRout = false;
         }
         private void GetRoad()
         {
-            Road road = RouteStore.RoutesData[roadID].roadList[roadID];
-            roadEditor.ID = road.ID;
-            roadEditor.roateID = road.roateID;
-            roadEditor.locationString = road.locationString;
-
+            roadEditor.GetRoad();
             getRoad = false;
         }
         private void GetPoint()
         {
-            Point point = RouteStore.RoutesData[routID].pointList[pointID];
-            pointEditor.ID = point.ID;
-            pointEditor.roateID = point.roateID;
-            pointEditor.locationString = point.locationString;
-            pointEditor.visible = point.visible;
-            pointEditor.gameObject = point.gameObject;
-
-            pointEditor.size = point.size;
-            pointEditor.interactive = point.interactive;
-
-            pointEditor._name = point.screenInfo._name;
-            pointEditor.description = point.screenInfo.description;
-            pointEditor.photos = point.screenInfo.photos;
+            pointEditor.GetPoint();
             getPoint = false;
         }
 
         private void SetRout()
         {
-            Route route = new Route(routID, routeEditor.pointList, routeEditor.roadList
-                ,new ScreenInfo(routeEditor._name, routeEditor.description, routeEditor.photos));
-            RouteStore.SetRoute(roadID, route);
+            routeEditor.SetRout();
             setRout = false;
-        }  
-        private void SetPoint()
-        {
-            Point point = new Point(pointID, routID,
-                pointEditor.locationString, pointEditor.visible,
-                pointEditor.gameObject, pointEditor.size,
-                pointEditor.interactive, 
-                new ScreenInfo(pointEditor._name, pointEditor.description
-                , pointEditor.photos));
-            RouteStore.SetPoint(ref routID,ref pointID, point);
-            setPoint = false;   
         }
         private void SetRoad()
         {
-            Road road = new Road(roadID, routID);
-            RouteStore.SetRoad(ref routID, ref roadID, road);
+            roadEditor.SetRoad();
             setRoad = false;
         }
+        private void SetPoint()
+        {
+            pointEditor.SetPoint();
+            setPoint = false;   
+        }
+        
+
         #endregion GetSetMethods
-        
-        
+
+
     }
 }
