@@ -4,19 +4,21 @@ using Mapbox.Utils;
 using System;
 namespace routeSystem
 {
-    [System.Serializable]
+    [Serializable]
     public class Marker
     {
         public int ID;
-        public int roateID;
-        public string locationString;
-        
+
         public bool visible;
-        [NonSerialized]public GameObject gameObject;
+        public bool interactive;
+ 
+        public int size;
+        public string locationString;
         public Vector2d GetLocation()
         {
-            return Conversions.StringToLatLon(locationString); 
+            return Conversions.StringToLatLon(locationString);
         }
         
+        public ScreenInfo screenInfo;
     }
 }

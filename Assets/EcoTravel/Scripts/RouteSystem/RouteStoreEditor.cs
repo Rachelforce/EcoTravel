@@ -19,13 +19,18 @@ namespace routeSystem
         [SerializeField] PointEditor pointEditor;
         [SerializeField] bool getPoint;
         [SerializeField] bool setPoint;
+        [SerializeField] bool getPointPhoto;
+        [SerializeField] bool setPointPhoto;
 
         [Space]
         [Space]
 
-        [SerializeField] RoadEditor roadEditor;
-        [SerializeField] bool getRoad;
-        [SerializeField] bool setRoad;
+
+        [SerializeField] CollectionEditor collectionEditor;
+        [SerializeField] bool getCollection;
+        [SerializeField] bool setCollection;
+        [SerializeField] bool getCollectionPhoto;
+        [SerializeField] bool setCollectionPhoto;
         #endregion variables
 
         #region GetSetMethods
@@ -35,19 +40,20 @@ namespace routeSystem
             else if (setRout) SetRout();
             else if (getPoint) GetPoint();
             else if (setPoint) SetPoint();
-            else if (getRoad) GetRoad();
-            else if (setRoad) SetRoad();
+            else if (getPointPhoto) GetPointPhoto();
+            else if (setPointPhoto) SetPointPhoto();
+
+            else if (getCollection) GetCollection();
+            else if (setCollection) SetCollection();
+            else if (getCollectionPhoto) GetCollectionPhoto();
+            else if (setCollectionPhoto) SetCollectionPhoto();
         }
         private void GetRout()
         {
             routeEditor.GetRout();
             getRout = false;
         }
-        private void GetRoad()
-        {
-            roadEditor.GetRoad();
-            getRoad = false;
-        }
+
         private void GetPoint()
         {
             pointEditor.GetPoint();
@@ -59,17 +65,46 @@ namespace routeSystem
             routeEditor.SetRout();
             setRout = false;
         }
-        private void SetRoad()
-        {
-            roadEditor.SetRoad();
-            setRoad = false;
-        }
+
         private void SetPoint()
         {
             pointEditor.SetPoint();
             setPoint = false;   
         }
-        
+
+        private void GetPointPhoto()
+        {
+            pointEditor.GetPhoto();
+            getPointPhoto = false;
+        }
+        private void SetPointPhoto()
+        {
+            pointEditor.SetPhoto();
+            setPointPhoto = false;
+        }
+
+
+        private void GetCollection()
+        {
+            collectionEditor.GetCollection();
+            getCollection = false;
+        }
+        private void SetCollection()
+        {
+            collectionEditor.SetCollection();
+            setCollection = false;
+        }
+
+        private void GetCollectionPhoto()
+        {
+            collectionEditor.GetPhoto();
+            getCollectionPhoto = false;
+        }
+        private void SetCollectionPhoto()
+        {
+            collectionEditor.SetPhoto();
+            setCollectionPhoto = false;
+        }
 
         #endregion GetSetMethods
 

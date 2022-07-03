@@ -7,11 +7,25 @@ namespace routeSystem
     
     public class Photo 
     {
-        public string url;
-        public string path;
-        [NonSerialized]public Texture2D texture;
+        public string _url;
+        public string _path;
 
-  
+        public Photo() { }
+        public Photo(string path)
+        {
+            _path = path;
+            GetTextureFromPath();
+        }
+        public Photo(string path, string url)
+        {
+            _path =path;
+            _url = url;
+        }
+        public Texture2D GetTextureFromPath()
+        {
+            return Resources.Load<Texture2D>(_path);
+        }
+
     }
 }
 

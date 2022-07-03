@@ -16,7 +16,6 @@ public class StoreUpdater : MonoBehaviour
         {
             RouteStoreSerialize routeStoreSerialize = JsonSerializer.Load<RouteStoreSerialize>(this.path);
             routeStoreSerialize.OnAfterDeserialize();
-            print(routeStoreSerialize.rotesDataKey);
         }
         
     }

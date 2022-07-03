@@ -2,92 +2,76 @@
   "rotesDataKey": [
     0,
     1,
-    2,
-    3,
-    4
+    2
   ],
   "routesDataValue": [
     {
-      "pointList": [
-        {
-          "screenInfo": {
-            "_name": "Test Point Name00",
-            "description": "i Hope it Work Pint00",
-            "photos": [
-              {
-                "url": "",
-                "path": ""
-              },
-              {
-                "url": "",
-                "path": ""
-              }
-            ]
-          },
-          "size": 0,
-          "interactive": false,
-          "ID": 0,
-          "roateID": 0,
-          "locationString": "53.195878, 50.100202",
-          "visible": true
-        }
-      ],
-      "roadList": [
-        {
-          "ID": 0,
-          "roateID": 0,
-          "locationString": "00Road",
-          "visible": false
-        }
-      ],
-      "screenInfo": {
-        "_name": "01RouteName",
-        "description": "SomeDescription",
-        "photos": []
+      "pointList": [],
+      "road": {
+        "routeID": 0,
+        "pointPositions": null
       },
-      "ID": 0
+      "ID": 0,
+      "visible": true,
+      "interactive": true,
+      "size": 1,
+      "locationString": "53.284379, 49.534693",
+      "screenInfo": {
+        "_name": "Сосновый солонец ",
+        "description": "Село в Ставропольском районе Самарской области. Административно входит в сельское поселение Сосновый Солонец и является его центром.",
+        "photos": []
+      }
     },
     {
       "pointList": [],
-      "roadList": [],
-      "screenInfo": {
-        "_name": "02RouteName",
-        "description": "SomeDescription",
-        "photos": []
+      "road": {
+        "routeID": 1,
+        "pointPositions": null
       },
-      "ID": 1
+      "ID": 1,
+      "visible": true,
+      "interactive": true,
+      "size": 1,
+      "locationString": "53.399977, 49.635899",
+      "screenInfo": {
+        "_name": "село Бахилово",
+        "description": "Село в Ставропольском районе Самарской области. Административно входит в сельское поселение Бахилово, являясь его административным центром.",
+        "photos": []
+      }
     },
     {
       "pointList": [],
-      "roadList": [],
-      "screenInfo": {
-        "_name": "03RouteName",
-        "description": "SomeDescription",
-        "photos": []
+      "road": {
+        "routeID": 2,
+        "pointPositions": null
       },
-      "ID": 2
-    },
-    {
-      "pointList": [],
-      "roadList": [],
+      "ID": 2,
+      "visible": true,
+      "interactive": true,
+      "size": 1,
+      "locationString": "53.176617, 49.500660",
       "screenInfo": {
-        "_name": "04RouteName",
-        "description": "SomeDescription",
+        "_name": "село Севрюкаево",
+        "description": "Село в Ставропольском районе Самарской области. Административно входит в сельское поселение Бахилово, являясь его административным центром.",
         "photos": []
-      },
-      "ID": 3
-    },
-    {
-      "pointList": [],
-      "roadList": [],
-      "screenInfo": {
-        "_name": "someName",
-        "description": "SomeDescription",
-        "photos": []
-      },
-      "ID": 4
+      }
     }
   ],
-  "colectionsDataKey": null,
-  "colectionsDataValue": null
+  "collectionsDataKey": [
+    "Main"
+  ],
+  "collectionsDataValue": [
+    {
+      "key": "Main",
+      "screenInfo": {
+        "_name": "main",
+        "description": "startCollection",
+        "photos": []
+      },
+      "routeIDs": [
+        0,
+        1
+      ]
+    }
+  ]
 }

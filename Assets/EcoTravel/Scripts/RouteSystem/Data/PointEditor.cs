@@ -12,7 +12,6 @@ namespace routeSystem
         public int routeID;
         public string locationString;
         public bool visible;
-        public GameObject gameObject;
 
         public int size { get; set; }
         public bool interactive { get; set; }
@@ -20,11 +19,16 @@ namespace routeSystem
         public string _name;
         public string description;
         public List<Photo> photos;
+        [Space]
+        [Space]
+        public int photoIndex;
+        public string _url;
+        public string _path;
 
 
         public void GetPoint()
         {
-            if (RouteStore.ContainsRoute(ID))
+            if (RouteStore.ContainsRoute(routeID))
             {
                 ListInRoute = RouteStore.RoutesData[routeID].pointList;
                 if (ListInRoute != null)
@@ -34,7 +38,6 @@ namespace routeSystem
                         Point point = RouteStore.RoutesData[routeID].pointList[ID];
                         locationString = point.locationString;
                         visible = point.visible;
-                        gameObject = point.gameObject;
 
                         size = point.size;
                         interactive = point.interactive;
@@ -58,31 +61,79 @@ namespace routeSystem
         }
         public void SetPoint()
         {
-            if (RouteStore.RoutesData[routeID].ContainsPointIndex(ID))
+            if (RouteStore.ContainsRoute(routeID))
             {
-                Point point = new Point(ID, routeID);
-                point.visible = visible;
-                point.gameObject = gameObject;
-                point.locationString = locationString;
+                    if (RouteStore.RoutesData[routeID].ContainsPointIndex(ID))
+                {
+                    Point point = new Point(ID, routeID);
+                    point.visible = visible;
+                    point.locationString = locationString;
 
-                point.size =  size;
-                point.interactive = interactive;
-                point.screenInfo._name = _name;
-                point.screenInfo.description = description;
-                point.screenInfo.photos = photos;
+                    point.size =  size;
+                    point.interactive = interactive;
+                    point.screenInfo._name = _name;
+                    point.screenInfo.description = description;
+                    point.screenInfo.photos = photos;
 
-                RouteStore.RoutesData[routeID].pointList[ID] = point;
-                Debug.Log("Set Point successfully");
+                    RouteStore.RoutesData[routeID].pointList[ID] = point;
+                    Debug.Log("Set Point successfully");
+                }
+                else
+                {
+                    Debug.Log("does not exist Point ID");
+                    ID = CreatePoint();
+                    SetPoint();
+                }
+            }
+            else Debug.Log("does not exist Route ID");
+
+
+        }
+        public void GetPhoto()
+        {
+            if (RouteStore.ContainsRoute(routeID))
+            {
+                ListInRoute = RouteStore.RoutesData[routeID].pointList;
+                if (ListInRoute != null)
+                {
+                    if (ID < ListInRoute.Count)
+                    {
+                        photos = RouteStore.RoutesData[routeID].pointList[ID].screenInfo.photos;
+                        if (photoIndex < photos.Count)
+                        {
+                            _url = photos[photoIndex]._url;
+                            _path = photos[photoIndex]._path;
+                            Debug.Log("Get Photo successfully");
+                        }
+                        else Debug.Log("does not exist Photo ID");
+                    }
+                    else Debug.Log("does not exist Point ID");
+                }
+                else Debug.Log("List in Point Empty");
+            }
+            else Debug.Log("does not exist Route ID");
+        }
+        public void SetPhoto()
+        {
+            if (RouteStore.RoutesData[routeID].pointList[ID].screenInfo.ContainsPhotoIndex(photoIndex))
+            {
+                Photo photo = new Photo(_path, _url) ;
+                RouteStore.RoutesData[routeID].pointList[ID].screenInfo.photos[photoIndex] = photo;
+                Debug.Log("Set Photo successfully");
             }
             else
             {
-                Debug.Log("does not exist Point ID");
-                ID = CreatePoint();
-                SetPoint();
+                Debug.Log("does not exist Photo ID");
+                photoIndex = CreatePhoto();
+                SetPhoto();
             }
-
-
-
+        }
+        public int CreatePhoto()
+        {
+            int emptyIndex = RouteStore.RoutesData[routeID].pointList[ID].screenInfo.EmptyPhotoIndex();
+            RouteStore.RoutesData[routeID].pointList[ID].screenInfo.photos.Add(new Photo());
+            Debug.Log("Create New Photo");
+            return emptyIndex;
         }
     }
 }

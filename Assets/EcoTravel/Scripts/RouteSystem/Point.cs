@@ -2,13 +2,10 @@ using UnityEngine;
 using System;
 namespace routeSystem
 {
-    [System.Serializable]
+    [Serializable]
     public class Point : Marker
     {
-
-        public ScreenInfo screenInfo;
-        public int size;
-        public bool interactive;
+        public int roateID;
 
         #region Constructor
         public Point()
@@ -44,5 +41,7 @@ namespace routeSystem
 
         }
         #endregion Constructor
+
+        
     }
 }

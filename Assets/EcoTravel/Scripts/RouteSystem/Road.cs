@@ -1,25 +1,27 @@
+using System.Collections.Generic;
+using Mapbox.Utils;
+
 namespace routeSystem
 {
     [System.Serializable]
-    public class Road : Marker
+    public class Road 
     {
-        public Road()
+        public int routeID;
+        public List<Vector2d> pointPositions;
+ 
+        public Road(int roateId)
         {
-
+            routeID = roateId;
+            //SetPointPosition();
         }
-        public Road(int id, int roateId, string _locationString)
+        public void SetPointPosition()
         {
-            ID = id;
-            roateID = roateId;
-            locationString = _locationString;
-        }
-        public Road(int id)
-        {
-            ID = id;
-        }
-        public Road(int id, int roateId) {
-            ID = id;
-            roateID = roateId;
+            pointPositions = new List<Vector2d>();
+            foreach (Point point in RouteStore.RoutesData[routeID].pointList)
+            {
+                pointPositions.Add(point.GetLocation()); 
+            }
+            
         }
     }
 }

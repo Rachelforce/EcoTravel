@@ -12,30 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6db844f9d48c0f04cbb4e2dff5c73e9a, type: 3}
   m_Name: PointEditor
   m_EditorClassIdentifier: 
-  ListInRoute:
-  - ID: 0
-    roateID: 0
-    locationString: 53.195878, 50.100202
-    visible: 1
-    screenInfo:
-      _name: Test Point Name00
-      description: i Hope it Work Pint00
-      photos:
-      - url: 
-        path: 
-      - url: 
-        path: 
-    size: 0
-    interactive: 0
+  ListInRoute: []
   ID: 0
   routeID: 0
-  locationString: 53.195878, 50.100202
+  locationString: 53.284379, 49.534693
   visible: 1
-  gameObject: {fileID: 0}
-  _name: Test Point Name00
-  description: i Hope it Work Pint00
-  photos:
-  - url: 
-    path: 
-  - url: 
-    path: 
+  _name: "\u0441\u0435\u043B\u043E \u0421\u043E\u0441\u043D\u043E\u0432\u044B\u0439
+    \u0421\u043E\u043B\u043E\u043D\u0435\u0446"
+  description: "\u0421\u0435\u043B\u043E \u0432 \u0421\u0442\u0430\u0432\u0440\u043E\u043F\u043E\u043B\u044C\u0441\u043A\u043E\u043C
+    \u0440\u0430\u0439\u043E\u043D\u0435 \u0421\u0430\u043C\u0430\u0440\u0441\u043A\u043E\u0439
+    \u043E\u0431\u043B\u0430\u0441\u0442\u0438."
+  photos: []
+  photoIndex: 0
+  _url: sdfsf
+  _path: sdfsd

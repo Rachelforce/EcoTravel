@@ -26,14 +26,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8474720795749249402}
-  m_LocalRotation: {x: 0, y: 0.7626683, z: 0.6467898, w: 0}
-  m_LocalPosition: {x: 0, y: 0.345, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalRotation: {x: 0, y: 0.72878945, z: 0.6847379, w: 0}
+  m_LocalPosition: {x: 0, y: 0.47, z: -0.01}
+  m_LocalScale: {x: 30, y: 30, z: 30}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 6771089228474595249}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -99.4, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: -93.57, y: 0, z: 180}
 --- !u!212 &8532382579777485125
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -111,7 +111,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a880f58df76158842973a09fc9ae3312, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screenInfo: {fileID: 0}
+  screenInfo:
+    _name: someName
+    description: SomeDescription
+    photos: []
   popUpmenuController: {fileID: 0}
 --- !u!1 &9058192906053959289
 GameObject:

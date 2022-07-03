@@ -23,5 +23,14 @@ namespace routeSystem
             description = _description;
             photos = _photos;
         }
+
+        public int EmptyPhotoIndex()
+        {
+            return photos.Count;
+        }
+        public bool ContainsPhotoIndex(int i)
+        {
+            return i < photos.Count;
+        }
     }
 }
