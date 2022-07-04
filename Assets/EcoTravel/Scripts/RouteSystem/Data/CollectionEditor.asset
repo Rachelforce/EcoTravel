@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   key: Main
   routeIDs: 0000000001000000
-  _name: main
-  description: startCollection
-  photos: []
-  photoIndex: 0
-  _url: 
-  _path: 
+  collection:
+    key: 
+    screenInfo:
+      _name: someName
+      description: SomeDescription
+      photos: []
+    routeIDs: 

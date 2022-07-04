@@ -6,10 +6,50 @@
   ],
   "routesDataValue": [
     {
-      "pointList": [],
+      "pointList": [
+        {
+          "roateID": 0,
+          "ID": 0,
+          "visible": true,
+          "interactive": true,
+          "size": 1,
+          "locationString": "53.284377, 49.534695",
+          "screenInfo": {
+            "_name": "село Сосновый Солонец",
+            "description": "Село в Ставропольском районе Самарской области.",
+            "photos": []
+          }
+        },
+        {
+          "roateID": 0,
+          "ID": 1,
+          "visible": true,
+          "interactive": true,
+          "size": 1,
+          "locationString": "53.243681, 49.560391",
+          "screenInfo": {
+            "_name": "село Берёзовый Солонец",
+            "description": "Село в Ставропольском районе Самарской области.",
+            "photos": []
+          }
+        },
+        {
+          "roateID": 0,
+          "ID": 2,
+          "visible": true,
+          "interactive": true,
+          "size": 1,
+          "locationString": "53.281199, 49.609911",
+          "screenInfo": {
+            "_name": "село Аскулы",
+            "description": "Село в Ставропольском районе Самарской области.",
+            "photos": []
+          }
+        }
+      ],
       "road": {
         "routeID": 0,
-        "pointPositions": null
+        "pointPositions": []
       },
       "ID": 0,
       "visible": true,
@@ -23,10 +63,37 @@
       }
     },
     {
-      "pointList": [],
+      "pointList": [
+        {
+          "roateID": 1,
+          "ID": 0,
+          "visible": true,
+          "interactive": true,
+          "size": 1,
+          "locationString": "53.399977, 49.635899",
+          "screenInfo": {
+            "_name": "село Бахилово",
+            "description": "Село в Ставропольском районе Самарской области.",
+            "photos": []
+          }
+        },
+        {
+          "roateID": 1,
+          "ID": 1,
+          "visible": true,
+          "interactive": true,
+          "size": 1,
+          "locationString": "53.399977, 49.635899",
+          "screenInfo": {
+            "_name": "село Бахилова Поляна",
+            "description": "Село в Самарской области на правом берегу Волги в пределах Жигулёвского заповедника",
+            "photos": []
+          }
+        }
+      ],
       "road": {
         "routeID": 1,
-        "pointPositions": null
+        "pointPositions": []
       },
       "ID": 1,
       "visible": true,
@@ -40,10 +107,37 @@
       }
     },
     {
-      "pointList": [],
+      "pointList": [
+        {
+          "roateID": 2,
+          "ID": 0,
+          "visible": true,
+          "interactive": true,
+          "size": 1,
+          "locationString": "53.176617, 49.500660",
+          "screenInfo": {
+            "_name": "село Севрюкаево",
+            "description": "Село в Ставропольском районе Самарской области.",
+            "photos": []
+          }
+        },
+        {
+          "roateID": 2,
+          "ID": 1,
+          "visible": true,
+          "interactive": true,
+          "size": 1,
+          "locationString": "53.170068, 49.453192",
+          "screenInfo": {
+            "_name": "село Мордово ",
+            "description": "Село в Ставропольском районе Самарской области.",
+            "photos": []
+          }
+        }
+      ],
       "road": {
         "routeID": 2,
-        "pointPositions": null
+        "pointPositions": []
       },
       "ID": 2,
       "visible": true,
@@ -64,13 +158,14 @@
     {
       "key": "Main",
       "screenInfo": {
-        "_name": "main",
-        "description": "startCollection",
+        "_name": "someName",
+        "description": "SomeDescription",
         "photos": []
       },
       "routeIDs": [
         0,
-        1
+        1,
+        2
       ]
     }
   ]

@@ -9,27 +9,15 @@ namespace routeSystem
     {
         public int ID;
 
-        public string _name;
-        public string description;
-        public List<Photo> photos;
-        public string locationString;
-        public int size;
-        public bool visible;
-        public bool interactive;
+        public Route route;
 
         public void GetRout()
         {
             if (RouteStore.ContainsRoute(ID))
             {
-                Route route = RouteStore.RoutesData[ID];
+                route = RouteStore.RoutesData[ID];
 
-                _name = route.screenInfo._name;
-                description = route.screenInfo.description;
-                photos = route.screenInfo.photos;
-                locationString = route.locationString;
-                size = route.size;
-                visible = route.visible;
-                interactive = route.interactive;
+                
                 Debug.Log("Get Route successfully");
             }
             else Debug.Log("does not exist Route ID");
@@ -44,12 +32,7 @@ namespace routeSystem
         }
         public void SetRout()
         {
-            Route route = new Route(ID,
-                new ScreenInfo(_name, description, photos));
-            route.locationString  = locationString;
-            route.size = size;
-            route.visible = visible;
-            route.interactive = interactive;
+            
             if (!RouteStore.ContainsRoute(ID))
             {
                 Debug.Log("does not exist Route ID");

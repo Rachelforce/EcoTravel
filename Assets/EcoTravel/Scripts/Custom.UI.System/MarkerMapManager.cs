@@ -26,6 +26,7 @@ namespace Custom.UI.System
 		enum MarkerType { route, point}; 
 		public void LoadColectionMarkers(Collection colection)
 		{
+			
 			DestroyMarkers();
 			ResetLists();
 			List<Route> routes = colection.GetFromStore();
@@ -35,6 +36,7 @@ namespace Custom.UI.System
 				markers.Add(route);
 			}
 			SetNewMarkers(markers, MarkerType.route);
+			
 
 		}
 		public void LoadRouteMarkers(Route route)
@@ -68,7 +70,12 @@ namespace Custom.UI.System
 			{
 				SetMapTransform(_spawnedObjects[i], _locations[i], _spawnScale[i]);
 			}
-			if(roadRender) _lineRenderer.SetPositions(GetPointPositionToRoad());
+			if (roadRender)
+			{
+				var pos = GetPointPositionToRoad();
+				_lineRenderer.positionCount = pos.Length;
+				_lineRenderer.SetPositions(pos);
+			}
 		}
 		
 
@@ -133,10 +140,11 @@ namespace Custom.UI.System
 		private Vector3[] GetPointPositionToRoad()
         {
 			var pos = new Vector3[_spawnedObjects.Count];
-			for(int i = 0;i< _spawnedObjects.Count;i++)
+			for(int i = 0;i < _spawnedObjects.Count;i++)
             {
 				pos[i] = _spawnedObjects[i].transform.position;
             }
+			
 			return pos;
 
 		}

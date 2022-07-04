@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using Mapbox.Utils;
-
+using UnityEngine;
 namespace routeSystem
 {
     [System.Serializable]
@@ -19,7 +19,8 @@ namespace routeSystem
             pointPositions = new List<Vector2d>();
             foreach (Point point in RouteStore.RoutesData[routeID].pointList)
             {
-                pointPositions.Add(point.GetLocation()); 
+                pointPositions.Add(point.GetLocation());
+                Debug.Log(pointPositions.Count);
             }
             
         }

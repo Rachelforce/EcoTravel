@@ -72,7 +72,6 @@ namespace routeSystem
         {
             try
             {
-                Debug.Log("IHre");
                 rotesDataKey = new List<int>(RouteStore.RoutesData.Keys);
                 routesDataValue = new List<Route>(RouteStore.RoutesData.Values);
                 collectionsDataKey = new List<string>(RouteStore.Collections.Keys);
