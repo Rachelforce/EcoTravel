@@ -8,11 +8,12 @@ using Mapbox.Examples;
 using routeSystem;
 using System.Collections;
 
-namespace Map.MarkerSystem
+namespace Custom.UI.System
 {
     public class MarkerMapManager : MonoBehaviour
     {
 		[SerializeField]AbstractMap _map;
+		[SerializeField] MarkerPopUpmenuController markerPopUpmenuController;
 		[SerializeField] GameObject _markerPrefab;
 		[SerializeField] GameObject roadObject;
 		List<Vector2d> _locations;
@@ -22,6 +23,7 @@ namespace Map.MarkerSystem
 		LineRenderer _lineRenderer;
 		bool roadRender  = false;
 
+		enum MarkerType { route, point}; 
 		public void LoadColectionMarkers(Collection colection)
 		{
 			DestroyMarkers();
@@ -32,7 +34,7 @@ namespace Map.MarkerSystem
 			{
 				markers.Add(route);
 			}
-			SetNewMarkers(markers);
+			SetNewMarkers(markers, MarkerType.route);
 
 		}
 		public void LoadRouteMarkers(Route route)
@@ -44,7 +46,7 @@ namespace Map.MarkerSystem
             {
 				markers.Add(point);
 			}
-			SetNewMarkers(markers);
+			SetNewMarkers(markers, MarkerType.point);
 			
 			var instance = Instantiate(roadObject);
 			_lineRenderer = instance.GetComponent<LineRenderer>();
@@ -77,6 +79,8 @@ namespace Map.MarkerSystem
 			{
 				foreach (GameObject obj in _spawnedObjects)
 				{
+					MapMarkerButton mapMarkerButton = obj.GetComponentInChildren<MapMarkerButton>();
+					mapMarkerButton.markerClick -= markerPopUpmenuController.MarkerButtonClick;
 					obj.Destroy();
 				}
 				if (roadRender)
@@ -93,17 +97,30 @@ namespace Map.MarkerSystem
 			_locations = new List<Vector2d>();
 			_spawnedObjects = new List<GameObject>();
 		}
-		private void SetNewMarkers(List<Marker> markers)
+		private void SetNewMarkers(List<Marker> markers, MarkerType markerType)
         {
 			foreach (Marker marker in markers)
 			{
 				var local = marker.GetLocation();
 				var scale = marker.size;
 				var instance = Instantiate(_markerPrefab);
+				MapMarkerButton mapMarkerButton;
+				if (markerType == MarkerType.route)
+                {
+					mapMarkerButton = instance.transform.GetChild(0).gameObject.AddComponent<MapRoutButton>();
+					((MapRoutButton)mapMarkerButton).loadRoute += LoadRouteMarkers;
+					((MapRoutButton)mapMarkerButton).route = (Route)marker;
+				}
+				else mapMarkerButton = instance.transform.GetChild(0).gameObject.AddComponent<MapPointButton>();
+
+				mapMarkerButton.screenInfo = marker.screenInfo;
+				mapMarkerButton.markerClick += markerPopUpmenuController.MarkerButtonClick;
+
 				_spawnedObjects.Add(instance);
 				_locations.Add(local);
 				_spawnScale.Add(scale);
 				SetMapTransform(instance, local, scale);
+
 				instance.GetComponentInChildren<Renderer>().enabled = marker.visible;
 				instance.GetComponentInChildren<Collider>().isTrigger = !marker.interactive;
 			}

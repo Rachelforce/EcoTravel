@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6391103003762785479}
   - component: {fileID: 8532382579777485125}
   - component: {fileID: 8685731115474302066}
-  - component: {fileID: 3714049279652218990}
   m_Layer: 0
   m_Name: Marker
   m_TagString: Untagged
@@ -99,23 +98,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.44007075, y: 0.5554889, z: 0.21312043}
   m_Center: {x: -0.0013509914, y: -0.005005777, z: 0.0065595056}
---- !u!114 &3714049279652218990
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8474720795749249402}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a880f58df76158842973a09fc9ae3312, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  screenInfo:
-    _name: someName
-    description: SomeDescription
-    photos: []
-  popUpmenuController: {fileID: 0}
 --- !u!1 &9058192906053959289
 GameObject:
   m_ObjectHideFlags: 0
