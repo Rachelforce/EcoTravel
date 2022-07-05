@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using Mapbox.Utils;
 using Mapbox.Unity.Map;
 using Mapbox.Unity.MeshGeneration.Factories;
@@ -24,9 +25,9 @@ namespace Custom.UI.System
 		bool roadRender  = false;
 
 		enum MarkerType { route, point}; 
-		public void LoadColectionMarkers(Collection colection)
+		public void LoadColectionMarkers(string key)
 		{
-			
+			Collection colection = RouteStore.Collections[key];
 			DestroyMarkers();
 			ResetLists();
 			List<Route> routes = colection.GetFromStore();
@@ -41,7 +42,7 @@ namespace Custom.UI.System
 		}
 		public void LoadRouteMarkers(Route route)
 		{
-			
+			DestroyMarkers();
 			ResetLists();
 			List<Marker> markers = new List<Marker>();
 			foreach (Point point in route.pointList)
@@ -56,11 +57,16 @@ namespace Custom.UI.System
 			roadRender = true;
 
 		}
+		public void LoadRouteIDMarkers(int routeId)
+        {
+			Route route = RouteStore.RoutesData[routeId];
+			LoadRouteMarkers(route);
 
+		}
 
 		void Start()
 		{
-			LoadColectionMarkers(RouteStore.Collections["Main"]);
+			LoadColectionMarkers("Main");
 		}
 		
 		private void Update()
@@ -87,13 +93,14 @@ namespace Custom.UI.System
 				foreach (GameObject obj in _spawnedObjects)
 				{
 					MapMarkerButton mapMarkerButton = obj.GetComponentInChildren<MapMarkerButton>();
-					mapMarkerButton.markerClick -= markerPopUpmenuController.MarkerButtonClick;
-					obj.Destroy();
+					//mapMarkerButton.markerClick -= markerPopUpmenuController.MarkerButtonClick;
+					Destroy(obj);
+
 				}
 				if (roadRender)
 				{
 					var roadobj = _lineRenderer.gameObject;
-					roadobj.Destroy();
+					Destroy(roadobj);
 					roadRender = false;
 				}
 			}
@@ -129,7 +136,7 @@ namespace Custom.UI.System
 				SetMapTransform(instance, local, scale);
 
 				instance.GetComponentInChildren<Renderer>().enabled = marker.visible;
-				instance.GetComponentInChildren<Collider>().isTrigger = !marker.interactive;
+				instance.GetComponentInChildren<Collider>().enabled = marker.interactive;
 			}
 		}
 		private void SetMapTransform(GameObject obj, Vector2d location, float scale)

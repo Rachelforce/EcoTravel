@@ -17,7 +17,6 @@ namespace routeSystem
             {   
                 collection = RouteStore.Collections[key];              
                 Debug.Log("Get Collection successfully");
-
             }
             else Debug.Log("does not exist Collection key");
         }

@@ -13,11 +13,10 @@ MonoBehaviour:
   m_Name: CollectionEditor
   m_EditorClassIdentifier: 
   key: Main
-  routeIDs: 0000000001000000
   collection:
-    key: 
+    key: First
     screenInfo:
       _name: someName
       description: SomeDescription
       photos: []
-    routeIDs: 
+    routeIDs: 0200000003000000

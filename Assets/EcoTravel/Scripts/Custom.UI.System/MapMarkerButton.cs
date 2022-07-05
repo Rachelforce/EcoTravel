@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using routeSystem;
+using UnityEngine.EventSystems;
 
 namespace Custom.UI.System
 {
@@ -18,6 +19,11 @@ namespace Custom.UI.System
         public virtual void ButtonEvent()
         {
             markerClick?.Invoke(screenInfo);
+        }
+
+        public void OnPointerClick(PointerEventData eventData)
+        {
+            throw new NotImplementedException();
         }
     }
 }

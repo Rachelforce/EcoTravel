@@ -23,6 +23,45 @@
         {
           "roateID": 0,
           "ID": 1,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.270334, 49.541011",
+          "screenInfo": {
+            "_name": "",
+            "description": "",
+            "photos": []
+          }
+        },
+        {
+          "roateID": 0,
+          "ID": 2,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.258166, 49.543499",
+          "screenInfo": {
+            "_name": "",
+            "description": "",
+            "photos": []
+          }
+        },
+        {
+          "roateID": 0,
+          "ID": 3,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.248500, 49.550925",
+          "screenInfo": {
+            "_name": "",
+            "description": "",
+            "photos": []
+          }
+        },
+        {
+          "roateID": 0,
+          "ID": 4,
           "visible": true,
           "interactive": true,
           "size": 1,
@@ -35,7 +74,46 @@
         },
         {
           "roateID": 0,
-          "ID": 2,
+          "ID": 5,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.257151, 49.563561",
+          "screenInfo": {
+            "_name": "",
+            "description": "",
+            "photos": []
+          }
+        },
+        {
+          "roateID": 0,
+          "ID": 6,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.266056, 49.590240",
+          "screenInfo": {
+            "_name": "",
+            "description": "",
+            "photos": []
+          }
+        },
+        {
+          "roateID": 0,
+          "ID": 7,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.278081, 49.599132",
+          "screenInfo": {
+            "_name": "",
+            "description": "",
+            "photos": []
+          }
+        },
+        {
+          "roateID": 0,
+          "ID": 8,
           "visible": true,
           "interactive": true,
           "size": 1,
@@ -124,6 +202,97 @@
         {
           "roateID": 2,
           "ID": 1,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.174188, 49.491733",
+          "screenInfo": {
+            "_name": "",
+            "description": "",
+            "photos": []
+          }
+        },
+        {
+          "roateID": 2,
+          "ID": 2,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.178017, 49.483026",
+          "screenInfo": {
+            "_name": "",
+            "description": "",
+            "photos": []
+          }
+        },
+        {
+          "roateID": 2,
+          "ID": 3,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.173113, 49.477708",
+          "screenInfo": {
+            "_name": "",
+            "description": "",
+            "photos": []
+          }
+        },
+        {
+          "roateID": 2,
+          "ID": 4,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.172778, 49.467994",
+          "screenInfo": {
+            "_name": "",
+            "description": "",
+            "photos": []
+          }
+        },
+        {
+          "roateID": 2,
+          "ID": 5,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.172757, 49.467959",
+          "screenInfo": {
+            "_name": "",
+            "description": "",
+            "photos": []
+          }
+        },
+        {
+          "roateID": 2,
+          "ID": 6,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.174281, 49.464253",
+          "screenInfo": {
+            "_name": "",
+            "description": "",
+            "photos": []
+          }
+        },
+        {
+          "roateID": 2,
+          "ID": 7,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.174351, 49.463963",
+          "screenInfo": {
+            "_name": "",
+            "description": "",
+            "photos": []
+          }
+        },
+        {
+          "roateID": 2,
+          "ID": 8,
           "visible": true,
           "interactive": true,
           "size": 1,
@@ -152,7 +321,9 @@
     }
   ],
   "collectionsDataKey": [
-    "Main"
+    "Main",
+    "First",
+    "Second"
   ],
   "collectionsDataValue": [
     {
@@ -165,6 +336,30 @@
       "routeIDs": [
         0,
         1,
+        2
+      ]
+    },
+    {
+      "key": "First",
+      "screenInfo": {
+        "_name": "someName",
+        "description": "SomeDescription",
+        "photos": []
+      },
+      "routeIDs": [
+        1,
+        2
+      ]
+    },
+    {
+      "key": "Second",
+      "screenInfo": {
+        "_name": "someName",
+        "description": "SomeDescription",
+        "photos": []
+      },
+      "routeIDs": [
+        0,
         2
       ]
     }
