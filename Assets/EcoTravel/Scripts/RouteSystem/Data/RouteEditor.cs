@@ -12,35 +12,13 @@ namespace routeSystem
         public Route route;
 
         public void GetRout()
-        {
-            if (RouteStore.ContainsRoute(ID))
-            {
-                route = RouteStore.RoutesData[ID];
-
-                
-                Debug.Log("Get Route successfully");
-            }
-            else Debug.Log("does not exist Route ID");
-
+        {          
+            route = RouteStore.GetRoute(ID);
         }
-        private int CreateRoute()
-        {
-            int emptyIndex = RouteStore.EmptyRouteIndex();
-            RouteStore.RoutesData.Add(emptyIndex, new Route());
-            Debug.Log("Create New Route");
-            return emptyIndex;
-        }
+        
         public void SetRout()
         {
-            
-            if (!RouteStore.ContainsRoute(ID))
-            {
-                Debug.Log("does not exist Route ID");
-                ID = CreateRoute();
-                
-            }
-            RouteStore.RoutesData[ID] = route;
-            Debug.Log("Set Route successfully");
+            ID = RouteStore.SetRout(route);
         }
 
 
