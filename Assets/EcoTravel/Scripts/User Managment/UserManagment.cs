@@ -8,72 +8,67 @@ using Doozy.Engine.Nody;
 
 public class UserManagment : MonoBehaviour
 {
-   
+
     [SerializeField] private GameObject regView;
     [SerializeField] private GameObject FirstView;
     [SerializeField] private GraphController graphController;
-    public IEnumerator Login(string login, string password)
+    public IEnumerator Login(string mail, string password)
     {
         AuthenticateModel user = new AuthenticateModel();
-        user.Login = login;
+        user.Mail = mail;
         user.Password = password;
 
-        var json = JsonUtility.ToJson(user);
+        var json = JsonUtility.ToJson(user, true);
+        Debug.Log(json);
+        using UnityWebRequest www = new UnityWebRequest(WebConfig.url + "authenticate", "POST");
+        byte[] jsonToSend = new System.Text.UTF8Encoding().GetBytes(json);
+        www.uploadHandler = (UploadHandler)new UploadHandlerRaw(jsonToSend);
+        www.downloadHandler = (DownloadHandler)new DownloadHandlerBuffer();
+        www.SetRequestHeader("Content-Type", "application/json");
+        yield return www.SendWebRequest();
 
-        using (UnityWebRequest www = new UnityWebRequest(WebConfig.url + "/users/authenticate", "POST"))
+
+        if (www.result != UnityWebRequest.Result.Success)
         {
-            byte[] jsonToSend = new System.Text.UTF8Encoding().GetBytes(json);
-            www.uploadHandler = (UploadHandler)new UploadHandlerRaw(jsonToSend);
-            www.downloadHandler = (DownloadHandler)new DownloadHandlerBuffer();
-            www.SetRequestHeader("Content-Type", "application/json");
-            yield return www.SendWebRequest();
-
-
-            if (www.result != UnityWebRequest.Result.Success)
-            {
-                Debug.Log(www.error);
-            }
-            else
-            {
-                graphController.Graph.SetActiveNodeByName("FirstMeet1");
-                Debug.Log("Form upload complete! " + www.downloadHandler.text);
-            }
+            Debug.Log(www.error);
+        }
+        else
+        {
+            graphController.Graph.SetActiveNodeByName("FirstMeet1");
+            Debug.Log("Form upload complete! " + www.downloadHandler.text);
         }
 
     }
 
-   public  IEnumerator Register(string login, string mail, string password, string sex, string birthday)
+    public IEnumerator Register(string fullName, string mail, string password, string sex, string birthday)
     {
         UserRegister user = new UserRegister();
-        user.Login = login;
         user.Mail = mail;
+        user.Fullname = fullName;
         user.Sex = sex;
         user.Birthday = birthday;
-        user.password = password;
-     
-        var json = JsonUtility.ToJson(user);
-        
-        
+        user.Password = password;
 
-        using (UnityWebRequest www = new UnityWebRequest(WebConfig.url + "/users/register", "POST"))
+        var json = JsonUtility.ToJson(user, true);
+        Debug.Log(json);
+
+        using UnityWebRequest www = new UnityWebRequest(WebConfig.url + "register", "POST");
+        byte[] jsonToSend = new System.Text.UTF8Encoding().GetBytes(json);
+        www.uploadHandler = (UploadHandler)new UploadHandlerRaw(jsonToSend);
+        www.downloadHandler = (DownloadHandler)new DownloadHandlerBuffer();
+        www.SetRequestHeader("Content-Type", "application/json");
+        yield return www.SendWebRequest();
+
+
+        if (www.result != UnityWebRequest.Result.Success)
         {
-            byte[] jsonToSend = new System.Text.UTF8Encoding().GetBytes(json);
-            www.uploadHandler = (UploadHandler)new UploadHandlerRaw(jsonToSend);
-            www.downloadHandler = (DownloadHandler)new DownloadHandlerBuffer();
-            www.SetRequestHeader("Content-Type", "application/json");
-            yield return www.SendWebRequest();
-
-            
-            if (www.result != UnityWebRequest.Result.Success)
-            {
-                Debug.Log(www.error);
-            }
-            else
-            {
-                graphController.Graph.SetActiveNodeByName("FirstMeet1");
-                Debug.Log("Form upload complete!");
-            }
+            Debug.Log(www.error);
+        }
+        else
+        {
+            graphController.Graph.SetActiveNodeByName("FirstMeet1");
+            Debug.Log("Form upload complete!");
         }
     }
- 
+
 }

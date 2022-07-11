@@ -5,6 +5,6 @@ using UnityEngine;
 [System.Serializable]
 public class AuthenticateModel : MonoBehaviour
 {
-    public string Login;
+    public string Mail;
     public string Password;
 }

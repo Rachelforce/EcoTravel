@@ -8,8 +8,8 @@ using UnityEngine;
 public class User 
 {
     public int Id;
-    public string Login;
     public string Mail;
+    public string Fullname;
     public string Sex;
     public string Birthday;
     public string tokoen;
