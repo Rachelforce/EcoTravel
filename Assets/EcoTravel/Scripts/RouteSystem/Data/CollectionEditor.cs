@@ -10,7 +10,7 @@ namespace routeSystem
         public string key;
 
         public Collection collection;
-
+        
         public void GetCollection()
         {
             collection = RouteStore.GetCollection(key);

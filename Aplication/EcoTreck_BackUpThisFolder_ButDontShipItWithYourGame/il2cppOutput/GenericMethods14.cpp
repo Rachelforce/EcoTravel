@@ -33852,9 +33852,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JsonSerializer_Save_TisRuntimeObject_m3B
 		String_t* L_3;
 		L_3 = JsonConvert_SerializeObject_m2FD84A11AB507316C720E5D72298B8B605CE9064(L_0, (int32_t)1, L_2, NULL);
 		V_0 = L_3;
-		// File.WriteAllText(
-		//             path, json
-		//         );
+		// File.WriteAllText(path, json);
 		String_t* L_4 = ___path0;
 		String_t* L_5 = V_0;
 		File_WriteAllText_mE462D8448CA65183AA5D464210706167E0EF19EB(L_4, L_5, NULL);

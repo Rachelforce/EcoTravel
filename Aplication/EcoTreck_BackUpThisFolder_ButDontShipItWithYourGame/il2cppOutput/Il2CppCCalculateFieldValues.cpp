@@ -6845,10 +6845,8 @@ struct RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields
 {
 	// System.Collections.Generic.Dictionary`2<System.Int32,routeSystem.Route> routeSystem.RouteStore::RoutesData
 	Dictionary_2_t47D4B188DFB318F2D2FF234B136714E02417949B* ___RoutesData_0;
-	// System.Collections.Generic.List`1<System.Int32> routeSystem.RouteStore::RouteID
-	List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* ___RouteID_1;
 	// System.Collections.Generic.Dictionary`2<System.String,routeSystem.Collection> routeSystem.RouteStore::Collections
-	Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466* ___Collections_2;
+	Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466* ___Collections_1;
 };
 
 // routeSystem.RouteStoreSerialize
@@ -40839,6 +40837,8 @@ struct StoreUpdater_t94ACDE4925540605361B42495B85B49A0F652A4A  : public MonoBeha
 	String_t* ___path_4;
 	// System.String StoreUpdater::fileName
 	String_t* ___fileName_5;
+	// System.Object StoreUpdater::file
+	RuntimeObject* ___file_6;
 };
 
 // TMPro.Examples.TMP_ExampleScript_01
@@ -47754,9 +47754,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1658[2] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1659[2] = 
 {
 	0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1660[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1660[3] = 
 {
-	static_cast<int32_t>(offsetof(StoreUpdater_t94ACDE4925540605361B42495B85B49A0F652A4A, ___path_4)),static_cast<int32_t>(offsetof(StoreUpdater_t94ACDE4925540605361B42495B85B49A0F652A4A, ___fileName_5)),};
+	static_cast<int32_t>(offsetof(StoreUpdater_t94ACDE4925540605361B42495B85B49A0F652A4A, ___path_4)),static_cast<int32_t>(offsetof(StoreUpdater_t94ACDE4925540605361B42495B85B49A0F652A4A, ___fileName_5)),static_cast<int32_t>(offsetof(StoreUpdater_t94ACDE4925540605361B42495B85B49A0F652A4A, ___file_6)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1661[2] = 
 {
 	static_cast<int32_t>(offsetof(AuthenticateModel_tC6B5618B307C0CDB748C017848D3758EB93FAF83, ___Login_4)),static_cast<int32_t>(offsetof(AuthenticateModel_tC6B5618B307C0CDB748C017848D3758EB93FAF83, ___Password_5)),};
@@ -49836,9 +49836,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2352[2] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2353[2] = 
 {
 	static_cast<int32_t>(offsetof(Route_tD0AFEA458AB21893C42C2A45022164A61508AD03, ___pointList_6)),static_cast<int32_t>(offsetof(Route_tD0AFEA458AB21893C42C2A45022164A61508AD03, ___road_7)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2354[3] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2354[2] = 
 {
-	static_cast<int32_t>(offsetof(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields, ___RoutesData_0)),static_cast<int32_t>(offsetof(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields, ___RouteID_1)),static_cast<int32_t>(offsetof(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields, ___Collections_2)),};
+	static_cast<int32_t>(offsetof(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields, ___RoutesData_0)),static_cast<int32_t>(offsetof(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields, ___Collections_1)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2355[4] = 
 {
 	static_cast<int32_t>(offsetof(RouteStoreSerialize_t59ACA27E1D5A57AA4BDBFB4114E8D0748E9482DA, ___rotesDataKey_0)),static_cast<int32_t>(offsetof(RouteStoreSerialize_t59ACA27E1D5A57AA4BDBFB4114E8D0748E9482DA, ___routesDataValue_1)),static_cast<int32_t>(offsetof(RouteStoreSerialize_t59ACA27E1D5A57AA4BDBFB4114E8D0748E9482DA, ___collectionsDataKey_2)),static_cast<int32_t>(offsetof(RouteStoreSerialize_t59ACA27E1D5A57AA4BDBFB4114E8D0748E9482DA, ___collectionsDataValue_3)),};

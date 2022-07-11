@@ -952,6 +952,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralE428B3562393AFF7BC001A810C1D2BE2C68087FC
 IL2CPP_EXTERN_C String_t* _stringLiteralEE3657997C5E6EC82CDE374326A95906F03A3315;
 IL2CPP_EXTERN_C String_t* _stringLiteralEF516EC7240CA160FD729299C926B5EDB246658A;
 IL2CPP_EXTERN_C String_t* _stringLiteralF1B6AAF37DDF842141E903D071B58A3BDF13A5C6;
+IL2CPP_EXTERN_C String_t* _stringLiteralF3063325FD751AEC72966430C6537525730A5E9C;
 IL2CPP_EXTERN_C String_t* _stringLiteralF359E6DDFFFF3D8B034D057E57DBD8ABA4ED7FFC;
 IL2CPP_EXTERN_C String_t* _stringLiteralF3E84B722399601AD7E281754E917478AA9AD48D;
 IL2CPP_EXTERN_C String_t* _stringLiteralFC6687DC37346CD2569888E29764F727FAF530E0;
@@ -5736,6 +5737,8 @@ struct StoreUpdater_t94ACDE4925540605361B42495B85B49A0F652A4A  : public MonoBeha
 	String_t* ___path_4;
 	// System.String StoreUpdater::fileName
 	String_t* ___fileName_5;
+	// System.Object StoreUpdater::file
+	RuntimeObject* ___file_6;
 };
 
 // TMPro.Examples.TMP_ExampleScript_01
@@ -7853,8 +7856,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponentInChildr
 
 // System.String UnityEngine.Application::get_dataPath()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Application_get_dataPath_mBBC742FA17F8BD4156C4CB98480BEFBFB0BBB6D9 (const RuntimeMethod* method) ;
-// System.String System.IO.Path::Combine(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Path_Combine_m64754D4E08990CE1EBC41CDF197807EE4B115474 (String_t* ___path10, String_t* ___path21, const RuntimeMethod* method) ;
+// System.String System.IO.Path::Combine(System.String,System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Path_Combine_m21AD76E5168EE9430E587E3EFE3C6C73383F1DA1 (String_t* ___path10, String_t* ___path21, String_t* ___path32, const RuntimeMethod* method) ;
+// System.String System.String::Concat(System.String,System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m9B13B47FCB3DF61144D9647DDA05F527377251B0 (String_t* ___str00, String_t* ___str11, String_t* ___str22, const RuntimeMethod* method) ;
 // System.Boolean System.IO.File::Exists(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool File_Exists_mD7E7A84A6B9E9A9BADBDA7C46AAE0624EF106D85 (String_t* ___path0, const RuntimeMethod* method) ;
 // T JsonSerializer::Load<routeSystem.RouteStoreSerialize>(System.String)
@@ -8170,8 +8175,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Int32_ToString_m967AECC237535C552A9
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DateTime_get_Minute_m73003491DA85D2C9951ECCF890D9BF6AFFB9E973 (DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D* __this, const RuntimeMethod* method) ;
 // System.Int32 System.DateTime::get_Second()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DateTime_get_Second_mC860BA28DED65249BE9EA46E4898730C7828B3EA (DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D* __this, const RuntimeMethod* method) ;
-// System.String System.String::Concat(System.String,System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m9B13B47FCB3DF61144D9647DDA05F527377251B0 (String_t* ___str00, String_t* ___str11, String_t* ___str22, const RuntimeMethod* method) ;
 // System.Void TMPro.TMP_InputField::ActivateInputField()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_InputField_ActivateInputField_m9471012A606F201DF838539F5400D072A827914F (TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.UI.Scrollbar::set_value(System.Single)
@@ -8833,38 +8836,47 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StoreUpdater_Awake_m5B74D878848C3E4F2839
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JsonSerializer_Load_TisRouteStoreSerialize_t59ACA27E1D5A57AA4BDBFB4114E8D0748E9482DA_m6597DBEE27A64A541A91FAB7AB6E80659C36BBB2_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Path_t8A38A801D0219E8209C1B1D90D82D4D755D998BC_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF3063325FD751AEC72966430C6537525730A5E9C);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// this.path = Path.Combine(Application.dataPath, this.fileName);
+		// this.path = Path.Combine(Application.dataPath, "/Resources/", this.fileName);
 		String_t* L_0;
 		L_0 = Application_get_dataPath_mBBC742FA17F8BD4156C4CB98480BEFBFB0BBB6D9(NULL);
 		String_t* L_1 = __this->___fileName_5;
 		il2cpp_codegen_runtime_class_init_inline(Path_t8A38A801D0219E8209C1B1D90D82D4D755D998BC_il2cpp_TypeInfo_var);
 		String_t* L_2;
-		L_2 = Path_Combine_m64754D4E08990CE1EBC41CDF197807EE4B115474(L_0, L_1, NULL);
+		L_2 = Path_Combine_m21AD76E5168EE9430E587E3EFE3C6C73383F1DA1(L_0, _stringLiteralF3063325FD751AEC72966430C6537525730A5E9C, L_1, NULL);
 		__this->___path_4 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___path_4), (void*)L_2);
+		// this.path = Application.dataPath + "/Resources/" + this.fileName;
+		String_t* L_3;
+		L_3 = Application_get_dataPath_mBBC742FA17F8BD4156C4CB98480BEFBFB0BBB6D9(NULL);
+		String_t* L_4 = __this->___fileName_5;
+		String_t* L_5;
+		L_5 = String_Concat_m9B13B47FCB3DF61144D9647DDA05F527377251B0(L_3, _stringLiteralF3063325FD751AEC72966430C6537525730A5E9C, L_4, NULL);
+		__this->___path_4 = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___path_4), (void*)L_5);
 		// if (File.Exists(this.path))
-		String_t* L_3 = __this->___path_4;
-		bool L_4;
-		L_4 = File_Exists_mD7E7A84A6B9E9A9BADBDA7C46AAE0624EF106D85(L_3, NULL);
-		if (!L_4)
+		String_t* L_6 = __this->___path_4;
+		bool L_7;
+		L_7 = File_Exists_mD7E7A84A6B9E9A9BADBDA7C46AAE0624EF106D85(L_6, NULL);
+		if (!L_7)
 		{
-			goto IL_0033;
+			goto IL_0053;
 		}
 	}
 	{
 		// RouteStoreSerialize routeStoreSerialize = JsonSerializer.Load<RouteStoreSerialize>(this.path);
-		String_t* L_5 = __this->___path_4;
-		RouteStoreSerialize_t59ACA27E1D5A57AA4BDBFB4114E8D0748E9482DA* L_6;
-		L_6 = JsonSerializer_Load_TisRouteStoreSerialize_t59ACA27E1D5A57AA4BDBFB4114E8D0748E9482DA_m6597DBEE27A64A541A91FAB7AB6E80659C36BBB2(L_5, JsonSerializer_Load_TisRouteStoreSerialize_t59ACA27E1D5A57AA4BDBFB4114E8D0748E9482DA_m6597DBEE27A64A541A91FAB7AB6E80659C36BBB2_RuntimeMethod_var);
+		String_t* L_8 = __this->___path_4;
+		RouteStoreSerialize_t59ACA27E1D5A57AA4BDBFB4114E8D0748E9482DA* L_9;
+		L_9 = JsonSerializer_Load_TisRouteStoreSerialize_t59ACA27E1D5A57AA4BDBFB4114E8D0748E9482DA_m6597DBEE27A64A541A91FAB7AB6E80659C36BBB2(L_8, JsonSerializer_Load_TisRouteStoreSerialize_t59ACA27E1D5A57AA4BDBFB4114E8D0748E9482DA_m6597DBEE27A64A541A91FAB7AB6E80659C36BBB2_RuntimeMethod_var);
 		// routeStoreSerialize.OnAfterDeserialize();
-		NullCheck(L_6);
-		RouteStoreSerialize_OnAfterDeserialize_mF014C620AADB655676CCFAF75C6B69FDD9FA5A17(L_6, NULL);
+		NullCheck(L_9);
+		RouteStoreSerialize_OnAfterDeserialize_mF014C620AADB655676CCFAF75C6B69FDD9FA5A17(L_9, NULL);
 	}
 
-IL_0033:
+IL_0053:
 	{
 		// }
 		return;

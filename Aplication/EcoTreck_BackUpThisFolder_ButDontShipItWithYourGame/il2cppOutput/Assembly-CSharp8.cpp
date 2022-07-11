@@ -976,6 +976,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral3123E03E0F78BE0B3E699C55D5F5FF9A58388A02
 IL2CPP_EXTERN_C String_t* _stringLiteral31E8E4ACB2EDC39B158FBA91185DE1333306F668;
 IL2CPP_EXTERN_C String_t* _stringLiteral32189949CB1CA4A6EBB1A643EBE2DB69713D5407;
 IL2CPP_EXTERN_C String_t* _stringLiteral325F4CFFD215E7A21707CFDAA5DA564B91335E17;
+IL2CPP_EXTERN_C String_t* _stringLiteral3289D852299497603C8F5121D18850BB14D62582;
 IL2CPP_EXTERN_C String_t* _stringLiteral32930CC51F25269E75DAFA9BC6910A0B309D8E9C;
 IL2CPP_EXTERN_C String_t* _stringLiteral32AB8787A7A4E639F71F819D2FFB38EADD751F41;
 IL2CPP_EXTERN_C String_t* _stringLiteral337FEBA5F43BB30F1DC5FA419BDE7E5009A516B5;
@@ -1140,6 +1141,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral647E3B94C863A25F86CBEC3AFD3B35C6FDC6554A
 IL2CPP_EXTERN_C String_t* _stringLiteral6482913AB0840A2809D92963B7864E295F0EECAA;
 IL2CPP_EXTERN_C String_t* _stringLiteral65962AB7981D7DED4606F8986A6AA25EAE045B40;
 IL2CPP_EXTERN_C String_t* _stringLiteral65C6B81A0EE622FE63F0F6A4C8C4570728531007;
+IL2CPP_EXTERN_C String_t* _stringLiteral66013102B6836020E1B1465A1EEF9F377173D071;
 IL2CPP_EXTERN_C String_t* _stringLiteral674EF580DF09510C3C7E9F7968F103DEE31CF5E6;
 IL2CPP_EXTERN_C String_t* _stringLiteral6771994E8C6131D3933D0B976879DA7C6556958B;
 IL2CPP_EXTERN_C String_t* _stringLiteral6790F5A313E4F3D7D9EE743046C665DE8D5FE0F2;
@@ -1651,10 +1653,11 @@ IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Add_mD42A72B16A9F8CF5A3BEF843D
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_ContainsKey_m25FF8C3085817527908F37908E130AB7546D938B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_ContainsKey_mB037FA16EFD5C73B359724CB0A4E8D4B6DEA9490_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_ContainsKey_mD6C2E0222F956E775C82308F8B41F13F2FE33FA0_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Remove_mDC0584091DD7AE1AC02A131420D4E2447783F632_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Remove_mFCF093624DCAF151C0F109EB0C5650F558632584_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_mC22F65830B10FDBA29B5B92FD44DADA343092021_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_mDB34751F1BF9BE4EDE0076C257B6221D0B7FD142_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_mFC56679F44DF75FFE98E8B6E00EE468ED85FDBFB_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_get_Count_m085F40295BC67527C8F97E1CD488A6E71C875000_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_get_Item_m2764F5D5341DF657BE78599D27AAAC6263F5C444_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_get_Item_m2BECDADDD27FF2DA1AAA989D7D08A37C7793D811_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_get_Item_m37C9CDA7114B75318EEFF7857613C33D7B818419_RuntimeMethod_var;
@@ -2518,10 +2521,8 @@ struct RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields
 {
 	// System.Collections.Generic.Dictionary`2<System.Int32,routeSystem.Route> routeSystem.RouteStore::RoutesData
 	Dictionary_2_t47D4B188DFB318F2D2FF234B136714E02417949B* ___RoutesData_0;
-	// System.Collections.Generic.List`1<System.Int32> routeSystem.RouteStore::RouteID
-	List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* ___RouteID_1;
 	// System.Collections.Generic.Dictionary`2<System.String,routeSystem.Collection> routeSystem.RouteStore::Collections
-	Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466* ___Collections_2;
+	Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466* ___Collections_1;
 };
 
 // routeSystem.RouteStoreSerialize
@@ -7485,16 +7486,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Dictionary_2_get_Item_mC3FEA64
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___item0, const RuntimeMethod* method) ;
 // System.Boolean System.Collections.Generic.List`1/Enumerator<System.Int32>::MoveNext()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m39C71A39758E2B4A04F44F20FCEFAF7009D5F312_gshared (Enumerator_t9DBCD072C72E44AB8959D9884EF7F528028F20EC* __this, const RuntimeMethod* method) ;
-// TValue System.Collections.Generic.Dictionary`2<System.Object,System.Object>::get_Item(TKey)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Dictionary_2_get_Item_m4AAAECBE902A211BF2126E6AFA280AEF73A3E0D6_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, RuntimeObject* ___key0, const RuntimeMethod* method) ;
-// System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::Add(TKey,TValue)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_Add_m93FFFABE8FCE7FA9793F0915E2A8842C7CD0C0C1_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, RuntimeObject* ___key0, RuntimeObject* ___value1, const RuntimeMethod* method) ;
-// System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::set_Item(TKey,TValue)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_set_Item_m1A840355E8EDAECEA9D0C6F5E51B248FAA449CBD_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, RuntimeObject* ___key0, RuntimeObject* ___value1, const RuntimeMethod* method) ;
-// System.Void System.Collections.Generic.Dictionary`2<System.Int32,System.Object>::Add(TKey,TValue)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_Add_mAF1EF7DA16BD70E252EA5C4B0F74DE519A02CBCD_gshared (Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* __this, int32_t ___key0, RuntimeObject* ___value1, const RuntimeMethod* method) ;
-// System.Void System.Collections.Generic.Dictionary`2<System.Int32,System.Object>::set_Item(TKey,TValue)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_set_Item_m2888D71A14F2B8510102F24FEE90552E91B124C1_gshared (Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* __this, int32_t ___key0, RuntimeObject* ___value1, const RuntimeMethod* method) ;
 // T UnityEngine.Resources::Load<System.Object>(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Resources_Load_TisRuntimeObject_m8B40A11CE62A4E445DADC28C81BD73922A4D4B65_gshared (String_t* ___path0, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<Mapbox.Utils.Vector2d>::.ctor()
@@ -7515,20 +7506,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mE921CC8F29FBBDE7CC3
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
 // System.Boolean System.Collections.Generic.Dictionary`2<System.Int32,System.Object>::ContainsKey(TKey)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_ContainsKey_mED5C451F158CDDD2B3F4B0720CD248DA9DB27B25_gshared (Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* __this, int32_t ___key0, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.Int32,System.Object>::set_Item(TKey,TValue)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_set_Item_m2888D71A14F2B8510102F24FEE90552E91B124C1_gshared (Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* __this, int32_t ___key0, RuntimeObject* ___value1, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Int32,System.Object>::Remove(TKey)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_Remove_m12BAB2F82E34CAA21A7245AB61E48F106340C1A4_gshared (Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* __this, int32_t ___key0, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.Int32,System.Object>::Add(TKey,TValue)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_Add_mAF1EF7DA16BD70E252EA5C4B0F74DE519A02CBCD_gshared (Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* __this, int32_t ___key0, RuntimeObject* ___value1, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Object,System.Object>::ContainsKey(TKey)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_ContainsKey_m703047C213F7AB55C9DC346596287773A1F670CD_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, RuntimeObject* ___key0, const RuntimeMethod* method) ;
+// TValue System.Collections.Generic.Dictionary`2<System.Object,System.Object>::get_Item(TKey)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Dictionary_2_get_Item_m4AAAECBE902A211BF2126E6AFA280AEF73A3E0D6_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, RuntimeObject* ___key0, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::set_Item(TKey,TValue)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_set_Item_m1A840355E8EDAECEA9D0C6F5E51B248FAA449CBD_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, RuntimeObject* ___key0, RuntimeObject* ___value1, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Object,System.Object>::Remove(TKey)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_Remove_m5C7C45E75D951A75843F3F7AADD56ECD64F6BC86_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, RuntimeObject* ___key0, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::Add(TKey,TValue)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_Add_m93FFFABE8FCE7FA9793F0915E2A8842C7CD0C0C1_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, RuntimeObject* ___key0, RuntimeObject* ___value1, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.Int32,System.Object>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2__ctor_m92E9AB321FBD7147CA109C822D99C8B0610C27B7_gshared (Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* __this, const RuntimeMethod* method) ;
 // System.Collections.Generic.Dictionary`2/KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2<System.Int32,System.Object>::get_Keys()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyCollection_tA19BA39E5042FA7AF8D048D51934DC3BD9F2E952* Dictionary_2_get_Keys_m0F5F6FCFB36ED340EC91E6064534CEE0411CEF53_gshared (Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* __this, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<System.Int32>::.ctor(System.Collections.Generic.IEnumerable`1<T>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_mCC0E71080DE343C1A527526A1AC2DBEC355CEA6C_gshared (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* __this, RuntimeObject* ___collection0, const RuntimeMethod* method) ;
-// System.Int32 System.Collections.Generic.Dictionary`2<System.Int32,System.Object>::get_Count()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Dictionary_2_get_Count_mB1687BC0FFB3D5E49E5129641D4FB9EA23743F91_gshared (Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* __this, const RuntimeMethod* method) ;
-// System.Int32 System.Collections.Generic.List`1<System.Int32>::get_Count()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_mF590592E32D421DE2C6E2F0D5C2F62FB14CCEFDF_gshared_inline (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* __this, const RuntimeMethod* method) ;
-// T System.Collections.Generic.List`1<System.Int32>::get_Item(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t List_1_get_Item_mD99081BEFA1AB3526715F489192B0F7F596C183D_gshared (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* __this, int32_t ___index0, const RuntimeMethod* method) ;
-// System.Boolean System.Collections.Generic.Dictionary`2<System.Object,System.Object>::ContainsKey(TKey)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_ContainsKey_m703047C213F7AB55C9DC346596287773A1F670CD_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, RuntimeObject* ___key0, const RuntimeMethod* method) ;
-// System.Void System.Collections.Generic.Dictionary`2<System.Int32,System.Object>::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2__ctor_m92E9AB321FBD7147CA109C822D99C8B0610C27B7_gshared (Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* __this, const RuntimeMethod* method) ;
 // System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2<System.Int32,System.Object>::get_Values()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueCollection_t65BBB6F728D41FD4760F6D6C59CC030CF237785F* Dictionary_2_get_Values_mC5B06C3C3FA89D62D6035C5B4C5E64A08FCF4DB9_gshared (Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* __this, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<System.Object>::.ctor(System.Collections.Generic.IEnumerable`1<T>)
@@ -7539,6 +7538,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyCollection_tB45A861D090B15129521119AE48ED3
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueCollection_t038245E04B5D2A80048D9F8021A23E69A0C9DBAA* Dictionary_2_get_Values_mA0C01DEA55329E55380E96BBD04D4D228B437EC5_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2__ctor_m5B32FBC624618211EB461D59CFBB10E987FD1329_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, const RuntimeMethod* method) ;
+// System.Int32 System.Collections.Generic.List`1<System.Int32>::get_Count()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_mF590592E32D421DE2C6E2F0D5C2F62FB14CCEFDF_gshared_inline (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* __this, const RuntimeMethod* method) ;
+// T System.Collections.Generic.List`1<System.Int32>::get_Item(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t List_1_get_Item_mD99081BEFA1AB3526715F489192B0F7F596C183D_gshared (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* __this, int32_t ___index0, const RuntimeMethod* method) ;
 // T System.Collections.Generic.List`1<System.Object>::get_Item(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, int32_t ___index0, const RuntimeMethod* method) ;
 // T UnityEngine.Object::Instantiate<System.Object>(T)
@@ -7670,51 +7673,16 @@ inline bool Enumerator_MoveNext_m39C71A39758E2B4A04F44F20FCEFAF7009D5F312 (Enume
 {
 	return ((  bool (*) (Enumerator_t9DBCD072C72E44AB8959D9884EF7F528028F20EC*, const RuntimeMethod*))Enumerator_MoveNext_m39C71A39758E2B4A04F44F20FCEFAF7009D5F312_gshared)(__this, method);
 }
-// System.Boolean routeSystem.RouteStore::ConstainsCollection(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RouteStore_ConstainsCollection_mDAF39375C888FD73ADD699512E343F545B3F55CC (String_t* ___key0, const RuntimeMethod* method) ;
-// TValue System.Collections.Generic.Dictionary`2<System.String,routeSystem.Collection>::get_Item(TKey)
-inline Collection_t894FED000CF388BACD7BB87A2C097581F81CD627* Dictionary_2_get_Item_m37C9CDA7114B75318EEFF7857613C33D7B818419 (Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466* __this, String_t* ___key0, const RuntimeMethod* method)
-{
-	return ((  Collection_t894FED000CF388BACD7BB87A2C097581F81CD627* (*) (Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466*, String_t*, const RuntimeMethod*))Dictionary_2_get_Item_m4AAAECBE902A211BF2126E6AFA280AEF73A3E0D6_gshared)(__this, ___key0, method);
-}
-// System.Void UnityEngine.Debug::Log(System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219 (RuntimeObject* ___message0, const RuntimeMethod* method) ;
-// System.Void routeSystem.Collection::.ctor(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Collection__ctor_mAAFCA9AEEEAEA001FB8F47A24E8C5E9DBE88CAA6 (Collection_t894FED000CF388BACD7BB87A2C097581F81CD627* __this, String_t* ___key0, const RuntimeMethod* method) ;
-// System.Void System.Collections.Generic.Dictionary`2<System.String,routeSystem.Collection>::Add(TKey,TValue)
-inline void Dictionary_2_Add_m7D74F40961C8C622130A4C63D689BDD90677E8F9 (Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466* __this, String_t* ___key0, Collection_t894FED000CF388BACD7BB87A2C097581F81CD627* ___value1, const RuntimeMethod* method)
-{
-	((  void (*) (Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466*, String_t*, Collection_t894FED000CF388BACD7BB87A2C097581F81CD627*, const RuntimeMethod*))Dictionary_2_Add_m93FFFABE8FCE7FA9793F0915E2A8842C7CD0C0C1_gshared)(__this, ___key0, ___value1, method);
-}
-// System.Void System.Collections.Generic.Dictionary`2<System.String,routeSystem.Collection>::set_Item(TKey,TValue)
-inline void Dictionary_2_set_Item_m17302D068F2519AEF3C9AA275A774D8790D5BC86 (Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466* __this, String_t* ___key0, Collection_t894FED000CF388BACD7BB87A2C097581F81CD627* ___value1, const RuntimeMethod* method)
-{
-	((  void (*) (Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466*, String_t*, Collection_t894FED000CF388BACD7BB87A2C097581F81CD627*, const RuntimeMethod*))Dictionary_2_set_Item_m1A840355E8EDAECEA9D0C6F5E51B248FAA449CBD_gshared)(__this, ___key0, ___value1, method);
-}
-// System.Boolean routeSystem.CollectionEditor::CreateCollection()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CollectionEditor_CreateCollection_m556260C72B061319D33D51E2C5182B2A3737F102 (CollectionEditor_tAE15DAABCDCF469A444A1CC90CD71AE1ADEB0FD0* __this, const RuntimeMethod* method) ;
-// System.Void routeSystem.CollectionEditor::SetCollection()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CollectionEditor_SetCollection_m4F570E6AA83EB09DBDB92308334CF517B6F054DC (CollectionEditor_tAE15DAABCDCF469A444A1CC90CD71AE1ADEB0FD0* __this, const RuntimeMethod* method) ;
+// routeSystem.Collection routeSystem.RouteStore::GetCollection(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Collection_t894FED000CF388BACD7BB87A2C097581F81CD627* RouteStore_GetCollection_m470E1EEA335DDC1998759D3ED9B7E0755E1D2958 (String_t* ___key0, const RuntimeMethod* method) ;
+// System.String routeSystem.RouteStore::SetCollection(routeSystem.Collection)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RouteStore_SetCollection_m1286C4575E554723A21BC8C6ADAB3EDF6E553898 (Collection_t894FED000CF388BACD7BB87A2C097581F81CD627* ___collection0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.ScriptableObject::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScriptableObject__ctor_mD037FDB0B487295EA47F79A4DB1BF1846C9087FF (ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A* __this, const RuntimeMethod* method) ;
-// System.Boolean routeSystem.RouteStore::ContainsRoute(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RouteStore_ContainsRoute_m418A7C23FDD1D5933ABBBBF04A87694CE3FF25F6 (int32_t ___i0, const RuntimeMethod* method) ;
-// System.Int32 routeSystem.RouteStore::EmptyRouteIndex(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RouteStore_EmptyRouteIndex_m102DE044DEBF972130EF47CE7D5D927129F1FA07 (int32_t ___Index0, const RuntimeMethod* method) ;
-// System.Void routeSystem.Route::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Route__ctor_m6EFB2F828429919F6204B882FA3CC723C689BA59 (Route_tD0AFEA458AB21893C42C2A45022164A61508AD03* __this, const RuntimeMethod* method) ;
-// System.Void System.Collections.Generic.Dictionary`2<System.Int32,routeSystem.Route>::Add(TKey,TValue)
-inline void Dictionary_2_Add_m7AB1C91512FB71E6595FF55C1A6AA8CBED5BC515 (Dictionary_2_t47D4B188DFB318F2D2FF234B136714E02417949B* __this, int32_t ___key0, Route_tD0AFEA458AB21893C42C2A45022164A61508AD03* ___value1, const RuntimeMethod* method)
-{
-	((  void (*) (Dictionary_2_t47D4B188DFB318F2D2FF234B136714E02417949B*, int32_t, Route_tD0AFEA458AB21893C42C2A45022164A61508AD03*, const RuntimeMethod*))Dictionary_2_Add_mAF1EF7DA16BD70E252EA5C4B0F74DE519A02CBCD_gshared)(__this, ___key0, ___value1, method);
-}
-// System.Int32 routeSystem.RouteEditor::CreateRoute()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RouteEditor_CreateRoute_m9C157FE15107685E76A9DA20D9B257298F15CDF6 (RouteEditor_t7B0DA85F619D5CDC4B4E69846D4FF8FA3DF4535D* __this, const RuntimeMethod* method) ;
-// System.Void System.Collections.Generic.Dictionary`2<System.Int32,routeSystem.Route>::set_Item(TKey,TValue)
-inline void Dictionary_2_set_Item_m7072A69F476A9E1C0882F69D020DFCF43397FF33 (Dictionary_2_t47D4B188DFB318F2D2FF234B136714E02417949B* __this, int32_t ___key0, Route_tD0AFEA458AB21893C42C2A45022164A61508AD03* ___value1, const RuntimeMethod* method)
-{
-	((  void (*) (Dictionary_2_t47D4B188DFB318F2D2FF234B136714E02417949B*, int32_t, Route_tD0AFEA458AB21893C42C2A45022164A61508AD03*, const RuntimeMethod*))Dictionary_2_set_Item_m2888D71A14F2B8510102F24FEE90552E91B124C1_gshared)(__this, ___key0, ___value1, method);
-}
+// routeSystem.Route routeSystem.RouteStore::GetRoute(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Route_tD0AFEA458AB21893C42C2A45022164A61508AD03* RouteStore_GetRoute_mB647E3B2F02E7AFF3AB76F223CC014CB7E1C9F1C (int32_t ___id0, const RuntimeMethod* method) ;
+// System.Int32 routeSystem.RouteStore::SetRout(routeSystem.Route)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RouteStore_SetRout_m875324668EA6A6098DAD0E730B894AEF6CC4CEB4 (Route_tD0AFEA458AB21893C42C2A45022164A61508AD03* ___route0, const RuntimeMethod* method) ;
 // Mapbox.Utils.Vector2d Mapbox.Unity.Utilities.Conversions::StringToLatLon(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2d_t56C00F875E7B711F76931D3FD85D1D47957349FB Conversions_StringToLatLon_m11F0F7B39828145C87B23F6590A08F30EB6EE0DC (String_t* ___s0, const RuntimeMethod* method) ;
 // UnityEngine.Texture2D routeSystem.Photo::GetTextureFromPath()
@@ -7758,6 +7726,8 @@ inline int32_t List_1_get_Count_m62B533E4B0552BD6A0BC8B63065AA8C5BFC9CA3D_inline
 {
 	return ((  int32_t (*) (List_1_t8BCADAA0B30E406CCC3A841301DCC34C17628181*, const RuntimeMethod*))List_1_get_Count_m62B533E4B0552BD6A0BC8B63065AA8C5BFC9CA3D_gshared_inline)(__this, method);
 }
+// System.Void UnityEngine.Debug::Log(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219 (RuntimeObject* ___message0, const RuntimeMethod* method) ;
 // System.Boolean System.Collections.Generic.List`1/Enumerator<routeSystem.Point>::MoveNext()
 inline bool Enumerator_MoveNext_mC14FAAA1BD3434AD9A80FE639DD7D0ABDCB4626B (Enumerator_tD8CE29A583FAB50582399BDEB14FE0C81BAF99C8* __this, const RuntimeMethod* method)
 {
@@ -7780,6 +7750,59 @@ inline bool Dictionary_2_ContainsKey_m25FF8C3085817527908F37908E130AB7546D938B (
 {
 	return ((  bool (*) (Dictionary_2_t47D4B188DFB318F2D2FF234B136714E02417949B*, int32_t, const RuntimeMethod*))Dictionary_2_ContainsKey_mED5C451F158CDDD2B3F4B0720CD248DA9DB27B25_gshared)(__this, ___key0, method);
 }
+// System.Void routeSystem.RouteStore::CreateRoute(routeSystem.Route)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RouteStore_CreateRoute_m2EF5F63A5D08E37321F3F315CFAA2C563B047F03 (Route_tD0AFEA458AB21893C42C2A45022164A61508AD03* ___route0, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.Int32,routeSystem.Route>::set_Item(TKey,TValue)
+inline void Dictionary_2_set_Item_m7072A69F476A9E1C0882F69D020DFCF43397FF33 (Dictionary_2_t47D4B188DFB318F2D2FF234B136714E02417949B* __this, int32_t ___key0, Route_tD0AFEA458AB21893C42C2A45022164A61508AD03* ___value1, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_t47D4B188DFB318F2D2FF234B136714E02417949B*, int32_t, Route_tD0AFEA458AB21893C42C2A45022164A61508AD03*, const RuntimeMethod*))Dictionary_2_set_Item_m2888D71A14F2B8510102F24FEE90552E91B124C1_gshared)(__this, ___key0, ___value1, method);
+}
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Int32,routeSystem.Route>::Remove(TKey)
+inline bool Dictionary_2_Remove_mDC0584091DD7AE1AC02A131420D4E2447783F632 (Dictionary_2_t47D4B188DFB318F2D2FF234B136714E02417949B* __this, int32_t ___key0, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Dictionary_2_t47D4B188DFB318F2D2FF234B136714E02417949B*, int32_t, const RuntimeMethod*))Dictionary_2_Remove_m12BAB2F82E34CAA21A7245AB61E48F106340C1A4_gshared)(__this, ___key0, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2<System.Int32,routeSystem.Route>::Add(TKey,TValue)
+inline void Dictionary_2_Add_m7AB1C91512FB71E6595FF55C1A6AA8CBED5BC515 (Dictionary_2_t47D4B188DFB318F2D2FF234B136714E02417949B* __this, int32_t ___key0, Route_tD0AFEA458AB21893C42C2A45022164A61508AD03* ___value1, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_t47D4B188DFB318F2D2FF234B136714E02417949B*, int32_t, Route_tD0AFEA458AB21893C42C2A45022164A61508AD03*, const RuntimeMethod*))Dictionary_2_Add_mAF1EF7DA16BD70E252EA5C4B0F74DE519A02CBCD_gshared)(__this, ___key0, ___value1, method);
+}
+// System.Boolean System.Collections.Generic.Dictionary`2<System.String,routeSystem.Collection>::ContainsKey(TKey)
+inline bool Dictionary_2_ContainsKey_mB037FA16EFD5C73B359724CB0A4E8D4B6DEA9490 (Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466* __this, String_t* ___key0, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466*, String_t*, const RuntimeMethod*))Dictionary_2_ContainsKey_m703047C213F7AB55C9DC346596287773A1F670CD_gshared)(__this, ___key0, method);
+}
+// TValue System.Collections.Generic.Dictionary`2<System.String,routeSystem.Collection>::get_Item(TKey)
+inline Collection_t894FED000CF388BACD7BB87A2C097581F81CD627* Dictionary_2_get_Item_m37C9CDA7114B75318EEFF7857613C33D7B818419 (Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466* __this, String_t* ___key0, const RuntimeMethod* method)
+{
+	return ((  Collection_t894FED000CF388BACD7BB87A2C097581F81CD627* (*) (Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466*, String_t*, const RuntimeMethod*))Dictionary_2_get_Item_m4AAAECBE902A211BF2126E6AFA280AEF73A3E0D6_gshared)(__this, ___key0, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2<System.String,routeSystem.Collection>::set_Item(TKey,TValue)
+inline void Dictionary_2_set_Item_m17302D068F2519AEF3C9AA275A774D8790D5BC86 (Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466* __this, String_t* ___key0, Collection_t894FED000CF388BACD7BB87A2C097581F81CD627* ___value1, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466*, String_t*, Collection_t894FED000CF388BACD7BB87A2C097581F81CD627*, const RuntimeMethod*))Dictionary_2_set_Item_m1A840355E8EDAECEA9D0C6F5E51B248FAA449CBD_gshared)(__this, ___key0, ___value1, method);
+}
+// System.Boolean routeSystem.RouteStore::CreateCollection(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RouteStore_CreateCollection_m1C5E4D6F55DB2C2AD04AE7E55BA5670D9994781C (String_t* ___key0, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.Dictionary`2<System.String,routeSystem.Collection>::Remove(TKey)
+inline bool Dictionary_2_Remove_mFCF093624DCAF151C0F109EB0C5650F558632584 (Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466* __this, String_t* ___key0, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466*, String_t*, const RuntimeMethod*))Dictionary_2_Remove_m5C7C45E75D951A75843F3F7AADD56ECD64F6BC86_gshared)(__this, ___key0, method);
+}
+// System.Void routeSystem.Collection::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Collection__ctor_mAAFCA9AEEEAEA001FB8F47A24E8C5E9DBE88CAA6 (Collection_t894FED000CF388BACD7BB87A2C097581F81CD627* __this, String_t* ___key0, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.String,routeSystem.Collection>::Add(TKey,TValue)
+inline void Dictionary_2_Add_m7D74F40961C8C622130A4C63D689BDD90677E8F9 (Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466* __this, String_t* ___key0, Collection_t894FED000CF388BACD7BB87A2C097581F81CD627* ___value1, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466*, String_t*, Collection_t894FED000CF388BACD7BB87A2C097581F81CD627*, const RuntimeMethod*))Dictionary_2_Add_m93FFFABE8FCE7FA9793F0915E2A8842C7CD0C0C1_gshared)(__this, ___key0, ___value1, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2<System.Int32,routeSystem.Route>::.ctor()
+inline void Dictionary_2__ctor_mC22F65830B10FDBA29B5B92FD44DADA343092021 (Dictionary_2_t47D4B188DFB318F2D2FF234B136714E02417949B* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_t47D4B188DFB318F2D2FF234B136714E02417949B*, const RuntimeMethod*))Dictionary_2__ctor_m92E9AB321FBD7147CA109C822D99C8B0610C27B7_gshared)(__this, method);
+}
+// System.Void routeSystem.RouteStoreSerialize::OnBeforeSerialize()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RouteStoreSerialize_OnBeforeSerialize_mCC3B16E8965535A5760AEDAA1E331C2754FECE61 (RouteStoreSerialize_t59ACA27E1D5A57AA4BDBFB4114E8D0748E9482DA* __this, const RuntimeMethod* method) ;
 // System.Collections.Generic.Dictionary`2/KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2<System.Int32,routeSystem.Route>::get_Keys()
 inline KeyCollection_tFE980DEB1C67B305893BC4630B57F4FB7ACA93FD* Dictionary_2_get_Keys_mF4D67DD64A0B3DE1392417D9CA01A068893B1155 (Dictionary_2_t47D4B188DFB318F2D2FF234B136714E02417949B* __this, const RuntimeMethod* method)
 {
@@ -7790,33 +7813,6 @@ inline void List_1__ctor_mCC0E71080DE343C1A527526A1AC2DBEC355CEA6C (List_1_t0591
 {
 	((  void (*) (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*, RuntimeObject*, const RuntimeMethod*))List_1__ctor_mCC0E71080DE343C1A527526A1AC2DBEC355CEA6C_gshared)(__this, ___collection0, method);
 }
-// System.Int32 System.Collections.Generic.Dictionary`2<System.Int32,routeSystem.Route>::get_Count()
-inline int32_t Dictionary_2_get_Count_m085F40295BC67527C8F97E1CD488A6E71C875000 (Dictionary_2_t47D4B188DFB318F2D2FF234B136714E02417949B* __this, const RuntimeMethod* method)
-{
-	return ((  int32_t (*) (Dictionary_2_t47D4B188DFB318F2D2FF234B136714E02417949B*, const RuntimeMethod*))Dictionary_2_get_Count_mB1687BC0FFB3D5E49E5129641D4FB9EA23743F91_gshared)(__this, method);
-}
-// System.Int32 System.Collections.Generic.List`1<System.Int32>::get_Count()
-inline int32_t List_1_get_Count_mF590592E32D421DE2C6E2F0D5C2F62FB14CCEFDF_inline (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* __this, const RuntimeMethod* method)
-{
-	return ((  int32_t (*) (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*, const RuntimeMethod*))List_1_get_Count_mF590592E32D421DE2C6E2F0D5C2F62FB14CCEFDF_gshared_inline)(__this, method);
-}
-// T System.Collections.Generic.List`1<System.Int32>::get_Item(System.Int32)
-inline int32_t List_1_get_Item_mD99081BEFA1AB3526715F489192B0F7F596C183D (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* __this, int32_t ___index0, const RuntimeMethod* method)
-{
-	return ((  int32_t (*) (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*, int32_t, const RuntimeMethod*))List_1_get_Item_mD99081BEFA1AB3526715F489192B0F7F596C183D_gshared)(__this, ___index0, method);
-}
-// System.Boolean System.Collections.Generic.Dictionary`2<System.String,routeSystem.Collection>::ContainsKey(TKey)
-inline bool Dictionary_2_ContainsKey_mB037FA16EFD5C73B359724CB0A4E8D4B6DEA9490 (Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466* __this, String_t* ___key0, const RuntimeMethod* method)
-{
-	return ((  bool (*) (Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466*, String_t*, const RuntimeMethod*))Dictionary_2_ContainsKey_m703047C213F7AB55C9DC346596287773A1F670CD_gshared)(__this, ___key0, method);
-}
-// System.Void System.Collections.Generic.Dictionary`2<System.Int32,routeSystem.Route>::.ctor()
-inline void Dictionary_2__ctor_mC22F65830B10FDBA29B5B92FD44DADA343092021 (Dictionary_2_t47D4B188DFB318F2D2FF234B136714E02417949B* __this, const RuntimeMethod* method)
-{
-	((  void (*) (Dictionary_2_t47D4B188DFB318F2D2FF234B136714E02417949B*, const RuntimeMethod*))Dictionary_2__ctor_m92E9AB321FBD7147CA109C822D99C8B0610C27B7_gshared)(__this, method);
-}
-// System.Void routeSystem.RouteStoreSerialize::OnBeforeSerialize()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RouteStoreSerialize_OnBeforeSerialize_mCC3B16E8965535A5760AEDAA1E331C2754FECE61 (RouteStoreSerialize_t59ACA27E1D5A57AA4BDBFB4114E8D0748E9482DA* __this, const RuntimeMethod* method) ;
 // System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2<System.Int32,routeSystem.Route>::get_Values()
 inline ValueCollection_t07E7B1E569B253D5CFFF41E2F3994B70301B0409* Dictionary_2_get_Values_m1A70BD1F91A6D9E649E7D555E1B0EA2EE3E07CC3 (Dictionary_2_t47D4B188DFB318F2D2FF234B136714E02417949B* __this, const RuntimeMethod* method)
 {
@@ -7852,6 +7848,11 @@ inline void Dictionary_2__ctor_mFC56679F44DF75FFE98E8B6E00EE468ED85FDBFB (Dictio
 {
 	((  void (*) (Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466*, const RuntimeMethod*))Dictionary_2__ctor_m5B32FBC624618211EB461D59CFBB10E987FD1329_gshared)(__this, method);
 }
+// System.Int32 System.Collections.Generic.List`1<System.Int32>::get_Count()
+inline int32_t List_1_get_Count_mF590592E32D421DE2C6E2F0D5C2F62FB14CCEFDF_inline (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*, const RuntimeMethod*))List_1_get_Count_mF590592E32D421DE2C6E2F0D5C2F62FB14CCEFDF_gshared_inline)(__this, method);
+}
 // System.Int32 System.Collections.Generic.List`1<routeSystem.Route>::get_Count()
 inline int32_t List_1_get_Count_m9CACFD62ADDA3AE3D02E906C268C14FAF302E794_inline (List_1_t50CFA5F8D5574FB5B60D23BA20B40F597D10F4B5* __this, const RuntimeMethod* method)
 {
@@ -7868,6 +7869,11 @@ inline int32_t List_1_get_Count_mB63183A9151F4345A9DD444A7CBE0D6E03F77C7C_inline
 inline int32_t List_1_get_Count_m85B2432F8EBF209699C3AFCD74D5844C51C782D5_inline (List_1_tEEC83973F9A979188F7F00B3AD01FF0B148FA559* __this, const RuntimeMethod* method)
 {
 	return ((  int32_t (*) (List_1_tEEC83973F9A979188F7F00B3AD01FF0B148FA559*, const RuntimeMethod*))List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline)(__this, method);
+}
+// T System.Collections.Generic.List`1<System.Int32>::get_Item(System.Int32)
+inline int32_t List_1_get_Item_mD99081BEFA1AB3526715F489192B0F7F596C183D (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* __this, int32_t ___index0, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*, int32_t, const RuntimeMethod*))List_1_get_Item_mD99081BEFA1AB3526715F489192B0F7F596C183D_gshared)(__this, ___index0, method);
 }
 // T System.Collections.Generic.List`1<routeSystem.Route>::get_Item(System.Int32)
 inline Route_tD0AFEA458AB21893C42C2A45022164A61508AD03* List_1_get_Item_m83ED1CE77A9A1072F675782148B978C8C5047E4E (List_1_t50CFA5F8D5574FB5B60D23BA20B40F597D10F4B5* __this, int32_t ___index0, const RuntimeMethod* method)
@@ -7898,6 +7904,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RouteEditor_GetRout_mAB73C5CF803D539B034
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RouteEditor_SetRout_m76F9F65DD8ADB4DF785BCE7E2194A44D699E3618 (RouteEditor_t7B0DA85F619D5CDC4B4E69846D4FF8FA3DF4535D* __this, const RuntimeMethod* method) ;
 // System.Void routeSystem.CollectionEditor::GetCollection()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CollectionEditor_GetCollection_mE06E1A82EC7B5DDCA1BA878043D217B10E90CDEA (CollectionEditor_tAE15DAABCDCF469A444A1CC90CD71AE1ADEB0FD0* __this, const RuntimeMethod* method) ;
+// System.Void routeSystem.CollectionEditor::SetCollection()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CollectionEditor_SetCollection_m4F570E6AA83EB09DBDB92308334CF517B6F054DC (CollectionEditor_tAE15DAABCDCF469A444A1CC90CD71AE1ADEB0FD0* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.MonoBehaviour::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<routeSystem.Photo>::.ctor()
@@ -9299,99 +9307,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CollectionEditor_GetCollection_mE06E1A82
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_get_Item_m37C9CDA7114B75318EEFF7857613C33D7B818419_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralBD5A8E38A04CDD36D35BC04245A95D611DA98863);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF4994DFA4B1D01B70ED3A75C54E5DF2A752CFD69);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// if (RouteStore.ConstainsCollection(key))
+		// collection = RouteStore.GetCollection(key);
 		String_t* L_0 = __this->___key_4;
 		il2cpp_codegen_runtime_class_init_inline(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
-		bool L_1;
-		L_1 = RouteStore_ConstainsCollection_mDAF39375C888FD73ADD699512E343F545B3F55CC(L_0, NULL);
-		if (!L_1)
-		{
-			goto IL_002e;
-		}
-	}
-	{
-		// collection = RouteStore.Collections[key];
-		il2cpp_codegen_runtime_class_init_inline(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
-		Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466* L_2 = ((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___Collections_2;
-		String_t* L_3 = __this->___key_4;
-		NullCheck(L_2);
-		Collection_t894FED000CF388BACD7BB87A2C097581F81CD627* L_4;
-		L_4 = Dictionary_2_get_Item_m37C9CDA7114B75318EEFF7857613C33D7B818419(L_2, L_3, Dictionary_2_get_Item_m37C9CDA7114B75318EEFF7857613C33D7B818419_RuntimeMethod_var);
-		__this->___collection_5 = L_4;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___collection_5), (void*)L_4);
-		// Debug.Log("Get Collection successfully");
-		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219(_stringLiteralBD5A8E38A04CDD36D35BC04245A95D611DA98863, NULL);
-		return;
-	}
-
-IL_002e:
-	{
-		// else Debug.Log("does not exist Collection key");
-		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219(_stringLiteralF4994DFA4B1D01B70ED3A75C54E5DF2A752CFD69, NULL);
+		Collection_t894FED000CF388BACD7BB87A2C097581F81CD627* L_1;
+		L_1 = RouteStore_GetCollection_m470E1EEA335DDC1998759D3ED9B7E0755E1D2958(L_0, NULL);
+		__this->___collection_5 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___collection_5), (void*)L_1);
 		// }
 		return;
-	}
-}
-// System.Boolean routeSystem.CollectionEditor::CreateCollection()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CollectionEditor_CreateCollection_m556260C72B061319D33D51E2C5182B2A3737F102 (CollectionEditor_tAE15DAABCDCF469A444A1CC90CD71AE1ADEB0FD0* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Collection_t894FED000CF388BACD7BB87A2C097581F81CD627_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Add_m7D74F40961C8C622130A4C63D689BDD90677E8F9_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6F57C68E7C97D37EB731428011328658821D8C38);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA74D6CB8E162141667FA4E6E7772D90319840344);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// if (RouteStore.ConstainsCollection(key)) {
-		String_t* L_0 = __this->___key_4;
-		il2cpp_codegen_runtime_class_init_inline(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
-		bool L_1;
-		L_1 = RouteStore_ConstainsCollection_mDAF39375C888FD73ADD699512E343F545B3F55CC(L_0, NULL);
-		if (!L_1)
-		{
-			goto IL_0019;
-		}
-	}
-	{
-		// Debug.Log("Collection key occupant");
-		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219(_stringLiteralA74D6CB8E162141667FA4E6E7772D90319840344, NULL);
-		// return false;
-		return (bool)0;
-	}
-
-IL_0019:
-	{
-		// RouteStore.Collections.Add(key, new Collection(key));
-		il2cpp_codegen_runtime_class_init_inline(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
-		Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466* L_2 = ((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___Collections_2;
-		String_t* L_3 = __this->___key_4;
-		String_t* L_4 = __this->___key_4;
-		Collection_t894FED000CF388BACD7BB87A2C097581F81CD627* L_5 = (Collection_t894FED000CF388BACD7BB87A2C097581F81CD627*)il2cpp_codegen_object_new(Collection_t894FED000CF388BACD7BB87A2C097581F81CD627_il2cpp_TypeInfo_var);
-		NullCheck(L_5);
-		Collection__ctor_mAAFCA9AEEEAEA001FB8F47A24E8C5E9DBE88CAA6(L_5, L_4, NULL);
-		NullCheck(L_2);
-		Dictionary_2_Add_m7D74F40961C8C622130A4C63D689BDD90677E8F9(L_2, L_3, L_5, Dictionary_2_Add_m7D74F40961C8C622130A4C63D689BDD90677E8F9_RuntimeMethod_var);
-		// Debug.Log("Create New Collection");
-		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219(_stringLiteral6F57C68E7C97D37EB731428011328658821D8C38, NULL);
-		// return true;
-		return (bool)1;
 	}
 }
 // System.Void routeSystem.CollectionEditor::SetCollection()
@@ -9400,60 +9328,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CollectionEditor_SetCollection_m4F570E6A
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_set_Item_m17302D068F2519AEF3C9AA275A774D8790D5BC86_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6E5DD7C504EC4F98DF883A10FDB148E1D68BBE66);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF4994DFA4B1D01B70ED3A75C54E5DF2A752CFD69);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// if (RouteStore.ConstainsCollection(key))
-		String_t* L_0 = __this->___key_4;
+		// RouteStore.SetCollection(collection);
+		Collection_t894FED000CF388BACD7BB87A2C097581F81CD627* L_0 = __this->___collection_5;
 		il2cpp_codegen_runtime_class_init_inline(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
-		bool L_1;
-		L_1 = RouteStore_ConstainsCollection_mDAF39375C888FD73ADD699512E343F545B3F55CC(L_0, NULL);
-		if (!L_1)
-		{
-			goto IL_002e;
-		}
-	}
-	{
-		// RouteStore.Collections[key] = collection;
-		il2cpp_codegen_runtime_class_init_inline(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
-		Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466* L_2 = ((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___Collections_2;
-		String_t* L_3 = __this->___key_4;
-		Collection_t894FED000CF388BACD7BB87A2C097581F81CD627* L_4 = __this->___collection_5;
-		NullCheck(L_2);
-		Dictionary_2_set_Item_m17302D068F2519AEF3C9AA275A774D8790D5BC86(L_2, L_3, L_4, Dictionary_2_set_Item_m17302D068F2519AEF3C9AA275A774D8790D5BC86_RuntimeMethod_var);
-		// Debug.Log("Set Collection successfully");
-		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219(_stringLiteral6E5DD7C504EC4F98DF883A10FDB148E1D68BBE66, NULL);
-		return;
-	}
-
-IL_002e:
-	{
-		// Debug.Log("does not exist Collection key");
-		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219(_stringLiteralF4994DFA4B1D01B70ED3A75C54E5DF2A752CFD69, NULL);
-		// if(!CreateCollection()) return;
-		bool L_5;
-		L_5 = CollectionEditor_CreateCollection_m556260C72B061319D33D51E2C5182B2A3737F102(__this, NULL);
-		if (L_5)
-		{
-			goto IL_0041;
-		}
-	}
-	{
-		// if(!CreateCollection()) return;
-		return;
-	}
-
-IL_0041:
-	{
-		// SetCollection();
-		CollectionEditor_SetCollection_m4F570E6AA83EB09DBDB92308334CF517B6F054DC(__this, NULL);
+		String_t* L_1;
+		L_1 = RouteStore_SetCollection_m1286C4575E554723A21BC8C6ADAB3EDF6E553898(L_0, NULL);
 		// }
 		return;
 	}
@@ -9480,83 +9363,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RouteEditor_GetRout_mAB73C5CF803D539B034
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_get_Item_m2BECDADDD27FF2DA1AAA989D7D08A37C7793D811_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral043A3F88A3906761657F45F27F9C3E18FB8B8930);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralED306DA07F7BCE49C73A1E39B319602F463387AC);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// if (RouteStore.ContainsRoute(ID))
+		// route = RouteStore.GetRoute(ID);
 		int32_t L_0 = __this->___ID_4;
 		il2cpp_codegen_runtime_class_init_inline(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
-		bool L_1;
-		L_1 = RouteStore_ContainsRoute_m418A7C23FDD1D5933ABBBBF04A87694CE3FF25F6(L_0, NULL);
-		if (!L_1)
-		{
-			goto IL_002e;
-		}
-	}
-	{
-		// route = RouteStore.RoutesData[ID];
-		il2cpp_codegen_runtime_class_init_inline(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
-		Dictionary_2_t47D4B188DFB318F2D2FF234B136714E02417949B* L_2 = ((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___RoutesData_0;
-		int32_t L_3 = __this->___ID_4;
-		NullCheck(L_2);
-		Route_tD0AFEA458AB21893C42C2A45022164A61508AD03* L_4;
-		L_4 = Dictionary_2_get_Item_m2BECDADDD27FF2DA1AAA989D7D08A37C7793D811(L_2, L_3, Dictionary_2_get_Item_m2BECDADDD27FF2DA1AAA989D7D08A37C7793D811_RuntimeMethod_var);
-		__this->___route_5 = L_4;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___route_5), (void*)L_4);
-		// Debug.Log("Get Route successfully");
-		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219(_stringLiteralED306DA07F7BCE49C73A1E39B319602F463387AC, NULL);
-		return;
-	}
-
-IL_002e:
-	{
-		// else Debug.Log("does not exist Route ID");
-		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219(_stringLiteral043A3F88A3906761657F45F27F9C3E18FB8B8930, NULL);
+		Route_tD0AFEA458AB21893C42C2A45022164A61508AD03* L_1;
+		L_1 = RouteStore_GetRoute_mB647E3B2F02E7AFF3AB76F223CC014CB7E1C9F1C(L_0, NULL);
+		__this->___route_5 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___route_5), (void*)L_1);
 		// }
 		return;
-	}
-}
-// System.Int32 routeSystem.RouteEditor::CreateRoute()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RouteEditor_CreateRoute_m9C157FE15107685E76A9DA20D9B257298F15CDF6 (RouteEditor_t7B0DA85F619D5CDC4B4E69846D4FF8FA3DF4535D* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Add_m7AB1C91512FB71E6595FF55C1A6AA8CBED5BC515_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Route_tD0AFEA458AB21893C42C2A45022164A61508AD03_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6198004C21361935055B30FB833279625E9472A3);
-		s_Il2CppMethodInitialized = true;
-	}
-	int32_t V_0 = 0;
-	{
-		// int emptyIndex = RouteStore.EmptyRouteIndex();
-		il2cpp_codegen_runtime_class_init_inline(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
-		int32_t L_0;
-		L_0 = RouteStore_EmptyRouteIndex_m102DE044DEBF972130EF47CE7D5D927129F1FA07((-1), NULL);
-		V_0 = L_0;
-		// RouteStore.RoutesData.Add(emptyIndex, new Route());
-		Dictionary_2_t47D4B188DFB318F2D2FF234B136714E02417949B* L_1 = ((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___RoutesData_0;
-		int32_t L_2 = V_0;
-		Route_tD0AFEA458AB21893C42C2A45022164A61508AD03* L_3 = (Route_tD0AFEA458AB21893C42C2A45022164A61508AD03*)il2cpp_codegen_object_new(Route_tD0AFEA458AB21893C42C2A45022164A61508AD03_il2cpp_TypeInfo_var);
-		NullCheck(L_3);
-		Route__ctor_m6EFB2F828429919F6204B882FA3CC723C689BA59(L_3, NULL);
-		NullCheck(L_1);
-		Dictionary_2_Add_m7AB1C91512FB71E6595FF55C1A6AA8CBED5BC515(L_1, L_2, L_3, Dictionary_2_Add_m7AB1C91512FB71E6595FF55C1A6AA8CBED5BC515_RuntimeMethod_var);
-		// Debug.Log("Create New Route");
-		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219(_stringLiteral6198004C21361935055B30FB833279625E9472A3, NULL);
-		// return emptyIndex;
-		int32_t L_4 = V_0;
-		return L_4;
 	}
 }
 // System.Void routeSystem.RouteEditor::SetRout()
@@ -9565,46 +9384,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RouteEditor_SetRout_m76F9F65DD8ADB4DF785
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_set_Item_m7072A69F476A9E1C0882F69D020DFCF43397FF33_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral022CFAF834B1E66239F79A191ABF270C87EC4721);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral043A3F88A3906761657F45F27F9C3E18FB8B8930);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// if (!RouteStore.ContainsRoute(ID))
-		int32_t L_0 = __this->___ID_4;
+		// ID = RouteStore.SetRout(route);
+		Route_tD0AFEA458AB21893C42C2A45022164A61508AD03* L_0 = __this->___route_5;
 		il2cpp_codegen_runtime_class_init_inline(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
-		bool L_1;
-		L_1 = RouteStore_ContainsRoute_m418A7C23FDD1D5933ABBBBF04A87694CE3FF25F6(L_0, NULL);
-		if (L_1)
-		{
-			goto IL_0023;
-		}
-	}
-	{
-		// Debug.Log("does not exist Route ID");
-		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219(_stringLiteral043A3F88A3906761657F45F27F9C3E18FB8B8930, NULL);
-		// ID = CreateRoute();
-		int32_t L_2;
-		L_2 = RouteEditor_CreateRoute_m9C157FE15107685E76A9DA20D9B257298F15CDF6(__this, NULL);
-		__this->___ID_4 = L_2;
-	}
-
-IL_0023:
-	{
-		// RouteStore.RoutesData[ID] = route;
-		il2cpp_codegen_runtime_class_init_inline(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
-		Dictionary_2_t47D4B188DFB318F2D2FF234B136714E02417949B* L_3 = ((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___RoutesData_0;
-		int32_t L_4 = __this->___ID_4;
-		Route_tD0AFEA458AB21893C42C2A45022164A61508AD03* L_5 = __this->___route_5;
-		NullCheck(L_3);
-		Dictionary_2_set_Item_m7072A69F476A9E1C0882F69D020DFCF43397FF33(L_3, L_4, L_5, Dictionary_2_set_Item_m7072A69F476A9E1C0882F69D020DFCF43397FF33_RuntimeMethod_var);
-		// Debug.Log("Set Route successfully");
-		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219(_stringLiteral022CFAF834B1E66239F79A191ABF270C87EC4721, NULL);
+		int32_t L_1;
+		L_1 = RouteStore_SetRout_m875324668EA6A6098DAD0E730B894AEF6CC4CEB4(L_0, NULL);
+		__this->___ID_4 = L_1;
 		// }
 		return;
 	}
@@ -10162,219 +9951,438 @@ IL_000a:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Boolean routeSystem.RouteStore::ContainsRoute(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RouteStore_ContainsRoute_m418A7C23FDD1D5933ABBBBF04A87694CE3FF25F6 (int32_t ___i0, const RuntimeMethod* method) 
+// routeSystem.Route routeSystem.RouteStore::GetRoute(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Route_tD0AFEA458AB21893C42C2A45022164A61508AD03* RouteStore_GetRoute_mB647E3B2F02E7AFF3AB76F223CC014CB7E1C9F1C (int32_t ___id0, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_ContainsKey_m25FF8C3085817527908F37908E130AB7546D938B_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_get_Item_m2BECDADDD27FF2DA1AAA989D7D08A37C7793D811_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral043A3F88A3906761657F45F27F9C3E18FB8B8930);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralED306DA07F7BCE49C73A1E39B319602F463387AC);
 		s_Il2CppMethodInitialized = true;
 	}
-	bool V_0 = false;
-	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
-	try
-	{// begin try (depth: 1)
-		// return RoutesData.ContainsKey(i);
+	{
+		// if (RoutesData.ContainsKey(id))
 		il2cpp_codegen_runtime_class_init_inline(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
 		Dictionary_2_t47D4B188DFB318F2D2FF234B136714E02417949B* L_0 = ((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___RoutesData_0;
-		int32_t L_1 = ___i0;
+		int32_t L_1 = ___id0;
 		NullCheck(L_0);
 		bool L_2;
 		L_2 = Dictionary_2_ContainsKey_m25FF8C3085817527908F37908E130AB7546D938B(L_0, L_1, Dictionary_2_ContainsKey_m25FF8C3085817527908F37908E130AB7546D938B_RuntimeMethod_var);
-		V_0 = L_2;
-		goto IL_0013;
-	}// end try (depth: 1)
-	catch(Il2CppExceptionWrapper& e)
-	{
-		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&RuntimeObject_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+		if (!L_2)
 		{
-			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-			goto CATCH_000e;
+			goto IL_0023;
 		}
-		throw e;
+	}
+	{
+		// Debug.Log("Get Route successfully");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219(_stringLiteralED306DA07F7BCE49C73A1E39B319602F463387AC, NULL);
+		// return RouteStore.RoutesData[id];
+		il2cpp_codegen_runtime_class_init_inline(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
+		Dictionary_2_t47D4B188DFB318F2D2FF234B136714E02417949B* L_3 = ((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___RoutesData_0;
+		int32_t L_4 = ___id0;
+		NullCheck(L_3);
+		Route_tD0AFEA458AB21893C42C2A45022164A61508AD03* L_5;
+		L_5 = Dictionary_2_get_Item_m2BECDADDD27FF2DA1AAA989D7D08A37C7793D811(L_3, L_4, Dictionary_2_get_Item_m2BECDADDD27FF2DA1AAA989D7D08A37C7793D811_RuntimeMethod_var);
+		return L_5;
 	}
 
-CATCH_000e:
-	{// begin catch(System.Object)
-		// catch { return false; }
-		// catch { return false; }
-		V_0 = (bool)0;
-		IL2CPP_POP_ACTIVE_EXCEPTION();
-		goto IL_0013;
-	}// end catch (depth: 1)
-
-IL_0013:
+IL_0023:
 	{
-		// }
-		bool L_3 = V_0;
-		return L_3;
+		// else Debug.Log("does not exist Route ID");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219(_stringLiteral043A3F88A3906761657F45F27F9C3E18FB8B8930, NULL);
+		// return null;
+		return (Route_tD0AFEA458AB21893C42C2A45022164A61508AD03*)NULL;
 	}
 }
-// System.Int32 routeSystem.RouteStore::EmptyRouteIndex(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RouteStore_EmptyRouteIndex_m102DE044DEBF972130EF47CE7D5D927129F1FA07 (int32_t ___Index0, const RuntimeMethod* method) 
+// System.Int32 routeSystem.RouteStore::SetRout(routeSystem.Route)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RouteStore_SetRout_m875324668EA6A6098DAD0E730B894AEF6CC4CEB4 (Route_tD0AFEA458AB21893C42C2A45022164A61508AD03* ___route0, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_get_Count_m085F40295BC67527C8F97E1CD488A6E71C875000_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_get_Keys_mF4D67DD64A0B3DE1392417D9CA01A068893B1155_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_mCC0E71080DE343C1A527526A1AC2DBEC355CEA6C_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_mF590592E32D421DE2C6E2F0D5C2F62FB14CCEFDF_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_mD99081BEFA1AB3526715F489192B0F7F596C183D_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_ContainsKey_m25FF8C3085817527908F37908E130AB7546D938B_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_set_Item_m7072A69F476A9E1C0882F69D020DFCF43397FF33_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral022CFAF834B1E66239F79A191ABF270C87EC4721);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral043A3F88A3906761657F45F27F9C3E18FB8B8930);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// RouteID = new List<int>(RouteStore.RoutesData.Keys);
+		// if (!RoutesData.ContainsKey(route.ID))
 		il2cpp_codegen_runtime_class_init_inline(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
 		Dictionary_2_t47D4B188DFB318F2D2FF234B136714E02417949B* L_0 = ((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___RoutesData_0;
+		Route_tD0AFEA458AB21893C42C2A45022164A61508AD03* L_1 = ___route0;
+		NullCheck(L_1);
+		int32_t L_2 = ((Marker_tD911D37CBAF27544147FF8D152402092AEB5ADCC*)L_1)->___ID_0;
 		NullCheck(L_0);
-		KeyCollection_tFE980DEB1C67B305893BC4630B57F4FB7ACA93FD* L_1;
-		L_1 = Dictionary_2_get_Keys_mF4D67DD64A0B3DE1392417D9CA01A068893B1155(L_0, Dictionary_2_get_Keys_mF4D67DD64A0B3DE1392417D9CA01A068893B1155_RuntimeMethod_var);
-		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_2 = (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*)il2cpp_codegen_object_new(List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73_il2cpp_TypeInfo_var);
-		NullCheck(L_2);
-		List_1__ctor_mCC0E71080DE343C1A527526A1AC2DBEC355CEA6C(L_2, L_1, List_1__ctor_mCC0E71080DE343C1A527526A1AC2DBEC355CEA6C_RuntimeMethod_var);
-		((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___RouteID_1 = L_2;
-		Il2CppCodeGenWriteBarrier((void**)(&((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___RouteID_1), (void*)L_2);
-		// if (Index == -1)
-		int32_t L_3 = ___Index0;
-		if ((!(((uint32_t)L_3) == ((uint32_t)(-1)))))
-		{
-			goto IL_0055;
-		}
-	}
-	{
-		// if (RoutesData.Count == 0) Index = 0;
-		il2cpp_codegen_runtime_class_init_inline(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
-		Dictionary_2_t47D4B188DFB318F2D2FF234B136714E02417949B* L_4 = ((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___RoutesData_0;
-		NullCheck(L_4);
-		int32_t L_5;
-		L_5 = Dictionary_2_get_Count_m085F40295BC67527C8F97E1CD488A6E71C875000(L_4, Dictionary_2_get_Count_m085F40295BC67527C8F97E1CD488A6E71C875000_RuntimeMethod_var);
-		if (L_5)
+		bool L_3;
+		L_3 = Dictionary_2_ContainsKey_m25FF8C3085817527908F37908E130AB7546D938B(L_0, L_2, Dictionary_2_ContainsKey_m25FF8C3085817527908F37908E130AB7546D938B_RuntimeMethod_var);
+		if (L_3)
 		{
 			goto IL_0029;
 		}
 	}
 	{
-		// if (RoutesData.Count == 0) Index = 0;
-		___Index0 = 0;
-		goto IL_0055;
+		// Debug.Log("does not exist Route ID");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219(_stringLiteral043A3F88A3906761657F45F27F9C3E18FB8B8930, NULL);
+		// CreateRoute(route);
+		Route_tD0AFEA458AB21893C42C2A45022164A61508AD03* L_4 = ___route0;
+		il2cpp_codegen_runtime_class_init_inline(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
+		RouteStore_CreateRoute_m2EF5F63A5D08E37321F3F315CFAA2C563B047F03(L_4, NULL);
+		// return route.ID;
+		Route_tD0AFEA458AB21893C42C2A45022164A61508AD03* L_5 = ___route0;
+		NullCheck(L_5);
+		int32_t L_6 = ((Marker_tD911D37CBAF27544147FF8D152402092AEB5ADCC*)L_5)->___ID_0;
+		return L_6;
 	}
 
 IL_0029:
 	{
-		// if (RouteID.Count == 1) Index = 1;
+		// RoutesData[route.ID] = route;
 		il2cpp_codegen_runtime_class_init_inline(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
-		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_6 = ((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___RouteID_1;
-		NullCheck(L_6);
-		int32_t L_7;
-		L_7 = List_1_get_Count_mF590592E32D421DE2C6E2F0D5C2F62FB14CCEFDF_inline(L_6, List_1_get_Count_mF590592E32D421DE2C6E2F0D5C2F62FB14CCEFDF_RuntimeMethod_var);
-		if ((!(((uint32_t)L_7) == ((uint32_t)1))))
-		{
-			goto IL_003b;
-		}
-	}
-	{
-		// if (RouteID.Count == 1) Index = 1;
-		___Index0 = 1;
-		goto IL_0055;
-	}
-
-IL_003b:
-	{
-		// Index = RouteID[RouteID.Count - 1] + 1;
-		il2cpp_codegen_runtime_class_init_inline(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
-		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_8 = ((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___RouteID_1;
-		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_9 = ((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___RouteID_1;
-		NullCheck(L_9);
-		int32_t L_10;
-		L_10 = List_1_get_Count_mF590592E32D421DE2C6E2F0D5C2F62FB14CCEFDF_inline(L_9, List_1_get_Count_mF590592E32D421DE2C6E2F0D5C2F62FB14CCEFDF_RuntimeMethod_var);
+		Dictionary_2_t47D4B188DFB318F2D2FF234B136714E02417949B* L_7 = ((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___RoutesData_0;
+		Route_tD0AFEA458AB21893C42C2A45022164A61508AD03* L_8 = ___route0;
 		NullCheck(L_8);
-		int32_t L_11;
-		L_11 = List_1_get_Item_mD99081BEFA1AB3526715F489192B0F7F596C183D(L_8, ((int32_t)il2cpp_codegen_subtract(L_10, 1)), List_1_get_Item_mD99081BEFA1AB3526715F489192B0F7F596C183D_RuntimeMethod_var);
-		___Index0 = ((int32_t)il2cpp_codegen_add(L_11, 1));
-	}
-
-IL_0055:
-	{
-		// if (!ContainsRoute(Index))
-		int32_t L_12 = ___Index0;
-		il2cpp_codegen_runtime_class_init_inline(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
-		bool L_13;
-		L_13 = RouteStore_ContainsRoute_m418A7C23FDD1D5933ABBBBF04A87694CE3FF25F6(L_12, NULL);
-		if (L_13)
-		{
-			goto IL_005f;
-		}
-	}
-	{
-		// return Index;
-		int32_t L_14 = ___Index0;
-		return L_14;
-	}
-
-IL_005f:
-	{
-		// else EmptyRouteIndex(Index + 1);
-		int32_t L_15 = ___Index0;
-		il2cpp_codegen_runtime_class_init_inline(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
-		int32_t L_16;
-		L_16 = RouteStore_EmptyRouteIndex_m102DE044DEBF972130EF47CE7D5D927129F1FA07(((int32_t)il2cpp_codegen_add(L_15, 1)), NULL);
-		// return -1;
-		return (-1);
+		int32_t L_9 = ((Marker_tD911D37CBAF27544147FF8D152402092AEB5ADCC*)L_8)->___ID_0;
+		Route_tD0AFEA458AB21893C42C2A45022164A61508AD03* L_10 = ___route0;
+		NullCheck(L_7);
+		Dictionary_2_set_Item_m7072A69F476A9E1C0882F69D020DFCF43397FF33(L_7, L_9, L_10, Dictionary_2_set_Item_m7072A69F476A9E1C0882F69D020DFCF43397FF33_RuntimeMethod_var);
+		// Debug.Log("Set Route successfully");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219(_stringLiteral022CFAF834B1E66239F79A191ABF270C87EC4721, NULL);
+		// return route.ID;
+		Route_tD0AFEA458AB21893C42C2A45022164A61508AD03* L_11 = ___route0;
+		NullCheck(L_11);
+		int32_t L_12 = ((Marker_tD911D37CBAF27544147FF8D152402092AEB5ADCC*)L_11)->___ID_0;
+		return L_12;
 	}
 }
-// System.Boolean routeSystem.RouteStore::ConstainsCollection(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RouteStore_ConstainsCollection_mDAF39375C888FD73ADD699512E343F545B3F55CC (String_t* ___key0, const RuntimeMethod* method) 
+// System.Void routeSystem.RouteStore::RemoveRoute(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RouteStore_RemoveRoute_m3BC12DEA077F6FC71CA73DEF209FD01B33960600 (int32_t ___id0, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_ContainsKey_mB037FA16EFD5C73B359724CB0A4E8D4B6DEA9490_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_ContainsKey_m25FF8C3085817527908F37908E130AB7546D938B_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Remove_mDC0584091DD7AE1AC02A131420D4E2447783F632_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral043A3F88A3906761657F45F27F9C3E18FB8B8930);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3289D852299497603C8F5121D18850BB14D62582);
 		s_Il2CppMethodInitialized = true;
 	}
-	bool V_0 = false;
-	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
-	try
-	{// begin try (depth: 1)
-		// return Collections.ContainsKey(key);
+	{
+		// if (RoutesData.ContainsKey(id))
 		il2cpp_codegen_runtime_class_init_inline(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
-		Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466* L_0 = ((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___Collections_2;
+		Dictionary_2_t47D4B188DFB318F2D2FF234B136714E02417949B* L_0 = ((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___RoutesData_0;
+		int32_t L_1 = ___id0;
+		NullCheck(L_0);
+		bool L_2;
+		L_2 = Dictionary_2_ContainsKey_m25FF8C3085817527908F37908E130AB7546D938B(L_0, L_1, Dictionary_2_ContainsKey_m25FF8C3085817527908F37908E130AB7546D938B_RuntimeMethod_var);
+		if (!L_2)
+		{
+			goto IL_0024;
+		}
+	}
+	{
+		// RoutesData.Remove(id);
+		il2cpp_codegen_runtime_class_init_inline(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
+		Dictionary_2_t47D4B188DFB318F2D2FF234B136714E02417949B* L_3 = ((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___RoutesData_0;
+		int32_t L_4 = ___id0;
+		NullCheck(L_3);
+		bool L_5;
+		L_5 = Dictionary_2_Remove_mDC0584091DD7AE1AC02A131420D4E2447783F632(L_3, L_4, Dictionary_2_Remove_mDC0584091DD7AE1AC02A131420D4E2447783F632_RuntimeMethod_var);
+		// Debug.Log("Remove Route successfully");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219(_stringLiteral3289D852299497603C8F5121D18850BB14D62582, NULL);
+		return;
+	}
+
+IL_0024:
+	{
+		// else Debug.Log("does not exist Route ID");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219(_stringLiteral043A3F88A3906761657F45F27F9C3E18FB8B8930, NULL);
+		// }
+		return;
+	}
+}
+// System.Void routeSystem.RouteStore::CreateRoute(routeSystem.Route)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RouteStore_CreateRoute_m2EF5F63A5D08E37321F3F315CFAA2C563B047F03 (Route_tD0AFEA458AB21893C42C2A45022164A61508AD03* ___route0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Add_m7AB1C91512FB71E6595FF55C1A6AA8CBED5BC515_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6198004C21361935055B30FB833279625E9472A3);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// RoutesData.Add(route.ID, route);
+		il2cpp_codegen_runtime_class_init_inline(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
+		Dictionary_2_t47D4B188DFB318F2D2FF234B136714E02417949B* L_0 = ((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___RoutesData_0;
+		Route_tD0AFEA458AB21893C42C2A45022164A61508AD03* L_1 = ___route0;
+		NullCheck(L_1);
+		int32_t L_2 = ((Marker_tD911D37CBAF27544147FF8D152402092AEB5ADCC*)L_1)->___ID_0;
+		Route_tD0AFEA458AB21893C42C2A45022164A61508AD03* L_3 = ___route0;
+		NullCheck(L_0);
+		Dictionary_2_Add_m7AB1C91512FB71E6595FF55C1A6AA8CBED5BC515(L_0, L_2, L_3, Dictionary_2_Add_m7AB1C91512FB71E6595FF55C1A6AA8CBED5BC515_RuntimeMethod_var);
+		// Debug.Log("Create New Route");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219(_stringLiteral6198004C21361935055B30FB833279625E9472A3, NULL);
+		// }
+		return;
+	}
+}
+// routeSystem.Collection routeSystem.RouteStore::GetCollection(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Collection_t894FED000CF388BACD7BB87A2C097581F81CD627* RouteStore_GetCollection_m470E1EEA335DDC1998759D3ED9B7E0755E1D2958 (String_t* ___key0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_ContainsKey_mB037FA16EFD5C73B359724CB0A4E8D4B6DEA9490_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_get_Item_m37C9CDA7114B75318EEFF7857613C33D7B818419_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralBD5A8E38A04CDD36D35BC04245A95D611DA98863);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF4994DFA4B1D01B70ED3A75C54E5DF2A752CFD69);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Collections.ContainsKey(key))
+		il2cpp_codegen_runtime_class_init_inline(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
+		Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466* L_0 = ((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___Collections_1;
 		String_t* L_1 = ___key0;
 		NullCheck(L_0);
 		bool L_2;
 		L_2 = Dictionary_2_ContainsKey_mB037FA16EFD5C73B359724CB0A4E8D4B6DEA9490(L_0, L_1, Dictionary_2_ContainsKey_mB037FA16EFD5C73B359724CB0A4E8D4B6DEA9490_RuntimeMethod_var);
-		V_0 = L_2;
-		goto IL_0013;
-	}// end try (depth: 1)
-	catch(Il2CppExceptionWrapper& e)
-	{
-		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&RuntimeObject_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+		if (!L_2)
 		{
-			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-			goto CATCH_000e;
+			goto IL_0023;
 		}
-		throw e;
+	}
+	{
+		// Debug.Log("Get Collection successfully");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219(_stringLiteralBD5A8E38A04CDD36D35BC04245A95D611DA98863, NULL);
+		// return Collections[key];
+		il2cpp_codegen_runtime_class_init_inline(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
+		Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466* L_3 = ((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___Collections_1;
+		String_t* L_4 = ___key0;
+		NullCheck(L_3);
+		Collection_t894FED000CF388BACD7BB87A2C097581F81CD627* L_5;
+		L_5 = Dictionary_2_get_Item_m37C9CDA7114B75318EEFF7857613C33D7B818419(L_3, L_4, Dictionary_2_get_Item_m37C9CDA7114B75318EEFF7857613C33D7B818419_RuntimeMethod_var);
+		return L_5;
 	}
 
-CATCH_000e:
-	{// begin catch(System.Object)
-		// catch { return false; }
-		// catch { return false; }
-		V_0 = (bool)0;
-		IL2CPP_POP_ACTIVE_EXCEPTION();
-		goto IL_0013;
-	}// end catch (depth: 1)
-
-IL_0013:
+IL_0023:
 	{
+		// else Debug.Log("does not exist Collection key");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219(_stringLiteralF4994DFA4B1D01B70ED3A75C54E5DF2A752CFD69, NULL);
+		// return null;
+		return (Collection_t894FED000CF388BACD7BB87A2C097581F81CD627*)NULL;
+	}
+}
+// System.String routeSystem.RouteStore::SetCollection(routeSystem.Collection)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RouteStore_SetCollection_m1286C4575E554723A21BC8C6ADAB3EDF6E553898 (Collection_t894FED000CF388BACD7BB87A2C097581F81CD627* ___collection0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_ContainsKey_mB037FA16EFD5C73B359724CB0A4E8D4B6DEA9490_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_set_Item_m17302D068F2519AEF3C9AA275A774D8790D5BC86_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6E5DD7C504EC4F98DF883A10FDB148E1D68BBE66);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF4994DFA4B1D01B70ED3A75C54E5DF2A752CFD69);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Collections.ContainsKey(collection.key))
+		il2cpp_codegen_runtime_class_init_inline(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
+		Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466* L_0 = ((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___Collections_1;
+		Collection_t894FED000CF388BACD7BB87A2C097581F81CD627* L_1 = ___collection0;
+		NullCheck(L_1);
+		String_t* L_2 = L_1->___key_0;
+		NullCheck(L_0);
+		bool L_3;
+		L_3 = Dictionary_2_ContainsKey_mB037FA16EFD5C73B359724CB0A4E8D4B6DEA9490(L_0, L_2, Dictionary_2_ContainsKey_mB037FA16EFD5C73B359724CB0A4E8D4B6DEA9490_RuntimeMethod_var);
+		if (!L_3)
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		// Collections[collection.key] = collection;
+		il2cpp_codegen_runtime_class_init_inline(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
+		Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466* L_4 = ((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___Collections_1;
+		Collection_t894FED000CF388BACD7BB87A2C097581F81CD627* L_5 = ___collection0;
+		NullCheck(L_5);
+		String_t* L_6 = L_5->___key_0;
+		Collection_t894FED000CF388BACD7BB87A2C097581F81CD627* L_7 = ___collection0;
+		NullCheck(L_4);
+		Dictionary_2_set_Item_m17302D068F2519AEF3C9AA275A774D8790D5BC86(L_4, L_6, L_7, Dictionary_2_set_Item_m17302D068F2519AEF3C9AA275A774D8790D5BC86_RuntimeMethod_var);
+		// Debug.Log("Set Collection successfully");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219(_stringLiteral6E5DD7C504EC4F98DF883A10FDB148E1D68BBE66, NULL);
+		// return collection.key;
+		Collection_t894FED000CF388BACD7BB87A2C097581F81CD627* L_8 = ___collection0;
+		NullCheck(L_8);
+		String_t* L_9 = L_8->___key_0;
+		return L_9;
+	}
+
+IL_0034:
+	{
+		// Debug.Log("does not exist Collection key");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219(_stringLiteralF4994DFA4B1D01B70ED3A75C54E5DF2A752CFD69, NULL);
+		// if (!CreateCollection(collection.key)) return null;
+		Collection_t894FED000CF388BACD7BB87A2C097581F81CD627* L_10 = ___collection0;
+		NullCheck(L_10);
+		String_t* L_11 = L_10->___key_0;
+		il2cpp_codegen_runtime_class_init_inline(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
+		bool L_12;
+		L_12 = RouteStore_CreateCollection_m1C5E4D6F55DB2C2AD04AE7E55BA5670D9994781C(L_11, NULL);
+		if (L_12)
+		{
+			goto IL_004d;
+		}
+	}
+	{
+		// if (!CreateCollection(collection.key)) return null;
+		return (String_t*)NULL;
+	}
+
+IL_004d:
+	{
+		// SetCollection(collection);
+		Collection_t894FED000CF388BACD7BB87A2C097581F81CD627* L_13 = ___collection0;
+		il2cpp_codegen_runtime_class_init_inline(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
+		String_t* L_14;
+		L_14 = RouteStore_SetCollection_m1286C4575E554723A21BC8C6ADAB3EDF6E553898(L_13, NULL);
+		// return collection.key;
+		Collection_t894FED000CF388BACD7BB87A2C097581F81CD627* L_15 = ___collection0;
+		NullCheck(L_15);
+		String_t* L_16 = L_15->___key_0;
+		return L_16;
+	}
+}
+// System.Void routeSystem.RouteStore::RemoveCollection(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RouteStore_RemoveCollection_mDCDEBC682918342F0C43A71E25150B36BF98E7CB (String_t* ___key0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_ContainsKey_mB037FA16EFD5C73B359724CB0A4E8D4B6DEA9490_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Remove_mFCF093624DCAF151C0F109EB0C5650F558632584_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral66013102B6836020E1B1465A1EEF9F377173D071);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF4994DFA4B1D01B70ED3A75C54E5DF2A752CFD69);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Collections.ContainsKey(key))
+		il2cpp_codegen_runtime_class_init_inline(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
+		Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466* L_0 = ((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___Collections_1;
+		String_t* L_1 = ___key0;
+		NullCheck(L_0);
+		bool L_2;
+		L_2 = Dictionary_2_ContainsKey_mB037FA16EFD5C73B359724CB0A4E8D4B6DEA9490(L_0, L_1, Dictionary_2_ContainsKey_mB037FA16EFD5C73B359724CB0A4E8D4B6DEA9490_RuntimeMethod_var);
+		if (!L_2)
+		{
+			goto IL_0024;
+		}
+	}
+	{
+		// Collections.Remove(key);
+		il2cpp_codegen_runtime_class_init_inline(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
+		Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466* L_3 = ((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___Collections_1;
+		String_t* L_4 = ___key0;
+		NullCheck(L_3);
+		bool L_5;
+		L_5 = Dictionary_2_Remove_mFCF093624DCAF151C0F109EB0C5650F558632584(L_3, L_4, Dictionary_2_Remove_mFCF093624DCAF151C0F109EB0C5650F558632584_RuntimeMethod_var);
+		// Debug.Log("Remove Collection successfully");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219(_stringLiteral66013102B6836020E1B1465A1EEF9F377173D071, NULL);
+		return;
+	}
+
+IL_0024:
+	{
+		// else Debug.Log("does not exist Collection key");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219(_stringLiteralF4994DFA4B1D01B70ED3A75C54E5DF2A752CFD69, NULL);
 		// }
-		bool L_3 = V_0;
-		return L_3;
+		return;
+	}
+}
+// System.Boolean routeSystem.RouteStore::CreateCollection(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RouteStore_CreateCollection_m1C5E4D6F55DB2C2AD04AE7E55BA5670D9994781C (String_t* ___key0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Collection_t894FED000CF388BACD7BB87A2C097581F81CD627_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Add_m7D74F40961C8C622130A4C63D689BDD90677E8F9_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_ContainsKey_mB037FA16EFD5C73B359724CB0A4E8D4B6DEA9490_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6F57C68E7C97D37EB731428011328658821D8C38);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA74D6CB8E162141667FA4E6E7772D90319840344);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Collections.ContainsKey(key))
+		il2cpp_codegen_runtime_class_init_inline(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
+		Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466* L_0 = ((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___Collections_1;
+		String_t* L_1 = ___key0;
+		NullCheck(L_0);
+		bool L_2;
+		L_2 = Dictionary_2_ContainsKey_mB037FA16EFD5C73B359724CB0A4E8D4B6DEA9490(L_0, L_1, Dictionary_2_ContainsKey_mB037FA16EFD5C73B359724CB0A4E8D4B6DEA9490_RuntimeMethod_var);
+		if (!L_2)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		// Debug.Log("Collection key occupant");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219(_stringLiteralA74D6CB8E162141667FA4E6E7772D90319840344, NULL);
+		// return false;
+		return (bool)0;
+	}
+
+IL_0019:
+	{
+		// Collections.Add(key, new Collection(key));
+		il2cpp_codegen_runtime_class_init_inline(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
+		Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466* L_3 = ((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___Collections_1;
+		String_t* L_4 = ___key0;
+		String_t* L_5 = ___key0;
+		Collection_t894FED000CF388BACD7BB87A2C097581F81CD627* L_6 = (Collection_t894FED000CF388BACD7BB87A2C097581F81CD627*)il2cpp_codegen_object_new(Collection_t894FED000CF388BACD7BB87A2C097581F81CD627_il2cpp_TypeInfo_var);
+		NullCheck(L_6);
+		Collection__ctor_mAAFCA9AEEEAEA001FB8F47A24E8C5E9DBE88CAA6(L_6, L_5, NULL);
+		NullCheck(L_3);
+		Dictionary_2_Add_m7D74F40961C8C622130A4C63D689BDD90677E8F9(L_3, L_4, L_6, Dictionary_2_Add_m7D74F40961C8C622130A4C63D689BDD90677E8F9_RuntimeMethod_var);
+		// Debug.Log("Create New Collection");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219(_stringLiteral6F57C68E7C97D37EB731428011328658821D8C38, NULL);
+		// return true;
+		return (bool)1;
 	}
 }
 // System.Void routeSystem.RouteStore::.ctor()
@@ -10482,7 +10490,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RouteStoreSerialize_OnBeforeSerialize_mC
 		__this->___routesDataValue_1 = L_5;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___routesDataValue_1), (void*)L_5);
 		// collectionsDataKey = new List<string>(RouteStore.Collections.Keys);
-		Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466* L_6 = ((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___Collections_2;
+		Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466* L_6 = ((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___Collections_1;
 		NullCheck(L_6);
 		KeyCollection_t363752DB681A62692A2DA58F66EA7EEC6F99DEB9* L_7;
 		L_7 = Dictionary_2_get_Keys_m9DFC483D49CF58AF867DF1FDB40B6B9540669110(L_6, Dictionary_2_get_Keys_m9DFC483D49CF58AF867DF1FDB40B6B9540669110_RuntimeMethod_var);
@@ -10492,7 +10500,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RouteStoreSerialize_OnBeforeSerialize_mC
 		__this->___collectionsDataKey_2 = L_8;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___collectionsDataKey_2), (void*)L_8);
 		// collectionsDataValue = new List<Collection>(RouteStore.Collections.Values);
-		Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466* L_9 = ((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___Collections_2;
+		Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466* L_9 = ((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___Collections_1;
 		NullCheck(L_9);
 		ValueCollection_t5E6DF013C5BA9B82B3ED5E0B3CB9CD3F8822BBC4* L_10;
 		L_10 = Dictionary_2_get_Values_m6F3918F39F8A76DA15F96CA2C6298045981003B5(L_9, Dictionary_2_get_Values_m6F3918F39F8A76DA15F96CA2C6298045981003B5_RuntimeMethod_var);
@@ -10561,8 +10569,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RouteStoreSerialize_OnAfterDeserialize_m
 		NullCheck(L_0);
 		Dictionary_2__ctor_mFC56679F44DF75FFE98E8B6E00EE468ED85FDBFB(L_0, Dictionary_2__ctor_mFC56679F44DF75FFE98E8B6E00EE468ED85FDBFB_RuntimeMethod_var);
 		il2cpp_codegen_runtime_class_init_inline(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
-		((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___Collections_2 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___Collections_2), (void*)L_0);
+		((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___Collections_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___Collections_1), (void*)L_0);
 		// RouteStore.RoutesData = new Dictionary<int, Route>();
 		Dictionary_2_t47D4B188DFB318F2D2FF234B136714E02417949B* L_1 = (Dictionary_2_t47D4B188DFB318F2D2FF234B136714E02417949B*)il2cpp_codegen_object_new(Dictionary_2_t47D4B188DFB318F2D2FF234B136714E02417949B_il2cpp_TypeInfo_var);
 		NullCheck(L_1);
@@ -10675,7 +10683,7 @@ IL_00a1:
 	{
 		// RouteStore.Collections.Add(collectionsDataKey[i], collectionsDataValue[i]);
 		il2cpp_codegen_runtime_class_init_inline(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
-		Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466* L_24 = ((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___Collections_2;
+		Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466* L_24 = ((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___Collections_1;
 		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_25 = __this->___collectionsDataKey_2;
 		int32_t L_26 = V_1;
 		NullCheck(L_25);
@@ -12382,7 +12390,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MarkerMapManager_LoadColectionMarkers_mD
 	{
 		// Collection colection = RouteStore.Collections[key];
 		il2cpp_codegen_runtime_class_init_inline(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var);
-		Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466* L_0 = ((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___Collections_2;
+		Dictionary_2_t2C5DD997269A97776961CA7C170E42D3BA848466* L_0 = ((RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_StaticFields*)il2cpp_codegen_static_fields_for(RouteStore_t8ADA1C8F0ACF90496BE35C0B7142E2DE4F493B8F_il2cpp_TypeInfo_var))->___Collections_1;
 		String_t* L_1 = ___key0;
 		NullCheck(L_0);
 		Collection_t894FED000CF388BACD7BB87A2C097581F81CD627* L_2;

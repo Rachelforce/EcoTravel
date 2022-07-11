@@ -8,12 +8,14 @@ public class StoreUpdater : MonoBehaviour
 {
     [SerializeField] string path;
     [SerializeField] string fileName;
-    [SerializeField] TextAsset  file; 
+    [SerializeField] object  file; 
     private void Awake()
     {
-        this.path = Path.Combine(Application.dataPath, this.fileName);
+        this.path = Path.Combine(Application.dataPath, "/Resources/", this.fileName);
+        this.path = Application.dataPath + "/Resources/" + this.fileName;
         if (File.Exists(this.path))
         {
+            
             RouteStoreSerialize routeStoreSerialize = JsonSerializer.Load<RouteStoreSerialize>(this.path);
             routeStoreSerialize.OnAfterDeserialize();
         }

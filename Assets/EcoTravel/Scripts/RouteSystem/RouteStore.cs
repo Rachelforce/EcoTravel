@@ -4,19 +4,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using Newtonsoft.Json;
 
+
 namespace routeSystem
 {
     
     public class RouteStore 
     {
         static public Dictionary<int, Route> RoutesData = new Dictionary<int, Route>();
-        static public List<int> RouteID;
+        //static public List<int> RouteID;
         static public Dictionary<string, Collection> Collections;
 
        
         public static Route GetRoute(int id)
             {
-            if (ContainsRoute(id))
+            if (RoutesData.ContainsKey(id))
             {
                 Debug.Log("Get Route successfully");
                 return RouteStore.RoutesData[id]; 
@@ -26,29 +27,55 @@ namespace routeSystem
         }
         public static int SetRout(Route route)
         {
-            if (!ContainsRoute(route.ID))
+            if (!RoutesData.ContainsKey(route.ID))
             {
                 Debug.Log("does not exist Route ID");
-                route.ID = CreateRoute();
+                CreateRoute(route);
+                return route.ID;
             }
-            RoutesData[route.ID] = route;
-            Debug.Log("Set Route successfully");
-            return route.ID;      
+            else
+            {
+                RoutesData[route.ID] = route;
+                Debug.Log("Set Route successfully");
+                return route.ID;
+            }
         }
         public static void RemoveRoute(int id)
         {
-            if (ContainsRoute(id))
+            if (RoutesData.ContainsKey(id))
             {               
                 RoutesData.Remove(id);
-                RouteID = new List<int>(RoutesData.Keys);
+                //RouteID = new List<int>(RoutesData.Keys);
                 Debug.Log("Remove Route successfully");
             }
             else Debug.Log("does not exist Route ID"); 
         }
+        private static void CreateRoute(Route route)
+        {
+            RoutesData.Add(route.ID, route);
+            Debug.Log("Create New Route");
+        }
+        /*
+        public static int EmptyRouteIndex(int Index = -1)
+        {
+            RouteID = new List<int>(RouteStore.RoutesData.Keys);
+            if (Index == -1)
+                if (RoutesData.Count == 0) Index = 0;
+                else
+                if (RouteID.Count == 1) Index = 1;
+                else
+                Index = RouteID[RouteID.Count - 1] + 1;
+    
+            if (!RoutesData.ContainsKey(Index))
+                return Index;
+            else EmptyRouteIndex(Index + 1);
+            return -1;
+        }
+        */
 
         public static Collection GetCollection(string key)
         {
-            if (ConstainsCollection(key))
+            if (Collections.ContainsKey(key))
             {
                 Debug.Log("Get Collection successfully");
                 return Collections[key];
@@ -58,7 +85,7 @@ namespace routeSystem
         }
         public static string SetCollection(Collection collection)
         {
-            if (ConstainsCollection(collection.key))
+            if (Collections.ContainsKey(collection.key))
             {
 
                 Collections[collection.key] = collection;
@@ -75,48 +102,16 @@ namespace routeSystem
         }
         public static void RemoveCollection(string key)
         {
-            if (ConstainsCollection(key))
+            if (Collections.ContainsKey(key))
             {
                 Collections.Remove(key);
                 Debug.Log("Remove Collection successfully");
             }
             else Debug.Log("does not exist Collection key");
         }
-        
-
-        public static int CreateRoute()
-        {
-            int emptyIndex = EmptyRouteIndex();
-            RoutesData.Add(emptyIndex, new Route());
-            Debug.Log("Create New Route");
-            return emptyIndex;
-        }
-        public static bool ContainsRoute(int i)
-        {
-            try
-            {
-                return RoutesData.ContainsKey(i);
-            }
-            catch { return false; }
-        }
-        public static int EmptyRouteIndex(int Index = -1)
-        {
-            RouteID = new List<int>(RouteStore.RoutesData.Keys);
-            if (Index == -1)
-                if (RoutesData.Count == 0) Index = 0;
-                else
-                if (RouteID.Count == 1) Index = 1;
-                else
-                Index = RouteID[RouteID.Count - 1] + 1;
-    
-            if (!ContainsRoute(Index))
-                return Index;
-            else EmptyRouteIndex(Index + 1);
-            return -1;
-        }
         public static bool CreateCollection(string key)
         {
-            if (ConstainsCollection(key))
+            if (Collections.ContainsKey(key))
             {
                 Debug.Log("Collection key occupant");
                 return false;
@@ -125,21 +120,13 @@ namespace routeSystem
             Debug.Log("Create New Collection");
             return true;
         }
-        public static bool ConstainsCollection(string key)
-
-        {
-            try
-            {
-                return Collections.ContainsKey(key);
-            }
-            catch { return false; }
-        }
+        
 
 
         
     }
 
-    [System.Serializable]
+    [Serializable]
     public class RouteStoreSerialize: ISerializationCallbackReceiver
     {
         
