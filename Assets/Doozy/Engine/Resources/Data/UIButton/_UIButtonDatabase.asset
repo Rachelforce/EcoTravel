@@ -19,8 +19,10 @@ MonoBehaviour:
   - Authorizaion
   - Main
   - Profile
+  - ChouseCollection
   Categories:
-  - {fileID: 11400000, guid: bd2173a41ed24544fa3b875736e40db6, type: 2}
   - {fileID: 11400000, guid: d20ddc860fb6a294cad009a5caeb414c, type: 2}
+  - {fileID: 11400000, guid: 1bf628a200502924f9e125237528e975, type: 2}
+  - {fileID: 11400000, guid: bd2173a41ed24544fa3b875736e40db6, type: 2}
   - {fileID: 11400000, guid: a7829fbe1f542e64fa3b81d6ce10f335, type: 2}
   - {fileID: 11400000, guid: b06cf289b4c09654095a97cce29e2b1a, type: 2}

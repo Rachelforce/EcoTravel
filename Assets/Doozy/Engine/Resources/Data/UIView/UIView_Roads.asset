@@ -15,6 +15,11 @@ MonoBehaviour:
   CategoryName: Roads
   DatabaseType: 2
   Names:
+  - ChooseCollection
+  - Navigation
+  - RoadCollection
   - Roads1
   - Roads2
-  - Navigation
+  - SkiCollection
+  - TrackCollection
+  - WhaterCollection

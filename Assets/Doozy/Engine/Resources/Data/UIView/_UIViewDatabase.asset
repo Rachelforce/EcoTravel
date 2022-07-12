@@ -15,14 +15,16 @@ MonoBehaviour:
   DatabaseType: 2
   CategoryNames:
   - Custom
-  - General
   - Autorisation
   - FirstMeet
+  - General
   - Main
   - Roads
+  - Places
   Categories:
   - {fileID: 11400000, guid: 35c75af01aa37cb46bf44b340373e4d4, type: 2}
   - {fileID: 11400000, guid: 3ba6b048190a5a8458a21725e1ce302a, type: 2}
   - {fileID: 11400000, guid: 4f3865d95a848a14d99f92532a78965e, type: 2}
   - {fileID: 11400000, guid: e987e974eaabe1444b99d7ecd2a6ae25, type: 2}
   - {fileID: 11400000, guid: 31629aa7de50577438fa3864d42a8bd3, type: 2}
+  - {fileID: 11400000, guid: 56118379c8c3c714da723b463ea43c31, type: 2}
