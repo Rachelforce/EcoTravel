@@ -1,0 +1,367 @@
+{
+  "rotesDataKey": [
+    0,
+    1,
+    2
+  ],
+  "routesDataValue": [
+    {
+      "pointList": [
+        {
+          "roateID": 0,
+          "ID": 0,
+          "visible": true,
+          "interactive": true,
+          "size": 1,
+          "locationString": "53.284377, 49.534695",
+          "screenInfo": {
+            "_name": "село Сосновый Солонец",
+            "description": "Село в Ставропольском районе Самарской области.",
+            "photos": []
+          }
+        },
+        {
+          "roateID": 0,
+          "ID": 1,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.270334, 49.541011",
+          "screenInfo": {
+            "_name": "",
+            "description": "",
+            "photos": []
+          }
+        },
+        {
+          "roateID": 0,
+          "ID": 2,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.258166, 49.543499",
+          "screenInfo": {
+            "_name": "",
+            "description": "",
+            "photos": []
+          }
+        },
+        {
+          "roateID": 0,
+          "ID": 3,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.248500, 49.550925",
+          "screenInfo": {
+            "_name": "",
+            "description": "",
+            "photos": []
+          }
+        },
+        {
+          "roateID": 0,
+          "ID": 4,
+          "visible": true,
+          "interactive": true,
+          "size": 1,
+          "locationString": "53.243681, 49.560391",
+          "screenInfo": {
+            "_name": "село Берёзовый Солонец",
+            "description": "Село в Ставропольском районе Самарской области.",
+            "photos": []
+          }
+        },
+        {
+          "roateID": 0,
+          "ID": 5,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.257151, 49.563561",
+          "screenInfo": {
+            "_name": "",
+            "description": "",
+            "photos": []
+          }
+        },
+        {
+          "roateID": 0,
+          "ID": 6,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.266056, 49.590240",
+          "screenInfo": {
+            "_name": "",
+            "description": "",
+            "photos": []
+          }
+        },
+        {
+          "roateID": 0,
+          "ID": 7,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.278081, 49.599132",
+          "screenInfo": {
+            "_name": "",
+            "description": "",
+            "photos": []
+          }
+        },
+        {
+          "roateID": 0,
+          "ID": 8,
+          "visible": true,
+          "interactive": true,
+          "size": 1,
+          "locationString": "53.281199, 49.609911",
+          "screenInfo": {
+            "_name": "село Аскулы",
+            "description": "Село в Ставропольском районе Самарской области.",
+            "photos": []
+          }
+        }
+      ],
+      "road": {
+        "routeID": 0,
+        "pointPositions": []
+      },
+      "ID": 0,
+      "visible": true,
+      "interactive": true,
+      "size": 1,
+      "locationString": "53.284379, 49.534693",
+      "screenInfo": {
+        "_name": "Сосновый солонец ",
+        "description": "Село в Ставропольском районе Самарской области. Административно входит в сельское поселение Сосновый Солонец и является его центром.",
+        "photos": []
+      }
+    },
+    {
+      "pointList": [
+        {
+          "roateID": 1,
+          "ID": 0,
+          "visible": true,
+          "interactive": true,
+          "size": 1,
+          "locationString": "53.399977, 49.635899",
+          "screenInfo": {
+            "_name": "село Бахилово",
+            "description": "Село в Ставропольском районе Самарской области.",
+            "photos": []
+          }
+        },
+        {
+          "roateID": 1,
+          "ID": 1,
+          "visible": true,
+          "interactive": true,
+          "size": 1,
+          "locationString": "53.399977, 49.635899",
+          "screenInfo": {
+            "_name": "село Бахилова Поляна",
+            "description": "Село в Самарской области на правом берегу Волги в пределах Жигулёвского заповедника",
+            "photos": []
+          }
+        }
+      ],
+      "road": {
+        "routeID": 1,
+        "pointPositions": []
+      },
+      "ID": 1,
+      "visible": true,
+      "interactive": true,
+      "size": 1,
+      "locationString": "53.399977, 49.635899",
+      "screenInfo": {
+        "_name": "село Бахилово",
+        "description": "Село в Ставропольском районе Самарской области. Административно входит в сельское поселение Бахилово, являясь его административным центром.",
+        "photos": []
+      }
+    },
+    {
+      "pointList": [
+        {
+          "roateID": 2,
+          "ID": 0,
+          "visible": true,
+          "interactive": true,
+          "size": 1,
+          "locationString": "53.176617, 49.500660",
+          "screenInfo": {
+            "_name": "село Севрюкаево",
+            "description": "Село в Ставропольском районе Самарской области.",
+            "photos": []
+          }
+        },
+        {
+          "roateID": 2,
+          "ID": 1,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.174188, 49.491733",
+          "screenInfo": {
+            "_name": "",
+            "description": "",
+            "photos": []
+          }
+        },
+        {
+          "roateID": 2,
+          "ID": 2,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.178017, 49.483026",
+          "screenInfo": {
+            "_name": "",
+            "description": "",
+            "photos": []
+          }
+        },
+        {
+          "roateID": 2,
+          "ID": 3,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.173113, 49.477708",
+          "screenInfo": {
+            "_name": "",
+            "description": "",
+            "photos": []
+          }
+        },
+        {
+          "roateID": 2,
+          "ID": 4,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.172778, 49.467994",
+          "screenInfo": {
+            "_name": "",
+            "description": "",
+            "photos": []
+          }
+        },
+        {
+          "roateID": 2,
+          "ID": 5,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.172757, 49.467959",
+          "screenInfo": {
+            "_name": "",
+            "description": "",
+            "photos": []
+          }
+        },
+        {
+          "roateID": 2,
+          "ID": 6,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.174281, 49.464253",
+          "screenInfo": {
+            "_name": "",
+            "description": "",
+            "photos": []
+          }
+        },
+        {
+          "roateID": 2,
+          "ID": 7,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.174351, 49.463963",
+          "screenInfo": {
+            "_name": "",
+            "description": "",
+            "photos": []
+          }
+        },
+        {
+          "roateID": 2,
+          "ID": 8,
+          "visible": true,
+          "interactive": true,
+          "size": 1,
+          "locationString": "53.170068, 49.453192",
+          "screenInfo": {
+            "_name": "село Мордово ",
+            "description": "Село в Ставропольском районе Самарской области.",
+            "photos": []
+          }
+        }
+      ],
+      "road": {
+        "routeID": 2,
+        "pointPositions": []
+      },
+      "ID": 2,
+      "visible": true,
+      "interactive": true,
+      "size": 1,
+      "locationString": "53.176617, 49.500660",
+      "screenInfo": {
+        "_name": "село Севрюкаево",
+        "description": "Село в Ставропольском районе Самарской области. Административно входит в сельское поселение Бахилово, являясь его административным центром.",
+        "photos": []
+      }
+    }
+  ],
+  "collectionsDataKey": [
+    "Main",
+    "First",
+    "Second"
+  ],
+  "collectionsDataValue": [
+    {
+      "key": "Main",
+      "screenInfo": {
+        "_name": "someName",
+        "description": "SomeDescription",
+        "photos": []
+      },
+      "routeIDs": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "key": "First",
+      "screenInfo": {
+        "_name": "someName",
+        "description": "SomeDescription",
+        "photos": []
+      },
+      "routeIDs": [
+        1,
+        2
+      ]
+    },
+    {
+      "key": "Second",
+      "screenInfo": {
+        "_name": "someName",
+        "description": "SomeDescription",
+        "photos": []
+      },
+      "routeIDs": [
+        0,
+        2
+      ]
+    }
+  ]
+}

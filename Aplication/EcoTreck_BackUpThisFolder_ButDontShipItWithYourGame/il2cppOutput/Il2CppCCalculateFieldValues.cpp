@@ -8485,10 +8485,10 @@ struct User_t830E70FAB67A96176D2C105CB5BBDA86733559AB  : public RuntimeObject
 {
 	// System.Int32 User::Id
 	int32_t ___Id_0;
-	// System.String User::Login
-	String_t* ___Login_1;
 	// System.String User::Mail
-	String_t* ___Mail_2;
+	String_t* ___Mail_1;
+	// System.String User::Fullname
+	String_t* ___Fullname_2;
 	// System.String User::Sex
 	String_t* ___Sex_3;
 	// System.String User::Birthday
@@ -8500,16 +8500,16 @@ struct User_t830E70FAB67A96176D2C105CB5BBDA86733559AB  : public RuntimeObject
 // UserRegister
 struct UserRegister_tF86F2AA5D37ADDEA205889B56320C0227CA73ECA  : public RuntimeObject
 {
-	// System.String UserRegister::Login
-	String_t* ___Login_0;
 	// System.String UserRegister::Mail
-	String_t* ___Mail_1;
+	String_t* ___Mail_0;
+	// System.String UserRegister::Fullname
+	String_t* ___Fullname_1;
 	// System.String UserRegister::Sex
 	String_t* ___Sex_2;
 	// System.String UserRegister::Birthday
 	String_t* ___Birthday_3;
-	// System.String UserRegister::password
-	String_t* ___password_4;
+	// System.String UserRegister::Password
+	String_t* ___Password_4;
 };
 
 // System.Buffers.Utilities
@@ -11909,8 +11909,8 @@ struct U3CLoginU3Ed__3_t54F3BF4BD53BD355890C8EEF267B3E1226D15EA0  : public Runti
 	int32_t ___U3CU3E1__state_0;
 	// System.Object UserManagment/<Login>d__3::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// System.String UserManagment/<Login>d__3::login
-	String_t* ___login_2;
+	// System.String UserManagment/<Login>d__3::mail
+	String_t* ___mail_2;
 	// System.String UserManagment/<Login>d__3::password
 	String_t* ___password_3;
 	// UserManagment UserManagment/<Login>d__3::<>4__this
@@ -11926,10 +11926,10 @@ struct U3CRegisterU3Ed__4_t036C40C36674F18690ED5F6C7BA77EF5004B4A05  : public Ru
 	int32_t ___U3CU3E1__state_0;
 	// System.Object UserManagment/<Register>d__4::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// System.String UserManagment/<Register>d__4::login
-	String_t* ___login_2;
 	// System.String UserManagment/<Register>d__4::mail
-	String_t* ___mail_3;
+	String_t* ___mail_2;
+	// System.String UserManagment/<Register>d__4::fullName
+	String_t* ___fullName_3;
 	// System.String UserManagment/<Register>d__4::sex
 	String_t* ___sex_4;
 	// System.String UserManagment/<Register>d__4::birthday
@@ -39089,8 +39089,8 @@ struct AstronautMouseController_t0B30BD41D0B700448269D702B17D4B4D7D5F1837  : pub
 // AuthenticateModel
 struct AuthenticateModel_tC6B5618B307C0CDB748C017848D3758EB93FAF83  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
-	// System.String AuthenticateModel::Login
-	String_t* ___Login_4;
+	// System.String AuthenticateModel::Mail
+	String_t* ___Mail_4;
 	// System.String AuthenticateModel::Password
 	String_t* ___Password_5;
 };
@@ -40837,8 +40837,8 @@ struct StoreUpdater_t94ACDE4925540605361B42495B85B49A0F652A4A  : public MonoBeha
 	String_t* ___path_4;
 	// System.String StoreUpdater::fileName
 	String_t* ___fileName_5;
-	// System.Object StoreUpdater::file
-	RuntimeObject* ___file_6;
+	// UnityEngine.TextAsset StoreUpdater::file
+	TextAsset_t2C64E93DA366D9DE5A8209E1802FA4884AC1BD69* ___file_6;
 };
 
 // TMPro.Examples.TMP_ExampleScript_01
@@ -47759,7 +47759,7 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1660[3] =
 	static_cast<int32_t>(offsetof(StoreUpdater_t94ACDE4925540605361B42495B85B49A0F652A4A, ___path_4)),static_cast<int32_t>(offsetof(StoreUpdater_t94ACDE4925540605361B42495B85B49A0F652A4A, ___fileName_5)),static_cast<int32_t>(offsetof(StoreUpdater_t94ACDE4925540605361B42495B85B49A0F652A4A, ___file_6)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1661[2] = 
 {
-	static_cast<int32_t>(offsetof(AuthenticateModel_tC6B5618B307C0CDB748C017848D3758EB93FAF83, ___Login_4)),static_cast<int32_t>(offsetof(AuthenticateModel_tC6B5618B307C0CDB748C017848D3758EB93FAF83, ___Password_5)),};
+	static_cast<int32_t>(offsetof(AuthenticateModel_tC6B5618B307C0CDB748C017848D3758EB93FAF83, ___Mail_4)),static_cast<int32_t>(offsetof(AuthenticateModel_tC6B5618B307C0CDB748C017848D3758EB93FAF83, ___Password_5)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1662[3] = 
 {
 	static_cast<int32_t>(offsetof(LoginUI_tBF6AEE12D761D48C87617BB6197FA3710D15A4B9, ___userManagment_4)),static_cast<int32_t>(offsetof(LoginUI_tBF6AEE12D761D48C87617BB6197FA3710D15A4B9, ___login_5)),static_cast<int32_t>(offsetof(LoginUI_tBF6AEE12D761D48C87617BB6197FA3710D15A4B9, ___password_6)),};
@@ -47768,19 +47768,19 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1663[9] =
 	static_cast<int32_t>(offsetof(RiegisterUI_tE0FDA99615E412D99DFB4280918C452EE2C5ABD5, ___userManagment_4)),static_cast<int32_t>(offsetof(RiegisterUI_tE0FDA99615E412D99DFB4280918C452EE2C5ABD5, ___login_5)),static_cast<int32_t>(offsetof(RiegisterUI_tE0FDA99615E412D99DFB4280918C452EE2C5ABD5, ___mail_6)),static_cast<int32_t>(offsetof(RiegisterUI_tE0FDA99615E412D99DFB4280918C452EE2C5ABD5, ___password_7)),static_cast<int32_t>(offsetof(RiegisterUI_tE0FDA99615E412D99DFB4280918C452EE2C5ABD5, ___r_password_8)),static_cast<int32_t>(offsetof(RiegisterUI_tE0FDA99615E412D99DFB4280918C452EE2C5ABD5, ___sex_9)),static_cast<int32_t>(offsetof(RiegisterUI_tE0FDA99615E412D99DFB4280918C452EE2C5ABD5, ___d_birthday_10)),static_cast<int32_t>(offsetof(RiegisterUI_tE0FDA99615E412D99DFB4280918C452EE2C5ABD5, ___m_birthday_11)),static_cast<int32_t>(offsetof(RiegisterUI_tE0FDA99615E412D99DFB4280918C452EE2C5ABD5, ___y_birthday_12)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1664[6] = 
 {
-	static_cast<int32_t>(offsetof(User_t830E70FAB67A96176D2C105CB5BBDA86733559AB, ___Id_0)),static_cast<int32_t>(offsetof(User_t830E70FAB67A96176D2C105CB5BBDA86733559AB, ___Login_1)),static_cast<int32_t>(offsetof(User_t830E70FAB67A96176D2C105CB5BBDA86733559AB, ___Mail_2)),static_cast<int32_t>(offsetof(User_t830E70FAB67A96176D2C105CB5BBDA86733559AB, ___Sex_3)),static_cast<int32_t>(offsetof(User_t830E70FAB67A96176D2C105CB5BBDA86733559AB, ___Birthday_4)),static_cast<int32_t>(offsetof(User_t830E70FAB67A96176D2C105CB5BBDA86733559AB, ___tokoen_5)),};
+	static_cast<int32_t>(offsetof(User_t830E70FAB67A96176D2C105CB5BBDA86733559AB, ___Id_0)),static_cast<int32_t>(offsetof(User_t830E70FAB67A96176D2C105CB5BBDA86733559AB, ___Mail_1)),static_cast<int32_t>(offsetof(User_t830E70FAB67A96176D2C105CB5BBDA86733559AB, ___Fullname_2)),static_cast<int32_t>(offsetof(User_t830E70FAB67A96176D2C105CB5BBDA86733559AB, ___Sex_3)),static_cast<int32_t>(offsetof(User_t830E70FAB67A96176D2C105CB5BBDA86733559AB, ___Birthday_4)),static_cast<int32_t>(offsetof(User_t830E70FAB67A96176D2C105CB5BBDA86733559AB, ___tokoen_5)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1665[6] = 
 {
-	static_cast<int32_t>(offsetof(U3CLoginU3Ed__3_t54F3BF4BD53BD355890C8EEF267B3E1226D15EA0, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CLoginU3Ed__3_t54F3BF4BD53BD355890C8EEF267B3E1226D15EA0, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CLoginU3Ed__3_t54F3BF4BD53BD355890C8EEF267B3E1226D15EA0, ___login_2)),static_cast<int32_t>(offsetof(U3CLoginU3Ed__3_t54F3BF4BD53BD355890C8EEF267B3E1226D15EA0, ___password_3)),static_cast<int32_t>(offsetof(U3CLoginU3Ed__3_t54F3BF4BD53BD355890C8EEF267B3E1226D15EA0, ___U3CU3E4__this_4)),static_cast<int32_t>(offsetof(U3CLoginU3Ed__3_t54F3BF4BD53BD355890C8EEF267B3E1226D15EA0, ___U3CwwwU3E5__2_5)),};
+	static_cast<int32_t>(offsetof(U3CLoginU3Ed__3_t54F3BF4BD53BD355890C8EEF267B3E1226D15EA0, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CLoginU3Ed__3_t54F3BF4BD53BD355890C8EEF267B3E1226D15EA0, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CLoginU3Ed__3_t54F3BF4BD53BD355890C8EEF267B3E1226D15EA0, ___mail_2)),static_cast<int32_t>(offsetof(U3CLoginU3Ed__3_t54F3BF4BD53BD355890C8EEF267B3E1226D15EA0, ___password_3)),static_cast<int32_t>(offsetof(U3CLoginU3Ed__3_t54F3BF4BD53BD355890C8EEF267B3E1226D15EA0, ___U3CU3E4__this_4)),static_cast<int32_t>(offsetof(U3CLoginU3Ed__3_t54F3BF4BD53BD355890C8EEF267B3E1226D15EA0, ___U3CwwwU3E5__2_5)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1666[9] = 
 {
-	static_cast<int32_t>(offsetof(U3CRegisterU3Ed__4_t036C40C36674F18690ED5F6C7BA77EF5004B4A05, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CRegisterU3Ed__4_t036C40C36674F18690ED5F6C7BA77EF5004B4A05, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CRegisterU3Ed__4_t036C40C36674F18690ED5F6C7BA77EF5004B4A05, ___login_2)),static_cast<int32_t>(offsetof(U3CRegisterU3Ed__4_t036C40C36674F18690ED5F6C7BA77EF5004B4A05, ___mail_3)),static_cast<int32_t>(offsetof(U3CRegisterU3Ed__4_t036C40C36674F18690ED5F6C7BA77EF5004B4A05, ___sex_4)),static_cast<int32_t>(offsetof(U3CRegisterU3Ed__4_t036C40C36674F18690ED5F6C7BA77EF5004B4A05, ___birthday_5)),static_cast<int32_t>(offsetof(U3CRegisterU3Ed__4_t036C40C36674F18690ED5F6C7BA77EF5004B4A05, ___password_6)),static_cast<int32_t>(offsetof(U3CRegisterU3Ed__4_t036C40C36674F18690ED5F6C7BA77EF5004B4A05, ___U3CU3E4__this_7)),static_cast<int32_t>(offsetof(U3CRegisterU3Ed__4_t036C40C36674F18690ED5F6C7BA77EF5004B4A05, ___U3CwwwU3E5__2_8)),};
+	static_cast<int32_t>(offsetof(U3CRegisterU3Ed__4_t036C40C36674F18690ED5F6C7BA77EF5004B4A05, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CRegisterU3Ed__4_t036C40C36674F18690ED5F6C7BA77EF5004B4A05, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CRegisterU3Ed__4_t036C40C36674F18690ED5F6C7BA77EF5004B4A05, ___mail_2)),static_cast<int32_t>(offsetof(U3CRegisterU3Ed__4_t036C40C36674F18690ED5F6C7BA77EF5004B4A05, ___fullName_3)),static_cast<int32_t>(offsetof(U3CRegisterU3Ed__4_t036C40C36674F18690ED5F6C7BA77EF5004B4A05, ___sex_4)),static_cast<int32_t>(offsetof(U3CRegisterU3Ed__4_t036C40C36674F18690ED5F6C7BA77EF5004B4A05, ___birthday_5)),static_cast<int32_t>(offsetof(U3CRegisterU3Ed__4_t036C40C36674F18690ED5F6C7BA77EF5004B4A05, ___password_6)),static_cast<int32_t>(offsetof(U3CRegisterU3Ed__4_t036C40C36674F18690ED5F6C7BA77EF5004B4A05, ___U3CU3E4__this_7)),static_cast<int32_t>(offsetof(U3CRegisterU3Ed__4_t036C40C36674F18690ED5F6C7BA77EF5004B4A05, ___U3CwwwU3E5__2_8)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1667[3] = 
 {
 	static_cast<int32_t>(offsetof(UserManagment_t8901EDB66508FE76C558860B0BFF280F62B6DAEE, ___regView_4)),static_cast<int32_t>(offsetof(UserManagment_t8901EDB66508FE76C558860B0BFF280F62B6DAEE, ___FirstView_5)),static_cast<int32_t>(offsetof(UserManagment_t8901EDB66508FE76C558860B0BFF280F62B6DAEE, ___graphController_6)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1668[5] = 
 {
-	static_cast<int32_t>(offsetof(UserRegister_tF86F2AA5D37ADDEA205889B56320C0227CA73ECA, ___Login_0)),static_cast<int32_t>(offsetof(UserRegister_tF86F2AA5D37ADDEA205889B56320C0227CA73ECA, ___Mail_1)),static_cast<int32_t>(offsetof(UserRegister_tF86F2AA5D37ADDEA205889B56320C0227CA73ECA, ___Sex_2)),static_cast<int32_t>(offsetof(UserRegister_tF86F2AA5D37ADDEA205889B56320C0227CA73ECA, ___Birthday_3)),static_cast<int32_t>(offsetof(UserRegister_tF86F2AA5D37ADDEA205889B56320C0227CA73ECA, ___password_4)),};
+	static_cast<int32_t>(offsetof(UserRegister_tF86F2AA5D37ADDEA205889B56320C0227CA73ECA, ___Mail_0)),static_cast<int32_t>(offsetof(UserRegister_tF86F2AA5D37ADDEA205889B56320C0227CA73ECA, ___Fullname_1)),static_cast<int32_t>(offsetof(UserRegister_tF86F2AA5D37ADDEA205889B56320C0227CA73ECA, ___Sex_2)),static_cast<int32_t>(offsetof(UserRegister_tF86F2AA5D37ADDEA205889B56320C0227CA73ECA, ___Birthday_3)),static_cast<int32_t>(offsetof(UserRegister_tF86F2AA5D37ADDEA205889B56320C0227CA73ECA, ___Password_4)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable1669[1] = 
 {
 	static_cast<int32_t>(offsetof(WebConfig_tB23EF1BDA40E5CEDE0C7B99E6C8B14962C4520D4_StaticFields, ___url_0)),};
