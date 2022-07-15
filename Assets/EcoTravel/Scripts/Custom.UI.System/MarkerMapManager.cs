@@ -45,7 +45,7 @@ namespace Custom.UI.System
 			DestroyMarkers();
 			ResetLists();
 			List<Marker> markers = new List<Marker>();
-			foreach (Point point in route.pointList)
+			foreach (Point point in route.points)
             {
 				markers.Add(point);
 			}
@@ -127,7 +127,7 @@ namespace Custom.UI.System
 				}
 				else mapMarkerButton = instance.transform.GetChild(0).gameObject.AddComponent<MapPointButton>();
 
-				mapMarkerButton.screenInfo = marker.screenInfo;
+				mapMarkerButton.screenInfo = marker;
 				mapMarkerButton.markerClick += markerPopUpmenuController.MarkerButtonClick;
 
 				_spawnedObjects.Add(instance);

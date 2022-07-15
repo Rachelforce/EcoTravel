@@ -2,10 +2,12 @@ using UnityEngine;
 using Mapbox.Unity.Utilities;
 using Mapbox.Utils;
 using System;
+using System.Collections.Generic;
+
 namespace routeSystem
 {
     [Serializable]
-    public class Marker
+    public class Marker: ScreenInfo
     {
         public int ID;
 
@@ -18,7 +20,6 @@ namespace routeSystem
         {
             return Conversions.StringToLatLon(locationString);
         }
-        
-        public ScreenInfo screenInfo;
+
     }
 }

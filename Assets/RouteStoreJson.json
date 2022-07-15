@@ -1,367 +1,501 @@
 {
   "rotesDataKey": [
-    0,
     1,
-    2
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
   ],
   "routesDataValue": [
     {
-      "pointList": [
-        {
-          "roateID": 0,
-          "ID": 0,
-          "visible": true,
-          "interactive": true,
-          "size": 1,
-          "locationString": "53.284377, 49.534695",
-          "screenInfo": {
-            "_name": "село Сосновый Солонец",
-            "description": "Село в Ставропольском районе Самарской области.",
-            "photos": []
-          }
-        },
+      "points": [
         {
           "roateID": 0,
           "ID": 1,
-          "visible": false,
-          "interactive": false,
-          "size": 1,
-          "locationString": "53.270334, 49.541011",
-          "screenInfo": {
-            "_name": "",
-            "description": "",
-            "photos": []
-          }
-        },
-        {
-          "roateID": 0,
-          "ID": 2,
-          "visible": false,
-          "interactive": false,
-          "size": 1,
-          "locationString": "53.258166, 49.543499",
-          "screenInfo": {
-            "_name": "",
-            "description": "",
-            "photos": []
-          }
-        },
-        {
-          "roateID": 0,
-          "ID": 3,
-          "visible": false,
-          "interactive": false,
-          "size": 1,
-          "locationString": "53.248500, 49.550925",
-          "screenInfo": {
-            "_name": "",
-            "description": "",
-            "photos": []
-          }
-        },
-        {
-          "roateID": 0,
-          "ID": 4,
           "visible": true,
           "interactive": true,
-          "size": 1,
-          "locationString": "53.243681, 49.560391",
-          "screenInfo": {
-            "_name": "село Берёзовый Солонец",
-            "description": "Село в Ставропольском районе Самарской области.",
-            "photos": []
-          }
-        },
-        {
-          "roateID": 0,
-          "ID": 5,
-          "visible": false,
-          "interactive": false,
-          "size": 1,
-          "locationString": "53.257151, 49.563561",
-          "screenInfo": {
-            "_name": "",
-            "description": "",
-            "photos": []
-          }
-        },
-        {
-          "roateID": 0,
-          "ID": 6,
-          "visible": false,
-          "interactive": false,
-          "size": 1,
-          "locationString": "53.266056, 49.590240",
-          "screenInfo": {
-            "_name": "",
-            "description": "",
-            "photos": []
-          }
-        },
-        {
-          "roateID": 0,
-          "ID": 7,
-          "visible": false,
-          "interactive": false,
-          "size": 1,
-          "locationString": "53.278081, 49.599132",
-          "screenInfo": {
-            "_name": "",
-            "description": "",
-            "photos": []
-          }
-        },
-        {
-          "roateID": 0,
-          "ID": 8,
-          "visible": true,
-          "interactive": true,
-          "size": 1,
-          "locationString": "53.281199, 49.609911",
-          "screenInfo": {
-            "_name": "село Аскулы",
-            "description": "Село в Ставропольском районе Самарской области.",
-            "photos": []
-          }
+          "size": 0,
+          "locationString": "string",
+          "_name": null,
+          "description": "string"
         }
       ],
       "road": {
         "routeID": 0,
-        "pointPositions": []
-      },
-      "ID": 0,
-      "visible": true,
-      "interactive": true,
-      "size": 1,
-      "locationString": "53.284379, 49.534693",
-      "screenInfo": {
-        "_name": "Сосновый солонец ",
-        "description": "Село в Ставропольском районе Самарской области. Административно входит в сельское поселение Сосновый Солонец и является его центром.",
-        "photos": []
-      }
-    },
-    {
-      "pointList": [
-        {
-          "roateID": 1,
-          "ID": 0,
-          "visible": true,
-          "interactive": true,
-          "size": 1,
-          "locationString": "53.399977, 49.635899",
-          "screenInfo": {
-            "_name": "село Бахилово",
-            "description": "Село в Ставропольском районе Самарской области.",
-            "photos": []
-          }
-        },
-        {
-          "roateID": 1,
-          "ID": 1,
-          "visible": true,
-          "interactive": true,
-          "size": 1,
-          "locationString": "53.399977, 49.635899",
-          "screenInfo": {
-            "_name": "село Бахилова Поляна",
-            "description": "Село в Самарской области на правом берегу Волги в пределах Жигулёвского заповедника",
-            "photos": []
-          }
-        }
-      ],
-      "road": {
-        "routeID": 1,
-        "pointPositions": []
+        "pointPositions": null
       },
       "ID": 1,
       "visible": true,
       "interactive": true,
-      "size": 1,
-      "locationString": "53.399977, 49.635899",
-      "screenInfo": {
-        "_name": "село Бахилово",
-        "description": "Село в Ставропольском районе Самарской области. Административно входит в сельское поселение Бахилово, являясь его административным центром.",
-        "photos": []
-      }
+      "size": 0,
+      "locationString": "string",
+      "_name": null,
+      "description": "string"
     },
     {
-      "pointList": [
+      "points": [
         {
-          "roateID": 2,
-          "ID": 0,
-          "visible": true,
-          "interactive": true,
-          "size": 1,
-          "locationString": "53.176617, 49.500660",
-          "screenInfo": {
-            "_name": "село Севрюкаево",
-            "description": "Село в Ставропольском районе Самарской области.",
-            "photos": []
-          }
-        },
-        {
-          "roateID": 2,
-          "ID": 1,
-          "visible": false,
-          "interactive": false,
-          "size": 1,
-          "locationString": "53.174188, 49.491733",
-          "screenInfo": {
-            "_name": "",
-            "description": "",
-            "photos": []
-          }
-        },
-        {
-          "roateID": 2,
+          "roateID": 0,
           "ID": 2,
-          "visible": false,
-          "interactive": false,
-          "size": 1,
-          "locationString": "53.178017, 49.483026",
-          "screenInfo": {
-            "_name": "",
-            "description": "",
-            "photos": []
-          }
-        },
-        {
-          "roateID": 2,
-          "ID": 3,
-          "visible": false,
-          "interactive": false,
-          "size": 1,
-          "locationString": "53.173113, 49.477708",
-          "screenInfo": {
-            "_name": "",
-            "description": "",
-            "photos": []
-          }
-        },
-        {
-          "roateID": 2,
-          "ID": 4,
-          "visible": false,
-          "interactive": false,
-          "size": 1,
-          "locationString": "53.172778, 49.467994",
-          "screenInfo": {
-            "_name": "",
-            "description": "",
-            "photos": []
-          }
-        },
-        {
-          "roateID": 2,
-          "ID": 5,
-          "visible": false,
-          "interactive": false,
-          "size": 1,
-          "locationString": "53.172757, 49.467959",
-          "screenInfo": {
-            "_name": "",
-            "description": "",
-            "photos": []
-          }
-        },
-        {
-          "roateID": 2,
-          "ID": 6,
-          "visible": false,
-          "interactive": false,
-          "size": 1,
-          "locationString": "53.174281, 49.464253",
-          "screenInfo": {
-            "_name": "",
-            "description": "",
-            "photos": []
-          }
-        },
-        {
-          "roateID": 2,
-          "ID": 7,
-          "visible": false,
-          "interactive": false,
-          "size": 1,
-          "locationString": "53.174351, 49.463963",
-          "screenInfo": {
-            "_name": "",
-            "description": "",
-            "photos": []
-          }
-        },
-        {
-          "roateID": 2,
-          "ID": 8,
           "visible": true,
           "interactive": true,
-          "size": 1,
-          "locationString": "53.170068, 49.453192",
-          "screenInfo": {
-            "_name": "село Мордово ",
-            "description": "Село в Ставропольском районе Самарской области.",
-            "photos": []
-          }
+          "size": 0,
+          "locationString": "string",
+          "_name": null,
+          "description": "string"
+        },
+        {
+          "roateID": 0,
+          "ID": 3,
+          "visible": true,
+          "interactive": true,
+          "size": 0,
+          "locationString": "string",
+          "_name": null,
+          "description": "string"
         }
       ],
       "road": {
-        "routeID": 2,
-        "pointPositions": []
+        "routeID": 0,
+        "pointPositions": null
       },
       "ID": 2,
       "visible": true,
       "interactive": true,
-      "size": 1,
-      "locationString": "53.176617, 49.500660",
-      "screenInfo": {
-        "_name": "село Севрюкаево",
-        "description": "Село в Ставропольском районе Самарской области. Административно входит в сельское поселение Бахилово, являясь его административным центром.",
-        "photos": []
-      }
+      "size": 0,
+      "locationString": "string",
+      "_name": null,
+      "description": "string"
+    },
+    {
+      "points": [
+        {
+          "roateID": 0,
+          "ID": 4,
+          "visible": true,
+          "interactive": true,
+          "size": 0,
+          "locationString": "string",
+          "_name": null,
+          "description": "string"
+        }
+      ],
+      "road": {
+        "routeID": 0,
+        "pointPositions": null
+      },
+      "ID": 3,
+      "visible": true,
+      "interactive": true,
+      "size": 0,
+      "locationString": "string",
+      "_name": null,
+      "description": "string"
+    },
+    {
+      "points": [
+        {
+          "roateID": 0,
+          "ID": 5,
+          "visible": true,
+          "interactive": true,
+          "size": 0,
+          "locationString": "string",
+          "_name": null,
+          "description": "string"
+        }
+      ],
+      "road": {
+        "routeID": 0,
+        "pointPositions": null
+      },
+      "ID": 4,
+      "visible": true,
+      "interactive": true,
+      "size": 0,
+      "locationString": "string",
+      "_name": null,
+      "description": "string"
+    },
+    {
+      "points": [
+        {
+          "roateID": 0,
+          "ID": 6,
+          "visible": true,
+          "interactive": true,
+          "size": 0,
+          "locationString": "string",
+          "_name": null,
+          "description": "string"
+        }
+      ],
+      "road": {
+        "routeID": 0,
+        "pointPositions": null
+      },
+      "ID": 5,
+      "visible": true,
+      "interactive": true,
+      "size": 0,
+      "locationString": "string",
+      "_name": null,
+      "description": "string"
+    },
+    {
+      "points": [
+        {
+          "roateID": 0,
+          "ID": 7,
+          "visible": true,
+          "interactive": true,
+          "size": 0,
+          "locationString": "string",
+          "_name": null,
+          "description": "string"
+        }
+      ],
+      "road": {
+        "routeID": 0,
+        "pointPositions": null
+      },
+      "ID": 6,
+      "visible": true,
+      "interactive": true,
+      "size": 0,
+      "locationString": "string",
+      "_name": null,
+      "description": "string"
+    },
+    {
+      "points": [
+        {
+          "roateID": 0,
+          "ID": 8,
+          "visible": true,
+          "interactive": true,
+          "size": 0,
+          "locationString": "string",
+          "_name": null,
+          "description": "string"
+        }
+      ],
+      "road": {
+        "routeID": 0,
+        "pointPositions": null
+      },
+      "ID": 8,
+      "visible": true,
+      "interactive": true,
+      "size": 0,
+      "locationString": "string",
+      "_name": null,
+      "description": "string"
+    },
+    {
+      "points": [
+        {
+          "roateID": 0,
+          "ID": 9,
+          "visible": true,
+          "interactive": true,
+          "size": 0,
+          "locationString": "string",
+          "_name": null,
+          "description": "string"
+        }
+      ],
+      "road": {
+        "routeID": 0,
+        "pointPositions": null
+      },
+      "ID": 9,
+      "visible": true,
+      "interactive": true,
+      "size": 0,
+      "locationString": "string",
+      "_name": null,
+      "description": "string"
+    },
+    {
+      "points": [
+        {
+          "roateID": 0,
+          "ID": 10,
+          "visible": true,
+          "interactive": true,
+          "size": 0,
+          "locationString": "string",
+          "_name": null,
+          "description": "string"
+        }
+      ],
+      "road": {
+        "routeID": 0,
+        "pointPositions": null
+      },
+      "ID": 10,
+      "visible": true,
+      "interactive": true,
+      "size": 0,
+      "locationString": "string",
+      "_name": null,
+      "description": "string"
+    },
+    {
+      "points": [
+        {
+          "roateID": 0,
+          "ID": 11,
+          "visible": true,
+          "interactive": true,
+          "size": 0,
+          "locationString": "string",
+          "_name": null,
+          "description": "string"
+        }
+      ],
+      "road": {
+        "routeID": 0,
+        "pointPositions": null
+      },
+      "ID": 11,
+      "visible": true,
+      "interactive": true,
+      "size": 0,
+      "locationString": "string",
+      "_name": null,
+      "description": "string"
+    },
+    {
+      "points": [
+        {
+          "roateID": 0,
+          "ID": 12,
+          "visible": true,
+          "interactive": true,
+          "size": 0,
+          "locationString": "string",
+          "_name": null,
+          "description": "string"
+        }
+      ],
+      "road": {
+        "routeID": 0,
+        "pointPositions": null
+      },
+      "ID": 12,
+      "visible": true,
+      "interactive": true,
+      "size": 0,
+      "locationString": "string",
+      "_name": null,
+      "description": "string"
+    },
+    {
+      "points": [
+        {
+          "roateID": 0,
+          "ID": 13,
+          "visible": true,
+          "interactive": true,
+          "size": 0,
+          "locationString": "string",
+          "_name": null,
+          "description": "string"
+        }
+      ],
+      "road": {
+        "routeID": 0,
+        "pointPositions": null
+      },
+      "ID": 13,
+      "visible": true,
+      "interactive": true,
+      "size": 0,
+      "locationString": "string",
+      "_name": null,
+      "description": "string"
+    },
+    {
+      "points": [
+        {
+          "roateID": 0,
+          "ID": 14,
+          "visible": true,
+          "interactive": true,
+          "size": 0,
+          "locationString": "string",
+          "_name": null,
+          "description": "string"
+        }
+      ],
+      "road": {
+        "routeID": 0,
+        "pointPositions": null
+      },
+      "ID": 14,
+      "visible": true,
+      "interactive": true,
+      "size": 0,
+      "locationString": "string",
+      "_name": null,
+      "description": "string"
+    },
+    {
+      "points": [
+        {
+          "roateID": 0,
+          "ID": 15,
+          "visible": true,
+          "interactive": true,
+          "size": 0,
+          "locationString": "string",
+          "_name": null,
+          "description": "string"
+        }
+      ],
+      "road": {
+        "routeID": 0,
+        "pointPositions": null
+      },
+      "ID": 15,
+      "visible": true,
+      "interactive": true,
+      "size": 0,
+      "locationString": "string",
+      "_name": null,
+      "description": "string"
+    },
+    {
+      "points": [
+        {
+          "roateID": 0,
+          "ID": 16,
+          "visible": true,
+          "interactive": true,
+          "size": 0,
+          "locationString": "string",
+          "_name": null,
+          "description": "string"
+        }
+      ],
+      "road": {
+        "routeID": 0,
+        "pointPositions": null
+      },
+      "ID": 16,
+      "visible": true,
+      "interactive": true,
+      "size": 0,
+      "locationString": "string",
+      "_name": null,
+      "description": "string"
+    },
+    {
+      "points": [
+        {
+          "roateID": 0,
+          "ID": 17,
+          "visible": true,
+          "interactive": true,
+          "size": 0,
+          "locationString": "string",
+          "_name": null,
+          "description": "string"
+        }
+      ],
+      "road": {
+        "routeID": 0,
+        "pointPositions": null
+      },
+      "ID": 17,
+      "visible": true,
+      "interactive": true,
+      "size": 0,
+      "locationString": "string",
+      "_name": null,
+      "description": "string"
+    },
+    {
+      "points": [
+        {
+          "roateID": 0,
+          "ID": 18,
+          "visible": true,
+          "interactive": true,
+          "size": 0,
+          "locationString": "string",
+          "_name": null,
+          "description": "string"
+        }
+      ],
+      "road": {
+        "routeID": 0,
+        "pointPositions": null
+      },
+      "ID": 18,
+      "visible": true,
+      "interactive": true,
+      "size": 0,
+      "locationString": "string",
+      "_name": null,
+      "description": "string"
+    },
+    {
+      "points": [
+        {
+          "roateID": 0,
+          "ID": 19,
+          "visible": true,
+          "interactive": true,
+          "size": 0,
+          "locationString": "string",
+          "_name": null,
+          "description": "string"
+        }
+      ],
+      "road": {
+        "routeID": 0,
+        "pointPositions": null
+      },
+      "ID": 19,
+      "visible": true,
+      "interactive": true,
+      "size": 0,
+      "locationString": "string",
+      "_name": null,
+      "description": "string"
     }
   ],
   "collectionsDataKey": [
-    "Main",
-    "First",
-    "Second"
+    "string"
   ],
   "collectionsDataValue": [
     {
-      "key": "Main",
-      "screenInfo": {
-        "_name": "someName",
-        "description": "SomeDescription",
-        "photos": []
-      },
-      "routeIDs": [
-        0,
-        1,
-        2
-      ]
-    },
-    {
-      "key": "First",
-      "screenInfo": {
-        "_name": "someName",
-        "description": "SomeDescription",
-        "photos": []
-      },
-      "routeIDs": [
-        1,
-        2
-      ]
-    },
-    {
-      "key": "Second",
-      "screenInfo": {
-        "_name": "someName",
-        "description": "SomeDescription",
-        "photos": []
-      },
-      "routeIDs": [
-        0,
-        2
-      ]
+      "key": "string",
+      "routesID": [
+        5,
+        8,
+        9,
+        12,
+        13
+      ],
+      "_name": null,
+      "description": "string"
     }
   ]
 }

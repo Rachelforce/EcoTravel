@@ -17,7 +17,7 @@ namespace routeSystem
         public void SetPointPosition()
         {
             pointPositions = new List<Vector2d>();
-            foreach (Point point in RouteStore.RoutesData[routeID].pointList)
+            foreach (Point point in RouteStore.RoutesData[routeID].points)
             {
                 pointPositions.Add(point.GetLocation());
                 Debug.Log(pointPositions.Count);

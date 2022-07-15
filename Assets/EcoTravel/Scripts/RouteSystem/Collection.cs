@@ -4,17 +4,17 @@ using System;
 namespace routeSystem
 {
     [System.Serializable]
-    public class Collection
+    public class Collection: ScreenInfo
     {
         public string key;
-        public ScreenInfo screenInfo;
-        public List<int> routeIDs;
+        public List<int> routesID;
 
-        public Collection(string key) { this.key = key; screenInfo = new ScreenInfo(); routeIDs = new List<int>(); }
+        public Collection(string key) { this.key = key; routesID = new List<int>(); }
+
         public List<Route> GetFromStore()
         {
             List<Route> colectionRoutes = new List<Route>();
-            foreach(int elevent in routeIDs)
+            foreach(int elevent in routesID)
             {
                 colectionRoutes.Add(RouteStore.RoutesData[elevent]);
             }

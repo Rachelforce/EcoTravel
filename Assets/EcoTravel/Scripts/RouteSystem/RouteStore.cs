@@ -12,7 +12,7 @@ namespace routeSystem
     {
         static public Dictionary<int, Route> RoutesData = new Dictionary<int, Route>();
         //static public List<int> RouteID;
-        static public Dictionary<string, Collection> Collections;
+        static public Dictionary<string, Collection> Collections = new Dictionary<string, Collection>();
 
        
         public static Route GetRoute(int id)
