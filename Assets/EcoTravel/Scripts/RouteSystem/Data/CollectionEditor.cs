@@ -7,13 +7,13 @@ namespace routeSystem
     [CreateAssetMenu(fileName = "CollectionEditor", menuName = "RouteSystem/CollectionEditor", order = 1)]
     public class CollectionEditor : ScriptableObject
     {
-        public string key;
+        public int ID;
 
         public Collection collection;
         
         public void GetCollection()
         {
-            collection = RouteStore.GetCollection(key);
+            collection = RouteStore.GetCollection(ID);
         }
         
         public void SetCollection()

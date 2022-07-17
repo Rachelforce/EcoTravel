@@ -13,8 +13,11 @@ namespace Custom.UI.System
 {
     public class MarkerMapManager : MonoBehaviour
     {
+
 		[SerializeField]AbstractMap _map;
 		[SerializeField] MarkerPopUpmenuController markerPopUpmenuController;
+		[SerializeField] ForwardGeocodeUserInput forwardGeocodeUserInput;
+
 		[SerializeField] GameObject _markerPrefab;
 		[SerializeField] GameObject roadObject;
 		List<Vector2d> _locations;
@@ -24,26 +27,38 @@ namespace Custom.UI.System
 		LineRenderer _lineRenderer;
 		bool roadRender  = false;
 
-		enum MarkerType { route, point}; 
-		public void LoadColectionMarkers(string key)
+		public delegate void ChangeLocation(string location);
+		public event ChangeLocation changeTo;
+
+		enum MarkerType { route, point};
+		public void LoadColectionMarkers(Collection collection)
 		{
-			Collection colection = RouteStore.Collections[key];
 			DestroyMarkers();
 			ResetLists();
-			List<Route> routes = colection.GetFromStore();
+			List<Route> routes = collection.GetFromStore();
+			changeTo?.Invoke(routes[0].locationString);
 			List<Marker> markers = new List<Marker>();
 			foreach (Route route in routes)
 			{
 				markers.Add(route);
 			}
 			SetNewMarkers(markers, MarkerType.route);
-			
-
 		}
+		public void LoadColectionMarkers(int id)
+		{
+			Collection collection = RouteStore.GetCollection(id);
+			if (collection != null)
+				LoadColectionMarkers(collection);
+			else Debug.Log("does not exist Collection id");
+		}
+		
 		public void LoadRouteMarkers(Route route)
 		{
 			DestroyMarkers();
 			ResetLists();
+
+			changeTo?.Invoke(route.locationString);
+
 			List<Marker> markers = new List<Marker>();
 			foreach (Point point in route.points)
             {
@@ -55,21 +70,20 @@ namespace Custom.UI.System
 			_lineRenderer = instance.GetComponent<LineRenderer>();
 			_lineRenderer.SetPositions(GetPointPositionToRoad());
 			roadRender = true;
-
+			
 		}
-		public void LoadRouteIDMarkers(int routeId)
+		public void LoadRouteMarkers(int routeId)
         {
 			Route route = RouteStore.RoutesData[routeId];
 			LoadRouteMarkers(route);
 
 		}
 
-		void Start()
-		{
-			LoadColectionMarkers("Main");
+        private void Awake()
+        {
+			changeTo += forwardGeocodeUserInput.HandleUserInput;
 		}
-		
-		private void Update()
+        private void LateUpdate()
 		{
 			int count = _spawnedObjects.Count;
 			for (int i = 0; i < count; i++)
@@ -155,6 +169,9 @@ namespace Custom.UI.System
 			return pos;
 
 		}
+
+
+
 		
 
 	}

@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: _UIPopupDatabase
   m_EditorClassIdentifier: 
   PopupNames:
-  - RoutePopUp
+  - LongUIPopup
+  - ShortUIPopup
+  - AtWorkUIPopup
   Popups:
+  - {fileID: 11400000, guid: 17eb8beb5cb85af4b85b77f971d4da14, type: 2}
   - {fileID: 11400000, guid: d1794d2821e10fe4397e331bcad2ddeb, type: 2}
+  - {fileID: 11400000, guid: 5afb84d3ef8223a418ea7b4b20e74f74, type: 2}

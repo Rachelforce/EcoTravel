@@ -4,5 +4,5 @@ using UnityEngine;
 
 public static class WebConfig 
 {
-    public static string url = "https://3c88-31-173-170-141.eu.ngrok.io/";
+    public static string url = "https://myecotrack.ru/";
 }

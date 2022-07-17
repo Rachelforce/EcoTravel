@@ -9,7 +9,6 @@ namespace routeSystem
     [Serializable]
     public class Marker: ScreenInfo
     {
-        public int ID;
 
         public bool visible;
         public bool interactive;

@@ -6,496 +6,1510 @@
     4,
     5,
     6,
+    7,
     8,
     9,
-    10,
-    11,
-    12,
-    13,
-    14,
-    15,
-    16,
-    17,
-    18,
-    19
+    10
   ],
   "routesDataValue": [
     {
       "points": [
         {
-          "roateID": 0,
+          "routeID": 1,
+          "visible": true,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.395472, 49.301518",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
           "ID": 1,
-          "visible": true,
-          "interactive": true,
-          "size": 0,
-          "locationString": "string",
-          "_name": null,
-          "description": "string"
-        }
-      ],
-      "road": {
-        "routeID": 0,
-        "pointPositions": null
-      },
-      "ID": 1,
-      "visible": true,
-      "interactive": true,
-      "size": 0,
-      "locationString": "string",
-      "_name": null,
-      "description": "string"
-    },
-    {
-      "points": [
-        {
-          "roateID": 0,
-          "ID": 2,
-          "visible": true,
-          "interactive": true,
-          "size": 0,
-          "locationString": "string",
-          "_name": null,
-          "description": "string"
+          "conveniences": [],
+          "availability": [],
+          "other": []
         },
         {
-          "roateID": 0,
+          "routeID": 1,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.397968, 49.303823",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 2,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 1,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.403633, 49.308393",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
           "ID": 3,
-          "visible": true,
-          "interactive": true,
-          "size": 0,
-          "locationString": "string",
-          "_name": null,
-          "description": "string"
-        }
-      ],
-      "road": {
-        "routeID": 0,
-        "pointPositions": null
-      },
-      "ID": 2,
-      "visible": true,
-      "interactive": true,
-      "size": 0,
-      "locationString": "string",
-      "_name": null,
-      "description": "string"
-    },
-    {
-      "points": [
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
         {
-          "roateID": 0,
+          "routeID": 1,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.404733, 49.310584",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
           "ID": 4,
-          "visible": true,
-          "interactive": true,
-          "size": 0,
-          "locationString": "string",
-          "_name": null,
-          "description": "string"
-        }
-      ],
-      "road": {
-        "routeID": 0,
-        "pointPositions": null
-      },
-      "ID": 3,
-      "visible": true,
-      "interactive": true,
-      "size": 0,
-      "locationString": "string",
-      "_name": null,
-      "description": "string"
-    },
-    {
-      "points": [
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
         {
-          "roateID": 0,
+          "routeID": 1,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.404685, 49.314048",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
           "ID": 5,
-          "visible": true,
-          "interactive": true,
-          "size": 0,
-          "locationString": "string",
-          "_name": null,
-          "description": "string"
-        }
-      ],
-      "road": {
-        "routeID": 0,
-        "pointPositions": null
-      },
-      "ID": 4,
-      "visible": true,
-      "interactive": true,
-      "size": 0,
-      "locationString": "string",
-      "_name": null,
-      "description": "string"
-    },
-    {
-      "points": [
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
         {
-          "roateID": 0,
+          "routeID": 1,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.404623, 49.313723",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
           "ID": 6,
-          "visible": true,
-          "interactive": true,
-          "size": 0,
-          "locationString": "string",
-          "_name": null,
-          "description": "string"
-        }
-      ],
-      "road": {
-        "routeID": 0,
-        "pointPositions": null
-      },
-      "ID": 5,
-      "visible": true,
-      "interactive": true,
-      "size": 0,
-      "locationString": "string",
-      "_name": null,
-      "description": "string"
-    },
-    {
-      "points": [
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
         {
-          "roateID": 0,
+          "routeID": 1,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.405940, 49.313992",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
           "ID": 7,
-          "visible": true,
-          "interactive": true,
-          "size": 0,
-          "locationString": "string",
-          "_name": null,
-          "description": "string"
-        }
-      ],
-      "road": {
-        "routeID": 0,
-        "pointPositions": null
-      },
-      "ID": 6,
-      "visible": true,
-      "interactive": true,
-      "size": 0,
-      "locationString": "string",
-      "_name": null,
-      "description": "string"
-    },
-    {
-      "points": [
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
         {
-          "roateID": 0,
+          "routeID": 1,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.406258, 49.311018",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
           "ID": 8,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 1,
           "visible": true,
           "interactive": true,
-          "size": 0,
-          "locationString": "string",
-          "_name": null,
-          "description": "string"
-        }
-      ],
-      "road": {
-        "routeID": 0,
-        "pointPositions": null
-      },
-      "ID": 8,
-      "visible": true,
-      "interactive": true,
-      "size": 0,
-      "locationString": "string",
-      "_name": null,
-      "description": "string"
-    },
-    {
-      "points": [
-        {
-          "roateID": 0,
+          "size": 1,
+          "locationString": "53.406472, 49.310925",
+          "title": "Молодецкий курган",
+          "description": "Достопримечательность расположена в рекреационной зоне национального парка 'Самарская Лука'. /n Чтобы попасть на его территорию, нужно купить специальную путевку за 50 рублей на взрослого (дети до 7 лет бесплатно).",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
           "ID": 9,
-          "visible": true,
-          "interactive": true,
-          "size": 0,
-          "locationString": "string",
-          "_name": null,
-          "description": "string"
+          "conveniences": [],
+          "availability": [],
+          "other": []
         }
       ],
       "road": {
         "routeID": 0,
         "pointPositions": null
       },
-      "ID": 9,
       "visible": true,
       "interactive": true,
-      "size": 0,
-      "locationString": "string",
-      "_name": null,
-      "description": "string"
+      "size": 1,
+      "locationString": "53.406472, 49.310925",
+      "title": "Молодецкий курган",
+      "description": "Достопримечательность расположена в рекреационной зоне национального парка 'Самарская Лука'.\\nЧтобы попасть на его территорию, нужно купить специальную путевку за 50 рублей на взрослого (дети до 7 лет бесплатно).",
+      "conveniencesString": "Сложность маршрута, Легкий,  ",
+      "availabilityString": "null,null,null",
+      "otherString": "null,null,null",
+      "ID": 1,
+      "conveniences": [
+        "Сложность маршрута",
+        " Легкий",
+        "  "
+      ],
+      "availability": [
+        "null",
+        "null",
+        "null"
+      ],
+      "other": [
+        "null",
+        "null",
+        "null"
+      ]
     },
     {
       "points": [
         {
-          "roateID": 0,
+          "routeID": 2,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.395479, 49.301501",
+          "title": "start",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
           "ID": 10,
-          "visible": true,
-          "interactive": true,
-          "size": 0,
-          "locationString": "string",
-          "_name": null,
-          "description": "string"
-        }
-      ],
-      "road": {
-        "routeID": 0,
-        "pointPositions": null
-      },
-      "ID": 10,
-      "visible": true,
-      "interactive": true,
-      "size": 0,
-      "locationString": "string",
-      "_name": null,
-      "description": "string"
-    },
-    {
-      "points": [
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
         {
-          "roateID": 0,
+          "routeID": 2,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.397778, 49.300460",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
           "ID": 11,
-          "visible": true,
-          "interactive": true,
-          "size": 0,
-          "locationString": "string",
-          "_name": null,
-          "description": "string"
-        }
-      ],
-      "road": {
-        "routeID": 0,
-        "pointPositions": null
-      },
-      "ID": 11,
-      "visible": true,
-      "interactive": true,
-      "size": 0,
-      "locationString": "string",
-      "_name": null,
-      "description": "string"
-    },
-    {
-      "points": [
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
         {
-          "roateID": 0,
+          "routeID": 2,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.399527, 49.298911",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
           "ID": 12,
-          "visible": true,
-          "interactive": true,
-          "size": 0,
-          "locationString": "string",
-          "_name": null,
-          "description": "string"
-        }
-      ],
-      "road": {
-        "routeID": 0,
-        "pointPositions": null
-      },
-      "ID": 12,
-      "visible": true,
-      "interactive": true,
-      "size": 0,
-      "locationString": "string",
-      "_name": null,
-      "description": "string"
-    },
-    {
-      "points": [
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
         {
-          "roateID": 0,
+          "routeID": 2,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.399868, 49.297056",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
           "ID": 13,
-          "visible": true,
-          "interactive": true,
-          "size": 0,
-          "locationString": "string",
-          "_name": null,
-          "description": "string"
-        }
-      ],
-      "road": {
-        "routeID": 0,
-        "pointPositions": null
-      },
-      "ID": 13,
-      "visible": true,
-      "interactive": true,
-      "size": 0,
-      "locationString": "string",
-      "_name": null,
-      "description": "string"
-    },
-    {
-      "points": [
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
         {
-          "roateID": 0,
+          "routeID": 2,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.400784, 49.297143",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
           "ID": 14,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 2,
           "visible": true,
           "interactive": true,
-          "size": 0,
-          "locationString": "string",
-          "_name": null,
-          "description": "string"
-        }
-      ],
-      "road": {
-        "routeID": 0,
-        "pointPositions": null
-      },
-      "ID": 14,
-      "visible": true,
-      "interactive": true,
-      "size": 0,
-      "locationString": "string",
-      "_name": null,
-      "description": "string"
-    },
-    {
-      "points": [
-        {
-          "roateID": 0,
+          "size": 1,
+          "locationString": "53.401467, 49.298115",
+          "title": "Девичья гора",
+          "description": "Достопримечательность расположена в рекреационной зоне национального парка 'Самарская Лука'.\\nЧтобы попасть на его территорию, нужно купить специальную путевку за 50 рублей на взрослого (дети до 7 лет бесплатно).",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
           "ID": 15,
-          "visible": true,
-          "interactive": true,
-          "size": 0,
-          "locationString": "string",
-          "_name": null,
-          "description": "string"
+          "conveniences": [],
+          "availability": [],
+          "other": []
         }
       ],
       "road": {
         "routeID": 0,
         "pointPositions": null
       },
-      "ID": 15,
       "visible": true,
       "interactive": true,
-      "size": 0,
-      "locationString": "string",
-      "_name": null,
-      "description": "string"
+      "size": 1,
+      "locationString": "53.401467, 49.298115",
+      "title": "Девичья гора",
+      "description": "Достопримечательность расположена в рекреационной зоне национального парка 'Самарская Лука'.\\nЧтобы попасть на его территорию, нужно купить специальную путевку за 50 рублей на взрослого (дети до 7 лет бесплатно).",
+      "conveniencesString": "Сложность маршрута, Легкий,  ",
+      "availabilityString": "null,null,null",
+      "otherString": "null,null,null",
+      "ID": 2,
+      "conveniences": [
+        "Сложность маршрута",
+        " Легкий",
+        "  "
+      ],
+      "availability": [
+        "null",
+        "null",
+        "null"
+      ],
+      "other": [
+        "null",
+        "null",
+        "null"
+      ]
     },
     {
       "points": [
         {
-          "roateID": 0,
+          "routeID": 3,
+          "visible": true,
+          "interactive": true,
+          "size": 1,
+          "locationString": "53.393977, 49.267644",
+          "title": "Усинский курган",
+          "description": "Достопримечательность расположена в рекреационной зоне национального парка 'Самарская Лука'.",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
           "ID": 16,
-          "visible": true,
-          "interactive": true,
-          "size": 0,
-          "locationString": "string",
-          "_name": null,
-          "description": "string"
+          "conveniences": [],
+          "availability": [],
+          "other": []
         }
       ],
       "road": {
         "routeID": 0,
         "pointPositions": null
       },
-      "ID": 16,
       "visible": true,
       "interactive": true,
-      "size": 0,
-      "locationString": "string",
-      "_name": null,
-      "description": "string"
+      "size": 1,
+      "locationString": "53.393977, 49.267644",
+      "title": "Усинский курган",
+      "description": "Достопримечательность расположена в рекреационной зоне национального парка 'Самарская Лука'.",
+      "conveniencesString": "Сложность маршрута, Легкий,  ",
+      "availabilityString": "null,null,null",
+      "otherString": "null,null,null",
+      "ID": 3,
+      "conveniences": [
+        "Сложность маршрута",
+        " Легкий",
+        "  "
+      ],
+      "availability": [
+        "null",
+        "null",
+        "null"
+      ],
+      "other": [
+        "null",
+        "null",
+        "null"
+      ]
     },
     {
       "points": [
         {
-          "roateID": 0,
+          "routeID": 4,
+          "visible": true,
+          "interactive": true,
+          "size": 1,
+          "locationString": "53.421937, 50.007087",
+          "title": "Древний воин",
+          "description": "Памятник",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
           "ID": 17,
-          "visible": true,
-          "interactive": true,
-          "size": 0,
-          "locationString": "string",
-          "_name": null,
-          "description": "string"
-        }
-      ],
-      "road": {
-        "routeID": 0,
-        "pointPositions": null
-      },
-      "ID": 17,
-      "visible": true,
-      "interactive": true,
-      "size": 0,
-      "locationString": "string",
-      "_name": null,
-      "description": "string"
-    },
-    {
-      "points": [
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
         {
-          "roateID": 0,
+          "routeID": 4,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.422110, 50.008092",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
           "ID": 18,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 4,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.422435, 50.008836",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 19,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 4,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.423108, 50.010150",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 20,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 4,
           "visible": true,
           "interactive": true,
-          "size": 0,
-          "locationString": "string",
-          "_name": null,
-          "description": "string"
+          "size": 1,
+          "locationString": "53.423644, 50.010385",
+          "title": "Памятник работникам",
+          "description": "Памятник работникам, трудившимся на вырубке известняка",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 21,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 4,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.423655, 50.009488",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 22,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 4,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.423694, 50.008537",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 23,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 4,
+          "visible": true,
+          "interactive": true,
+          "size": 1,
+          "locationString": "53.424046, 50.007277",
+          "title": "Попова гора. Штольни",
+          "description": "Достопримечательность расположена в рекреационной зоне национального парка «Самарская Лука». Путевки приобрести можно в информационном центре с. Ширяево, который находится на въезде в село. Режим работы в летний период с 8.00 до 20.00, в зимний период — с 8.00 до 17.00 час., тел. +7 939 701 06 95",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 24,
+          "conveniences": [],
+          "availability": [],
+          "other": []
         }
       ],
       "road": {
         "routeID": 0,
         "pointPositions": null
       },
-      "ID": 18,
       "visible": true,
       "interactive": true,
-      "size": 0,
-      "locationString": "string",
-      "_name": null,
-      "description": "string"
+      "size": 1,
+      "locationString": "53.424046, 50.007277",
+      "title": "Попова гора. Штольни",
+      "description": "Достопримечательность расположена в рекреационной зоне национального парка «Самарская Лука». Путевки приобрести можно в информационном центре с. Ширяево, который находится на въезде в село. Режим работы в летний период с 8.00 до 20.00, в зимний период — с 8.00 до 17.00 час., тел. +7 939 701 06 95",
+      "conveniencesString": "Сложность маршрута, Легкий,  ",
+      "availabilityString": "null,null,null",
+      "otherString": "null,null,null",
+      "ID": 4,
+      "conveniences": [
+        "Сложность маршрута",
+        " Легкий",
+        "  "
+      ],
+      "availability": [
+        "null",
+        "null",
+        "null"
+      ],
+      "other": [
+        "null",
+        "null",
+        "null"
+      ]
     },
     {
       "points": [
         {
-          "roateID": 0,
-          "ID": 19,
+          "routeID": 5,
+          "visible": true,
+          "interactive": false,
+          "size": 0,
+          "locationString": "53.432206, 49.541091",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 25,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 5,
+          "visible": false,
+          "interactive": false,
+          "size": 0,
+          "locationString": "53.432004, 49.541689",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 26,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 5,
+          "visible": false,
+          "interactive": false,
+          "size": 0,
+          "locationString": "53.432161, 49.541870",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 27,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 5,
+          "visible": false,
+          "interactive": false,
+          "size": 0,
+          "locationString": "53.432367, 49.542819",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 28,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 5,
+          "visible": false,
+          "interactive": false,
+          "size": 0,
+          "locationString": "53.432258, 49.542931",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 29,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 5,
           "visible": true,
           "interactive": true,
-          "size": 0,
-          "locationString": "string",
-          "_name": null,
-          "description": "string"
+          "size": 1,
+          "locationString": "53.432414, 49.544147",
+          "title": "Лысая гора. Утес Сокол (Петров камень)",
+          "description": "Достопримечательность расположена в рекреационной зоне национального парка «Самарская Лука».",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 30,
+          "conveniences": [],
+          "availability": [],
+          "other": []
         }
       ],
       "road": {
         "routeID": 0,
         "pointPositions": null
       },
-      "ID": 19,
+      "visible": true,
+      "interactive": true,
+      "size": 1,
+      "locationString": "53.432414, 49.544147",
+      "title": "Лысая гора. Утес Сокол (Петров камень)",
+      "description": "Достопримечательность расположена в рекреационной зоне национального парка «Самарская Лука».",
+      "conveniencesString": "Сложность маршрута, Легкий,  ",
+      "availabilityString": "null,null,null",
+      "otherString": "null,null,null",
+      "ID": 5,
+      "conveniences": [
+        "Сложность маршрута",
+        " Легкий",
+        "  "
+      ],
+      "availability": [
+        "null",
+        "null",
+        "null"
+      ],
+      "other": [
+        "null",
+        "null",
+        "null"
+      ]
+    },
+    {
+      "points": [
+        {
+          "routeID": 6,
+          "visible": true,
+          "interactive": true,
+          "size": 1,
+          "locationString": "53.230699, 49.799490",
+          "title": "Вислый камень. Змеиный затон",
+          "description": "Достопримечательность расположена в рекреационной зоне национального парка «Самарская Лука».",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 31,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        }
+      ],
+      "road": {
+        "routeID": 0,
+        "pointPositions": null
+      },
+      "visible": true,
+      "interactive": true,
+      "size": 1,
+      "locationString": "53.230699, 49.799490",
+      "title": "Вислый камень. Змеиный затон",
+      "description": "Достопримечательность расположена в рекреационной зоне национального парка «Самарская Лука».",
+      "conveniencesString": "Сложность маршрута, Легкий,  ",
+      "availabilityString": "null,null,null",
+      "otherString": "null,null,null",
+      "ID": 6,
+      "conveniences": [
+        "Сложность маршрута",
+        " Легкий",
+        "  "
+      ],
+      "availability": [
+        "null",
+        "null",
+        "null"
+      ],
+      "other": [
+        "null",
+        "null",
+        "null"
+      ]
+    },
+    {
+      "points": [
+        {
+          "routeID": 7,
+          "visible": true,
+          "interactive": true,
+          "size": 1,
+          "locationString": "53.406787, 50.001732",
+          "title": "село Ширяево",
+          "description": "Село в Самарской области Российской Федерации. С 1 января 2006 года входит в состав городского округа Жигулёвск.",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 32,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 7,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.405133, 49.921709",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 33,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 7,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.404865, 49.923387",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 34,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 7,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.403395, 49.924190",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 35,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 7,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.402809, 49.927455",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 36,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 7,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.400146, 49.928304",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 37,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 7,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.399769, 49.930206",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 38,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 7,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.396501, 49.937137",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 39,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 7,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.397033, 49.939303",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 40,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 7,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.396210, 49.942774",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 41,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 7,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.392067, 49.950210",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 42,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 7,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.391925, 49.952009",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 43,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 7,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.389908, 49.956710",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 44,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 7,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.390165, 49.958038",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 45,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 7,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.389201, 49.967795",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 46,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 7,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.402202, 49.985185",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 47,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 7,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.402882, 49.986575",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 48,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 7,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.403652, 49.990626",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 49,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 7,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.404646, 49.992461",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 50,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 7,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.404932, 49.994102",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 51,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 7,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.406112, 49.921278",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 52,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 7,
+          "visible": true,
+          "interactive": true,
+          "size": 1,
+          "locationString": "53.406841, 49.921597",
+          "title": "Урочище Каменная Чаша",
+          "description": "Достопримечательность расположена в рекреационной зоне национального парка «Самарская Лука».",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 53,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        }
+      ],
+      "road": {
+        "routeID": 0,
+        "pointPositions": null
+      },
+      "visible": true,
+      "interactive": true,
+      "size": 1,
+      "locationString": "53.406841, 49.921597",
+      "title": "Урочище Каменная Чаша",
+      "description": "Достопримечательность расположена в рекреационной зоне национального парка «Самарская Лука».",
+      "conveniencesString": "Сложность маршрута, Легкий,  ",
+      "availabilityString": "null,null,null",
+      "otherString": "null,null,null",
+      "ID": 7,
+      "conveniences": [
+        "Сложность маршрута",
+        " Легкий",
+        "  "
+      ],
+      "availability": [
+        "null",
+        "null",
+        "null"
+      ],
+      "other": [
+        "null",
+        "null",
+        "null"
+      ]
+    },
+    {
+      "points": [
+        {
+          "routeID": 8,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.408896, 50.074712",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 54,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 8,
+          "visible": true,
+          "interactive": true,
+          "size": 1,
+          "locationString": "53.408644, 50.074119",
+          "title": "овраг Козий",
+          "description": "овраг",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 55,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 8,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.408584, 50.073786",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 56,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 8,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.408631, 50.073524",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 57,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 8,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.408871, 50.073436",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 58,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 8,
+          "visible": false,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.408965, 50.073219",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 59,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 8,
+          "visible": true,
+          "interactive": true,
+          "size": 1,
+          "locationString": "53.408918, 50.073153",
+          "title": "Грот на горе Верблюд",
+          "description": "Государственный природный национальный парк на территории Самарской Луки, расположенный в Самарской области. Вместе с Жигулевским заповедником им. И. И. Спрыгина входит в состав Средне-Волжского комплексного биосферного резервата, созданного под эгидой ЮНЕСКО.",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 60,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        }
+      ],
+      "road": {
+        "routeID": 0,
+        "pointPositions": null
+      },
+      "visible": true,
+      "interactive": true,
+      "size": 1,
+      "locationString": "53.408786, 50.072407",
+      "title": "Гора Верблюд",
+      "description": "Достопримечательность расположена в рекреационной зоне национального парка «Самарская Лука».",
+      "conveniencesString": "Сложность маршрута, Легкий,  ",
+      "availabilityString": "null,null,null",
+      "otherString": "null,null,null",
+      "ID": 8,
+      "conveniences": [
+        "Сложность маршрута",
+        " Легкий",
+        "  "
+      ],
+      "availability": [
+        "null",
+        "null",
+        "null"
+      ],
+      "other": [
+        "null",
+        "null",
+        "null"
+      ]
+    },
+    {
+      "points": [
+        {
+          "routeID": 9,
+          "visible": true,
+          "interactive": true,
+          "size": 0,
+          "locationString": "53.396211, 49.640286",
+          "title": "Ведьмино озеро",
+          "description": "Достопримечательность расположена в рекреационной зоне национального парка «Самарская Лука».",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 61,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        }
+      ],
+      "road": {
+        "routeID": 0,
+        "pointPositions": null
+      },
       "visible": true,
       "interactive": true,
       "size": 0,
-      "locationString": "string",
-      "_name": null,
-      "description": "string"
+      "locationString": "53.396211, 49.640286",
+      "title": "Ведьмино озеро",
+      "description": "Достопримечательность расположена в рекреационной зоне национального парка «Самарская Лука».",
+      "conveniencesString": "Сложность маршрута, Легкий,  ",
+      "availabilityString": "null,null,null",
+      "otherString": "null,null,null",
+      "ID": 9,
+      "conveniences": [
+        "Сложность маршрута",
+        " Легкий",
+        "  "
+      ],
+      "availability": [
+        "null",
+        "null",
+        "null"
+      ],
+      "other": [
+        "null",
+        "null",
+        "null"
+      ]
+    },
+    {
+      "points": [
+        {
+          "routeID": 10,
+          "visible": true,
+          "interactive": false,
+          "size": 1,
+          "locationString": "53.217092, 49.339050",
+          "title": "string",
+          "description": "string",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 62,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        },
+        {
+          "routeID": 10,
+          "visible": true,
+          "interactive": true,
+          "size": 1,
+          "locationString": "53.216125, 49.342313",
+          "title": "Пещера Степана Разина",
+          "description": "Достопримечательность расположена в рекреационной зоне национального парка «Самарская Лука».",
+          "conveniencesString": null,
+          "availabilityString": null,
+          "otherString": null,
+          "ID": 63,
+          "conveniences": [],
+          "availability": [],
+          "other": []
+        }
+      ],
+      "road": {
+        "routeID": 0,
+        "pointPositions": null
+      },
+      "visible": true,
+      "interactive": true,
+      "size": 1,
+      "locationString": "53.216125, 49.342313",
+      "title": "Пещера Степана Разина",
+      "description": "Достопримечательность расположена в рекреационной зоне национального парка «Самарская Лука».",
+      "conveniencesString": "Сложность маршрута, Легкий,  ",
+      "availabilityString": "null,null,null",
+      "otherString": "null,null,null",
+      "ID": 10,
+      "conveniences": [
+        "Сложность маршрута",
+        " Легкий",
+        "  "
+      ],
+      "availability": [
+        "null",
+        "null",
+        "null"
+      ],
+      "other": [
+        "null",
+        "null",
+        "null"
+      ]
     }
   ],
   "collectionsDataKey": [
-    "string"
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
   ],
   "collectionsDataValue": [
     {
-      "key": "string",
+      "key": "NoCollection",
+      "routesID": [],
+      "title": "NoCollection",
+      "description": "Routes without collection",
+      "conveniencesString": null,
+      "availabilityString": null,
+      "otherString": null,
+      "ID": 2,
+      "conveniences": [],
+      "availability": [],
+      "other": []
+    },
+    {
+      "key": "Road",
       "routesID": [
-        5,
-        8,
-        9,
-        12,
-        13
+        1,
+        2,
+        10
       ],
-      "_name": null,
-      "description": "string"
+      "title": "Автомобильный маршрут \nВелосипедный маршрут \nПешеходный маршрут",
+      "description": null,
+      "conveniencesString": "null,null,null",
+      "availabilityString": "null,null,null",
+      "otherString": "null,null,null",
+      "ID": 3,
+      "conveniences": [
+        "null",
+        "null",
+        "null"
+      ],
+      "availability": [
+        "null",
+        "null",
+        "null"
+      ],
+      "other": [
+        "null",
+        "null",
+        "null"
+      ]
+    },
+    {
+      "key": "Track",
+      "routesID": [
+        4,
+        5,
+        7,
+        8
+      ],
+      "title": "Горные трек-маршруты \nКомби маршруты \nКонные маршруты",
+      "description": null,
+      "conveniencesString": "null,null,null",
+      "availabilityString": "null,null,null",
+      "otherString": "null,null,null",
+      "ID": 4,
+      "conveniences": [
+        "null",
+        "null",
+        "null"
+      ],
+      "availability": [
+        "null",
+        "null",
+        "null"
+      ],
+      "other": [
+        "null",
+        "null",
+        "null"
+      ]
+    },
+    {
+      "key": "Ski",
+      "routesID": [],
+      "title": "Лыжные, санные маршруты \nМаршруты для альпинистов",
+      "description": null,
+      "conveniencesString": "null,null,null",
+      "availabilityString": "null,null,null",
+      "otherString": "null,null,null",
+      "ID": 5,
+      "conveniences": [
+        "null",
+        "null",
+        "null"
+      ],
+      "availability": [
+        "null",
+        "null",
+        "null"
+      ],
+      "other": [
+        "null",
+        "null",
+        "null"
+      ]
+    },
+    {
+      "key": "Water",
+      "routesID": [],
+      "title": "Водные круизы \nВодные маршруты \nМаршруты для дайверов",
+      "description": null,
+      "conveniencesString": "null,null,null",
+      "availabilityString": "null,null,null",
+      "otherString": "null,null,null",
+      "ID": 6,
+      "conveniences": [
+        "null",
+        "null",
+        "null"
+      ],
+      "availability": [
+        "null",
+        "null",
+        "null"
+      ],
+      "other": [
+        "null",
+        "null",
+        "null"
+      ]
+    },
+    {
+      "key": "Places",
+      "routesID": [
+        3,
+        6,
+        9
+      ],
+      "title": "Места",
+      "description": null,
+      "conveniencesString": "null,null,null",
+      "availabilityString": "null,null,null",
+      "otherString": "null,null,null",
+      "ID": 7,
+      "conveniences": [
+        "null",
+        "null",
+        "null"
+      ],
+      "availability": [
+        "null",
+        "null",
+        "null"
+      ],
+      "other": [
+        "null",
+        "null",
+        "null"
+      ]
     }
   ]
 }

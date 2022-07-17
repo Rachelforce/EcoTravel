@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System;
+using UnityEngine;
 
 namespace routeSystem
 {
@@ -9,11 +10,14 @@ namespace routeSystem
         public string key;
         public List<int> routesID;
 
-        public Collection(string key) { this.key = key; routesID = new List<int>(); }
+        public Collection(int id) { this.ID = id; routesID = new List<int>(); }
 
         public List<Route> GetFromStore()
         {
             List<Route> colectionRoutes = new List<Route>();
+            if (routesID == null) {
+                Debug.Log("routesID is empty");
+                return colectionRoutes; }
             foreach(int elevent in routesID)
             {
                 colectionRoutes.Add(RouteStore.RoutesData[elevent]);

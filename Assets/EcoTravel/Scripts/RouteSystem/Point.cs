@@ -5,7 +5,7 @@ namespace routeSystem
     [Serializable]
     public class Point : Marker
     {
-        public int roateID;
+        public int routeID;
 
         #region Constructor
         public Point()
@@ -19,13 +19,13 @@ namespace routeSystem
         public Point(int id, int roateId)
         {
             ID = id;
-            roateID = roateId;
+            routeID = roateId;
            
         }
         public Point(int id, int roateId, string _locationString)
         {
             ID = id;
-            roateID = roateId;
+            routeID = roateId;
             locationString = _locationString;
             
         }
@@ -35,7 +35,7 @@ namespace routeSystem
             ScreenInfo _screenInfo)
         {
             ID = id;
-            roateID = routeid;
+            routeID = routeid;
             locationString = _locationString;
             
 

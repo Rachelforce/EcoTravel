@@ -12,7 +12,7 @@ namespace routeSystem
     {
         static public Dictionary<int, Route> RoutesData = new Dictionary<int, Route>();
         //static public List<int> RouteID;
-        static public Dictionary<string, Collection> Collections = new Dictionary<string, Collection>();
+        static public Dictionary<int, Collection> Collections = new Dictionary<int, Collection>();
 
        
         public static Route GetRoute(int id)
@@ -73,50 +73,50 @@ namespace routeSystem
         }
         */
 
-        public static Collection GetCollection(string key)
+        public static Collection GetCollection(int id)
         {
-            if (Collections.ContainsKey(key))
+            if (Collections.ContainsKey(id))
             {
                 Debug.Log("Get Collection successfully");
-                return Collections[key];
+                return Collections[id];
             }
-            else Debug.Log("does not exist Collection key");
+            else Debug.Log("does not exist Collection id");
             return null;
         }
-        public static string SetCollection(Collection collection)
+        public static int SetCollection(Collection collection)
         {
-            if (Collections.ContainsKey(collection.key))
+            if (Collections.ContainsKey(collection.ID))
             {
 
-                Collections[collection.key] = collection;
+                Collections[collection.ID] = collection;
                 Debug.Log("Set Collection successfully");
-                return collection.key;
+                return collection.ID;
             }
             else
             {
-                Debug.Log("does not exist Collection key");
-                if (!CreateCollection(collection.key)) return null;
+                Debug.Log("does not exist Collection id");
+                if (!CreateCollection(collection.ID)) return -1;
                 SetCollection(collection);
             }
-            return collection.key;
+            return collection.ID;
         }
-        public static void RemoveCollection(string key)
+        public static void RemoveCollection(int id)
         {
-            if (Collections.ContainsKey(key))
+            if (Collections.ContainsKey(id))
             {
-                Collections.Remove(key);
+                Collections.Remove(id);
                 Debug.Log("Remove Collection successfully");
             }
-            else Debug.Log("does not exist Collection key");
+            else Debug.Log("does not exist Collection id");
         }
-        public static bool CreateCollection(string key)
+        public static bool CreateCollection(int id)
         {
-            if (Collections.ContainsKey(key))
+            if (Collections.ContainsKey(id))
             {
                 Debug.Log("Collection key occupant");
                 return false;
             }
-            Collections.Add(key, new Collection(key));
+            Collections.Add(id, new Collection(id));
             Debug.Log("Create New Collection");
             return true;
         }
@@ -132,7 +132,7 @@ namespace routeSystem
         
         public List<int> rotesDataKey;
         public List<Route> routesDataValue;
-        public List<string> collectionsDataKey;
+        public List<int> collectionsDataKey;
         public List<Collection> collectionsDataValue;
         public RouteStoreSerialize()
         {
@@ -148,7 +148,7 @@ namespace routeSystem
             {
                 rotesDataKey = new List<int>(RouteStore.RoutesData.Keys);
                 routesDataValue = new List<Route>(RouteStore.RoutesData.Values);
-                collectionsDataKey = new List<string>(RouteStore.Collections.Keys);
+                collectionsDataKey = new List<int>(RouteStore.Collections.Keys);
                 collectionsDataValue = new List<Collection>(RouteStore.Collections.Values);
             }
             catch { return; }
@@ -157,7 +157,7 @@ namespace routeSystem
 
         public void OnAfterDeserialize()
         {
-            RouteStore.Collections = new Dictionary<string, Collection>();
+            RouteStore.Collections = new Dictionary<int, Collection>();
             RouteStore.RoutesData = new Dictionary<int, Route>();
             if (rotesDataKey != null)
             {

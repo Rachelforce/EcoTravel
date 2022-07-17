@@ -6,7 +6,7 @@
 
 	public class ImmediatePositionWithLocationProvider : MonoBehaviour
 	{
-
+		[SerializeField] ForwardGeocodeUserInput forwardGeocodeUserInput;
 		bool _isInitialized;
 
 		ILocationProvider _locationProvider;
@@ -36,7 +36,22 @@
 			{
 				var map = LocationProviderFactory.Instance.mapManager;
 				transform.localPosition = map.GeoToWorldPosition(LocationProvider.CurrentLocation.LatitudeLongitude);
+				
 			}
+		}
+		
+		public void SetCurrentPositionTomap()
+        {
+			string loc = LocationProvider.CurrentLocation.LatitudeLongitude.ToString();
+			loc = PharseGeoCode(loc);
+			forwardGeocodeUserInput.HandleUserInput(loc);
+		}
+		string PharseGeoCode(string input)
+		{
+			string[] array = input.Split(",");
+			string output = array[1] + "," + array[0];
+			return output;
+
 		}
 	}
 }

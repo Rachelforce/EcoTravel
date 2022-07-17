@@ -7,27 +7,31 @@ using UnityEditor;
 using UnityEngine.Networking;
 using System.Collections;
 using System.Collections.Generic;
+using Custom.UI.System;
+
 namespace routeSystem
 {
 
     public class StoreUpdater : MonoBehaviour
     {
+        [SerializeField] MarkerMapManager markerMapManager;
         [SerializeField] string path;
         [SerializeField] string fileName;
         [SerializeField][TextArea] string startJsone;
+        bool roadLoad;
+        bool collectionLoad;
+
         private void Awake()
         {
             path = Path.Combine(Application.dataPath, fileName);
+            LoadFromWeb();
 
-            IEnumerator routeCoroutine = WebRequestToLoad(GetRequestTipe.Route);
-            IEnumerator collectionCoroutine = WebRequestToLoad(GetRequestTipe.Collection);
-            StartCoroutine(routeCoroutine);
-            StartCoroutine(collectionCoroutine);
+            
+
         }
         private void OnDestroy()
         {
-            RouteStoreSerialize testSerialize = new RouteStoreSerialize(1);
-            JsonSerializer.Save(this.path, testSerialize);
+            SaveToFile();
         }
 
 
@@ -48,14 +52,28 @@ namespace routeSystem
         {
             if (startJsone != null)
             {
-
                 RouteStoreSerialize routeStoreSerialize = JsonSerializer.LoadFromString<RouteStoreSerialize>(startJsone);
                 routeStoreSerialize.OnAfterDeserialize();
                 return true;
             }
-            else { return false; }
+            else return false; 
+        }
+        private bool LoadFromWeb()
+        {
+            IEnumerator routeCoroutine = WebRequestToLoad(GetRequestTipe.Route);
+            IEnumerator collectionCoroutine = WebRequestToLoad(GetRequestTipe.Collection);
+            StartCoroutine(routeCoroutine);
+            StartCoroutine(collectionCoroutine);
+            StartCoroutine("LoadStartCollection");
+            return true;
+        }
+        private void SaveToFile()
+        {
+            RouteStoreSerialize testSerialize = new RouteStoreSerialize(1);
+            JsonSerializer.Save(this.path, testSerialize);
         }
 
+         
 
         enum GetRequestTipe { Route, Collection }
         private IEnumerator WebRequestToLoad(GetRequestTipe requestType, int id = -1)
@@ -88,7 +106,6 @@ namespace routeSystem
             }
         }
 
-
         private void PharseRouteList(string content)
         {
             List<Route> routeList = JsonSerializer.LoadFromString<List<Route>>(content);
@@ -96,6 +113,7 @@ namespace routeSystem
             {
                 RouteStore.SetRout(route);
             }
+            roadLoad = true;
         }
         private void PharseRoute(string content)
         {
@@ -103,23 +121,27 @@ namespace routeSystem
             RouteStore.SetRout(route);
         }
 
-
         private void PharseCollectionList(string content)
         {
             List<Collection> collections = JsonSerializer.LoadFromString<List<Collection>>(content);
             foreach (Collection collection in collections)
             {
                 Debug.Log(collection.key);
-                RouteStore.SetCollection(collection);
-
+                RouteStore.SetCollection(collection);     
             }
+            collectionLoad = true;
         }
         private void PharseCollection(string content)
         {
             Collection collection = JsonSerializer.LoadFromString<Collection>(content);
             RouteStore.SetCollection(collection);
         }
-        
 
+
+        private IEnumerator LoadStartCollection()
+        {
+            yield return collectionLoad && roadLoad;
+            markerMapManager.LoadColectionMarkers(3);
+        }
     }
 }

@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e241c8b7ecd52249ab076391b35489d, type: 3}
   m_Name: CollectionEditor
   m_EditorClassIdentifier: 
-  key: Main
+  ID: 1
   collection:
+    ID: 1
+    title: asd
+    description: sss
+    conveniencesString: "\u043A\u0430\u043A\u0430\u044F-\u0442\u043E \u0430\u0430"
+    availabilityString: ",\u043E\u0447\u0435\u043D\u044C \u043D\u0435 \u0443\u0434\u043E\u0431\u043D\u043E "
+    otherString: ',,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,'
     key: First
-    screenInfo:
-      _name: someName
-      description: SomeDescription
-      photos: []
-    routeIDs: 0200000003000000
+    routesID: 00000000
