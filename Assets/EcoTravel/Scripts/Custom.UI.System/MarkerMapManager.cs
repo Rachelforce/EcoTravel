@@ -78,8 +78,14 @@ namespace Custom.UI.System
 			LoadRouteMarkers(route);
 
 		}
+		public void LoadRouteMarkersbyId(int routeId)
+		{
+			Route route = RouteStore.RoutesData[routeId];
+			LoadRouteMarkers(route);
 
-        private void Awake()
+		}
+
+		private void Awake()
         {
 			changeTo += forwardGeocodeUserInput.HandleUserInput;
 		}
