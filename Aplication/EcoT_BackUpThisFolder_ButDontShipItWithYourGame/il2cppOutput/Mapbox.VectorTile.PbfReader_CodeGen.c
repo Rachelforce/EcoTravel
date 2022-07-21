@@ -104,7 +104,7 @@ static const int32_t s_InvokerIndices[22] =
 	7116,
 	5638,
 	6945,
-	10908,
+	10909,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Mapbox_VectorTile_PbfReader_CodeGenModule;
 const Il2CppCodeGenModule g_Mapbox_VectorTile_PbfReader_CodeGenModule = 

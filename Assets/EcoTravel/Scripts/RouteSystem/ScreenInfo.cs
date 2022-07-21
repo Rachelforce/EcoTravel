@@ -53,7 +53,9 @@ namespace routeSystem
             List<Texture2D> outList = new List<Texture2D>();
             foreach (var photo in photos)
             {
-                outList.Add(photo.GetTextureFromStore());
+                Texture2D tex = photo.GetTextureFromStore();
+                if(tex != null)
+                outList.Add(tex);
             }
             return outList;
         }

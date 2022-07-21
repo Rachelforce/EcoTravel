@@ -17,7 +17,9 @@ namespace PhotoSystem
 
         private void Awake()
         {
-            path = Path.Combine(Application.dataPath, "PhotoFolder");
+
+            path = Path.Combine(Application.persistentDataPath, "PhotoFolder");
+
             if (!Directory.Exists(path)) Directory.CreateDirectory(path);
         }
         public  void SetTextureToAllPhoto(ref bool state)

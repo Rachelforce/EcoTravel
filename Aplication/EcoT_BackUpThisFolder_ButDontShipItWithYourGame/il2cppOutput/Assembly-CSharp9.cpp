@@ -379,8 +379,22 @@ struct WaitForSecondsRealtime_tA8CE0AAB4B0C872B843E7973637037D17682BA01;
 struct XYZ_tE3196ED552E064FE5525F6DED420227570046B44;
 // UnityEngine.UI.Button/ButtonClickedEvent
 struct ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C;
+// Doozy.Engine.Utils.ColorModels.CMYK/C
+struct C_tE616771781865D103593E96AD6A480B9235ACDEC;
+// Doozy.Engine.Utils.ColorModels.CMYK/K
+struct K_t86324A0C54999E87F754A32E57FE70677F478C92;
+// Doozy.Engine.Utils.ColorModels.CMYK/M
+struct M_tD1EC8F28AEBBB2E37B27A5612A37EA41C4F54F0B;
+// Doozy.Engine.Utils.ColorModels.CMYK/Y
+struct Y_tE066865748EA2C6D854D0544F6D9D5D96581DA66;
 // UnityEngine.Canvas/WillRenderCanvases
 struct WillRenderCanvases_tA4A6E66DBA797DCB45B995DBA449A9D1D80D0FBC;
+// Doozy.Engine.Utils.ColorModels.HSL/H
+struct H_t82F847487FD3143F609EF25C26167C9DE1941092;
+// Doozy.Engine.Utils.ColorModels.HSL/L
+struct L_t85860D9B80AD3CCE08D4406F32BFB857379FD017;
+// Doozy.Engine.Utils.ColorModels.HSL/S
+struct S_t23E7815ECE8FD02CCC02EC3C1AB86E4824776A24;
 // Doozy.Engine.Utils.ColorModels.HSV/H
 struct H_t3E75BE652CD7B79B11B317A6C68B77590D8EF01C;
 // Doozy.Engine.Utils.ColorModels.HSV/S
@@ -451,6 +465,8 @@ IL2CPP_EXTERN_C RuntimeClass* ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E
 IL2CPP_EXTERN_C RuntimeClass* DoozyUtils_tE4BD3E40BB6CB9B45EB681531E9F48AF04D0947B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Func_2_t9348015EEE9FC6E41A24D015DE298986FFAAA71D_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* HSL_t3327B0EF464BCFB7B16C556396A8A31B7A90F5FD_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* HSV_tB86BAE4210FCAEDE9F7D98511652DD97474AA2EF_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Holder_t2230F4F0552B51AED3A0B6E40228DBBC89F72DEF_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* InputData_tC69F5F36C2E6B18BB330FD3620504C845F6035EE_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_t3B31A2FF6BAF855D132DEBDFBB0AABEC4227995C_il2cpp_TypeInfo_var;
@@ -527,6 +543,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral070C73ECDA7E3D1F38B1DF98B80C1406A60B6615
 IL2CPP_EXTERN_C String_t* _stringLiteral0902C464A97443974BA4CE91AF8F72597C2B8CCB;
 IL2CPP_EXTERN_C String_t* _stringLiteral0B0FEB3147CE20EB2C90076367F895C59BCD14B3;
 IL2CPP_EXTERN_C String_t* _stringLiteral0CCCBBFDE296E4406C146EFCEA3E9392028DA13C;
+IL2CPP_EXTERN_C String_t* _stringLiteral0D5B232DEE819BA77C49BE134C28781605C1D513;
 IL2CPP_EXTERN_C String_t* _stringLiteral0E470ABA2C59567731A808AC94475DE825025550;
 IL2CPP_EXTERN_C String_t* _stringLiteral0F07C45A8A52F20C74943D0DA9BD8E9A0D755C50;
 IL2CPP_EXTERN_C String_t* _stringLiteral10A105116F1400FFCE661E402C3C12DDCA0D688C;
@@ -544,6 +561,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral342FC41D5F0941A1202754D22ED3D019C5568B46
 IL2CPP_EXTERN_C String_t* _stringLiteral3791AA70FDF9F7938DAA669DF1CEB77BAF878033;
 IL2CPP_EXTERN_C String_t* _stringLiteral39CD2ACCEA40FC19DB29870C5ED65D96B44B28AE;
 IL2CPP_EXTERN_C String_t* _stringLiteral3BA4C78BB5BA66665ABCC84006E8FDCDA0E2ED09;
+IL2CPP_EXTERN_C String_t* _stringLiteral3D3F616EB264B2919350E7EAA83340F5572E701E;
 IL2CPP_EXTERN_C String_t* _stringLiteral3D77282DB1BC9C6445FC2D508627101B09556DA3;
 IL2CPP_EXTERN_C String_t* _stringLiteral3E417EE940A6CA520D4B6AB31006E7BE49F33ECA;
 IL2CPP_EXTERN_C String_t* _stringLiteral3F972B1FEB3120AF0E307AFF93EC2954F5A18DAB;
@@ -579,6 +597,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralA6D22C4ED336939E59ED0D598486D8CACA92B4A1
 IL2CPP_EXTERN_C String_t* _stringLiteralA8A212CA40E8B4D0D97A7E408A76BCA25E5B20C6;
 IL2CPP_EXTERN_C String_t* _stringLiteralAAA2A9D52886D8239B8081B13818E8FE9CF695F6;
 IL2CPP_EXTERN_C String_t* _stringLiteralAF6BC92EF5FEFB27FC5A8324A9B5CC1ACE577A31;
+IL2CPP_EXTERN_C String_t* _stringLiteralB19170937BB19AE756B569F20FAA6D3EC8E752E0;
 IL2CPP_EXTERN_C String_t* _stringLiteralB3F14BF976EFD974E34846B742502C802FABAE9D;
 IL2CPP_EXTERN_C String_t* _stringLiteralB98C617BCCCB91700F1E25697179D231A9A7B400;
 IL2CPP_EXTERN_C String_t* _stringLiteralBEF1F71BD3C21C53860EC6863B3105336E4D873B;
@@ -588,6 +607,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralC7A7939E82BEFEF8DDB755713442AA62963F09F8
 IL2CPP_EXTERN_C String_t* _stringLiteralC7E7771CBEC0E38EC0CAABBA9B550931C605D173;
 IL2CPP_EXTERN_C String_t* _stringLiteralCA3D1C55C6CAA7B2770ACF76CB216062A435D7E1;
 IL2CPP_EXTERN_C String_t* _stringLiteralCA5EF003C43724A30EBD3751479853EC15EA99A5;
+IL2CPP_EXTERN_C String_t* _stringLiteralD0E990E1AF194BF4BB18C700DE189F114D6D4AC3;
 IL2CPP_EXTERN_C String_t* _stringLiteralD29B6B4D109AB3C32657CC699CB7865ACE9F0D8B;
 IL2CPP_EXTERN_C String_t* _stringLiteralD9691C4FD8A1F6B09DB1147CA32B442772FB46A1;
 IL2CPP_EXTERN_C String_t* _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
@@ -1025,6 +1045,41 @@ struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_pinv
 };
 // Native definition for COM marshalling of UnityEngine.YieldInstruction
 struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
+{
+};
+
+// Doozy.Engine.Utils.ColorModels.CMYK/C
+struct C_tE616771781865D103593E96AD6A480B9235ACDEC  : public RuntimeObject
+{
+};
+
+// Doozy.Engine.Utils.ColorModels.CMYK/K
+struct K_t86324A0C54999E87F754A32E57FE70677F478C92  : public RuntimeObject
+{
+};
+
+// Doozy.Engine.Utils.ColorModels.CMYK/M
+struct M_tD1EC8F28AEBBB2E37B27A5612A37EA41C4F54F0B  : public RuntimeObject
+{
+};
+
+// Doozy.Engine.Utils.ColorModels.CMYK/Y
+struct Y_tE066865748EA2C6D854D0544F6D9D5D96581DA66  : public RuntimeObject
+{
+};
+
+// Doozy.Engine.Utils.ColorModels.HSL/H
+struct H_t82F847487FD3143F609EF25C26167C9DE1941092  : public RuntimeObject
+{
+};
+
+// Doozy.Engine.Utils.ColorModels.HSL/L
+struct L_t85860D9B80AD3CCE08D4406F32BFB857379FD017  : public RuntimeObject
+{
+};
+
+// Doozy.Engine.Utils.ColorModels.HSL/S
+struct S_t23E7815ECE8FD02CCC02EC3C1AB86E4824776A24  : public RuntimeObject
 {
 };
 
@@ -4420,6 +4475,38 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_RemoveAt_m54F62297ADEE4D4FDA697F4
 
 // System.Void System.Object::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
+// System.Void Doozy.Engine.Utils.ColorModels.HSL::.ctor(System.Single,System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HSL__ctor_m5547D12FBC4EA44307747BB471759C1493E492EE (HSL_t3327B0EF464BCFB7B16C556396A8A31B7A90F5FD* __this, float ___H0, float ___S1, float ___L2, const RuntimeMethod* method) ;
+// Doozy.Engine.Utils.ColorModels.RGB Doozy.Engine.Utils.ColorUtils::HSLtoRGB(Doozy.Engine.Utils.ColorModels.HSL)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RGB_tE8C6BDBCB5880BDD803ABE551D057A3D76CB57D1* ColorUtils_HSLtoRGB_m38E9E9616E83EBD73A0F9B1C056C750B7919D2DB (HSL_t3327B0EF464BCFB7B16C556396A8A31B7A90F5FD* ___values0, const RuntimeMethod* method) ;
+// Doozy.Engine.Utils.ColorModels.RGB Doozy.Engine.Utils.ColorModels.RGB::Validate()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RGB_tE8C6BDBCB5880BDD803ABE551D057A3D76CB57D1* RGB_Validate_mE4952A68E4756C48CBCFA42E424B97A487E5A7CF (RGB_tE8C6BDBCB5880BDD803ABE551D057A3D76CB57D1* __this, const RuntimeMethod* method) ;
+// UnityEngine.Color Doozy.Engine.Utils.ColorModels.RGB::Color(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F RGB_Color_m4084DDCB3D9084438D1D7576596220F1B0CA96A2 (RGB_tE8C6BDBCB5880BDD803ABE551D057A3D76CB57D1* __this, float ___alpha0, const RuntimeMethod* method) ;
+// System.Single Doozy.Engine.Utils.ColorModels.HSL::ValidateColor(System.Single,System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float HSL_ValidateColor_mB99B69C6599C95876C4BF740D8005E9242F629F4 (HSL_t3327B0EF464BCFB7B16C556396A8A31B7A90F5FD* __this, float ___value0, float ___min1, float ___max2, const RuntimeMethod* method) ;
+// System.Single UnityEngine.Mathf::Min(System.Single,System.Single)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Min_m4F2A9C5128DC3F9E84865EE7ADA8DB5DA6B8B507_inline (float ___a0, float ___b1, const RuntimeMethod* method) ;
+// System.Single UnityEngine.Mathf::Max(System.Single,System.Single)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Max_mA9DCA91E87D6D27034F56ABA52606A9090406016_inline (float ___a0, float ___b1, const RuntimeMethod* method) ;
+// System.Int32 Doozy.Engine.Utils.ColorModels.HSL::FactorizeColor(System.Single,System.Single,System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HSL_FactorizeColor_m5075BF339526ACA5E38136262B9987583215E48E (HSL_t3327B0EF464BCFB7B16C556396A8A31B7A90F5FD* __this, float ___value0, float ___min1, float ___max2, float ___f3, const RuntimeMethod* method) ;
+// System.String System.Single::ToString()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972 (float* __this, const RuntimeMethod* method) ;
+// System.String System.String::Concat(System.String[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m6B0734B65813C8EA093D78E5C2D16534EB6FE8C0 (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___values0, const RuntimeMethod* method) ;
+// UnityEngine.Vector3 Doozy.Engine.Utils.ColorModels.HSL::Factorize()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 HSL_Factorize_m6B1515AB9BD10E9D28E2C62056E9F5964C621F71 (HSL_t3327B0EF464BCFB7B16C556396A8A31B7A90F5FD* __this, const RuntimeMethod* method) ;
+// System.Void Doozy.Engine.Utils.ColorModels.HSV::.ctor(System.Single,System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HSV__ctor_mDB9DACC6422AA707FFC2F93C2E576D8920C31DDB (HSV_tB86BAE4210FCAEDE9F7D98511652DD97474AA2EF* __this, float ___H0, float ___S1, float ___V2, const RuntimeMethod* method) ;
+// Doozy.Engine.Utils.ColorModels.RGB Doozy.Engine.Utils.ColorUtils::HSVtoRGB(Doozy.Engine.Utils.ColorModels.HSV)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RGB_tE8C6BDBCB5880BDD803ABE551D057A3D76CB57D1* ColorUtils_HSVtoRGB_m60F0EF655397AE2D545E8E37E8F0D214BDC781D9 (HSV_tB86BAE4210FCAEDE9F7D98511652DD97474AA2EF* ___values0, const RuntimeMethod* method) ;
+// System.Single Doozy.Engine.Utils.ColorModels.HSV::ValidateColor(System.Single,System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float HSV_ValidateColor_mB5C1675568619C6C8067E1B17045FD3E3DC9166D (HSV_tB86BAE4210FCAEDE9F7D98511652DD97474AA2EF* __this, float ___value0, float ___min1, float ___max2, const RuntimeMethod* method) ;
+// System.Int32 Doozy.Engine.Utils.ColorModels.HSV::FactorizeColor(System.Single,System.Single,System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HSV_FactorizeColor_m5FD24B153F2D15545CAF07F37EC979F23736ADC0 (HSV_tB86BAE4210FCAEDE9F7D98511652DD97474AA2EF* __this, float ___value0, float ___min1, float ___max2, float ___f3, const RuntimeMethod* method) ;
+// UnityEngine.Vector3 Doozy.Engine.Utils.ColorModels.HSV::Factorize()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 HSV_Factorize_mB767A93DC58B207BE77A9C3393495C4C788C9A49 (HSV_tB86BAE4210FCAEDE9F7D98511652DD97474AA2EF* __this, const RuntimeMethod* method) ;
 // System.Void Doozy.Engine.Utils.ColorModels.RGB::.ctor(System.Single,System.Single,System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RGB__ctor_m6EC70DA76B31A17D9AA05F5AD9BDBCC492C17D4B (RGB_tE8C6BDBCB5880BDD803ABE551D057A3D76CB57D1* __this, float ___R0, float ___G1, float ___B2, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Mathf::Clamp(System.Single,System.Single,System.Single)
@@ -4438,20 +4525,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CMYK_tB83BAE027D5E7492DE526268876C6252AB244B2
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XYZ_tE3196ED552E064FE5525F6DED420227570046B44* ColorUtils_RGBtoXYZ_m402C84C209580FBFC4DFB6BB9DAEB9A8A031D512 (RGB_tE8C6BDBCB5880BDD803ABE551D057A3D76CB57D1* ___values0, const RuntimeMethod* method) ;
 // System.Single Doozy.Engine.Utils.ColorModels.RGB::ValidateColor(System.Single,System.Single,System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float RGB_ValidateColor_m807C48D5FEA3C3C544E6047F02916A8B0D811083 (RGB_tE8C6BDBCB5880BDD803ABE551D057A3D76CB57D1* __this, float ___value0, float ___min1, float ___max2, const RuntimeMethod* method) ;
-// System.Single UnityEngine.Mathf::Min(System.Single,System.Single)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Min_m4F2A9C5128DC3F9E84865EE7ADA8DB5DA6B8B507_inline (float ___a0, float ___b1, const RuntimeMethod* method) ;
-// System.Single UnityEngine.Mathf::Max(System.Single,System.Single)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Max_mA9DCA91E87D6D27034F56ABA52606A9090406016_inline (float ___a0, float ___b1, const RuntimeMethod* method) ;
 // System.Int32 Doozy.Engine.Utils.ColorModels.RGB::FactorizeColor(System.Single,System.Single,System.Single,System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RGB_FactorizeColor_m5ACCA12BF1E46F6AFD6913D1AB6E26566C698554 (RGB_tE8C6BDBCB5880BDD803ABE551D057A3D76CB57D1* __this, float ___value0, float ___min1, float ___max2, float ___f3, const RuntimeMethod* method) ;
-// System.String System.Single::ToString()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972 (float* __this, const RuntimeMethod* method) ;
-// System.String System.String::Concat(System.String[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m6B0734B65813C8EA093D78E5C2D16534EB6FE8C0 (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___values0, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 Doozy.Engine.Utils.ColorModels.RGB::Factorize()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 RGB_Factorize_m6FB2F392D7E37EE5A9C4E9A74EEDB30AD7086992 (RGB_tE8C6BDBCB5880BDD803ABE551D057A3D76CB57D1* __this, const RuntimeMethod* method) ;
-// UnityEngine.Color Doozy.Engine.Utils.ColorModels.RGB::Color(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F RGB_Color_m4084DDCB3D9084438D1D7576596220F1B0CA96A2 (RGB_tE8C6BDBCB5880BDD803ABE551D057A3D76CB57D1* __this, float ___alpha0, const RuntimeMethod* method) ;
 // System.String UnityEngine.ColorUtility::ToHtmlStringRGB(UnityEngine.Color)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ColorUtility_ToHtmlStringRGB_m0BF395744067B28A8C48609D4BA97F8920CBB346 (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___color0, const RuntimeMethod* method) ;
 // System.String System.String::Concat(System.String,System.String)
@@ -4460,8 +4537,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_mAF2CE02CC0CB7460753D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XYZ__ctor_m26465893D5EC66EEB51589585CB8CD6F50398A18 (XYZ_tE3196ED552E064FE5525F6DED420227570046B44* __this, float ___X0, float ___Y1, float ___Z2, const RuntimeMethod* method) ;
 // Doozy.Engine.Utils.ColorModels.RGB Doozy.Engine.Utils.ColorUtils::XYZtoRGB(Doozy.Engine.Utils.ColorModels.XYZ)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RGB_tE8C6BDBCB5880BDD803ABE551D057A3D76CB57D1* ColorUtils_XYZtoRGB_mE5DC5322D432581391782C186572C022DC4CB163 (XYZ_tE3196ED552E064FE5525F6DED420227570046B44* ___values0, const RuntimeMethod* method) ;
-// Doozy.Engine.Utils.ColorModels.RGB Doozy.Engine.Utils.ColorModels.RGB::Validate()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RGB_tE8C6BDBCB5880BDD803ABE551D057A3D76CB57D1* RGB_Validate_mE4952A68E4756C48CBCFA42E424B97A487E5A7CF (RGB_tE8C6BDBCB5880BDD803ABE551D057A3D76CB57D1* __this, const RuntimeMethod* method) ;
 // System.Single Doozy.Engine.Utils.ColorModels.XYZ::ValidateColor(System.Single,System.Single,System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float XYZ_ValidateColor_m15B9846FD55BAC7B0AC2C303BC13699336212440 (XYZ_tE3196ED552E064FE5525F6DED420227570046B44* __this, float ___value0, float ___min1, float ___max2, const RuntimeMethod* method) ;
 // System.Int32 Doozy.Engine.Utils.ColorModels.XYZ::FactorizeColor(System.Single,System.Single,System.Single,System.Single)
@@ -5692,6 +5767,680 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Repeat_m1ACDE7EF466FB
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m516FE285F5342F922C6EB3FCB33197E9017FF484_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___a0, float ___d1, const RuntimeMethod* method) ;
 // UnityEngine.Quaternion UnityEngine.Quaternion::Internal_FromEulerRad(UnityEngine.Vector3)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_Internal_FromEulerRad_m2842B9FFB31CDC0F80B7C2172E22831D11D91E93 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___euler0, const RuntimeMethod* method) ;
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Doozy.Engine.Utils.ColorModels.CMYK/C::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void C__ctor_m2895F7609B802C3F9CE220A0BA562972B4046766 (C_tE616771781865D103593E96AD6A480B9235ACDEC* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Doozy.Engine.Utils.ColorModels.CMYK/M::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void M__ctor_m174B8C38C643E7DA8C14B43BA48CBBF0696CC71E (M_tD1EC8F28AEBBB2E37B27A5612A37EA41C4F54F0B* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Doozy.Engine.Utils.ColorModels.CMYK/Y::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Y__ctor_m6D3CC71AC11702748389C02DB30AA51D199C8517 (Y_tE066865748EA2C6D854D0544F6D9D5D96581DA66* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Doozy.Engine.Utils.ColorModels.CMYK/K::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void K__ctor_mBCC9972EA899D19A0A70664A429534953EACF1A7 (K_t86324A0C54999E87F754A32E57FE70677F478C92* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Doozy.Engine.Utils.ColorModels.HSL::.ctor(System.Single,System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HSL__ctor_m5547D12FBC4EA44307747BB471759C1493E492EE (HSL_t3327B0EF464BCFB7B16C556396A8A31B7A90F5FD* __this, float ___H0, float ___S1, float ___L2, const RuntimeMethod* method) 
+{
+	{
+		// public HSL(float H, float S, float L)
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// h = H;
+		float L_0 = ___H0;
+		__this->___h_0 = L_0;
+		// s = S;
+		float L_1 = ___S1;
+		__this->___s_1 = L_1;
+		// l = L;
+		float L_2 = ___L2;
+		__this->___l_2 = L_2;
+		// }
+		return;
+	}
+}
+// Doozy.Engine.Utils.ColorModels.HSL Doozy.Engine.Utils.ColorModels.HSL::Copy()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HSL_t3327B0EF464BCFB7B16C556396A8A31B7A90F5FD* HSL_Copy_mC2FD20DF5E57B861423D857F923E248B01D588EB (HSL_t3327B0EF464BCFB7B16C556396A8A31B7A90F5FD* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HSL_t3327B0EF464BCFB7B16C556396A8A31B7A90F5FD_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public HSL Copy() { return new HSL(h, s, l); }
+		float L_0 = __this->___h_0;
+		float L_1 = __this->___s_1;
+		float L_2 = __this->___l_2;
+		HSL_t3327B0EF464BCFB7B16C556396A8A31B7A90F5FD* L_3 = (HSL_t3327B0EF464BCFB7B16C556396A8A31B7A90F5FD*)il2cpp_codegen_object_new(HSL_t3327B0EF464BCFB7B16C556396A8A31B7A90F5FD_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		HSL__ctor_m5547D12FBC4EA44307747BB471759C1493E492EE(L_3, L_0, L_1, L_2, NULL);
+		return L_3;
+	}
+}
+// UnityEngine.Color Doozy.Engine.Utils.ColorModels.HSL::Color(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F HSL_Color_m57BB6427F7AC814B0B9228BE8C8E999847D49F6C (HSL_t3327B0EF464BCFB7B16C556396A8A31B7A90F5FD* __this, float ___alpha0, const RuntimeMethod* method) 
+{
+	{
+		// public Color Color(float alpha = 1) { return ColorUtils.HSLtoRGB(this).Validate().Color(); }
+		RGB_tE8C6BDBCB5880BDD803ABE551D057A3D76CB57D1* L_0;
+		L_0 = ColorUtils_HSLtoRGB_m38E9E9616E83EBD73A0F9B1C056C750B7919D2DB(__this, NULL);
+		NullCheck(L_0);
+		RGB_tE8C6BDBCB5880BDD803ABE551D057A3D76CB57D1* L_1;
+		L_1 = RGB_Validate_mE4952A68E4756C48CBCFA42E424B97A487E5A7CF(L_0, NULL);
+		NullCheck(L_1);
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_2;
+		L_2 = RGB_Color_m4084DDCB3D9084438D1D7576596220F1B0CA96A2(L_1, (1.0f), NULL);
+		return L_2;
+	}
+}
+// Doozy.Engine.Utils.ColorModels.RGB Doozy.Engine.Utils.ColorModels.HSL::ToRGB()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RGB_tE8C6BDBCB5880BDD803ABE551D057A3D76CB57D1* HSL_ToRGB_mC55A2D3B3B32740F92FCFD23F00A288B3595622E (HSL_t3327B0EF464BCFB7B16C556396A8A31B7A90F5FD* __this, const RuntimeMethod* method) 
+{
+	{
+		// public RGB ToRGB() { return ColorUtils.HSLtoRGB(this); }
+		RGB_tE8C6BDBCB5880BDD803ABE551D057A3D76CB57D1* L_0;
+		L_0 = ColorUtils_HSLtoRGB_m38E9E9616E83EBD73A0F9B1C056C750B7919D2DB(__this, NULL);
+		return L_0;
+	}
+}
+// Doozy.Engine.Utils.ColorModels.HSL Doozy.Engine.Utils.ColorModels.HSL::Validate()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HSL_t3327B0EF464BCFB7B16C556396A8A31B7A90F5FD* HSL_Validate_mA58235717A3E2048F4A05B412DE649DB47335A56 (HSL_t3327B0EF464BCFB7B16C556396A8A31B7A90F5FD* __this, const RuntimeMethod* method) 
+{
+	{
+		// h = ValidateColor(h, H.MIN, H.MAX);
+		float L_0 = __this->___h_0;
+		float L_1;
+		L_1 = HSL_ValidateColor_mB99B69C6599C95876C4BF740D8005E9242F629F4(__this, L_0, (0.0f), (1.0f), NULL);
+		__this->___h_0 = L_1;
+		// s = ValidateColor(s, S.MIN, S.MAX);
+		float L_2 = __this->___s_1;
+		float L_3;
+		L_3 = HSL_ValidateColor_mB99B69C6599C95876C4BF740D8005E9242F629F4(__this, L_2, (0.0f), (1.0f), NULL);
+		__this->___s_1 = L_3;
+		// l = ValidateColor(l, L.MIN, L.MAX);
+		float L_4 = __this->___l_2;
+		float L_5;
+		L_5 = HSL_ValidateColor_mB99B69C6599C95876C4BF740D8005E9242F629F4(__this, L_4, (0.0f), (1.0f), NULL);
+		__this->___l_2 = L_5;
+		// return this;
+		return __this;
+	}
+}
+// System.Single Doozy.Engine.Utils.ColorModels.HSL::ValidateColor(System.Single,System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float HSL_ValidateColor_mB99B69C6599C95876C4BF740D8005E9242F629F4 (HSL_t3327B0EF464BCFB7B16C556396A8A31B7A90F5FD* __this, float ___value0, float ___min1, float ___max2, const RuntimeMethod* method) 
+{
+	{
+		// private float ValidateColor(float value, float min, float max) { return Mathf.Max(min, Mathf.Min(max, value)); }
+		float L_0 = ___min1;
+		float L_1 = ___max2;
+		float L_2 = ___value0;
+		float L_3;
+		L_3 = Mathf_Min_m4F2A9C5128DC3F9E84865EE7ADA8DB5DA6B8B507_inline(L_1, L_2, NULL);
+		float L_4;
+		L_4 = Mathf_Max_mA9DCA91E87D6D27034F56ABA52606A9090406016_inline(L_0, L_3, NULL);
+		return L_4;
+	}
+}
+// UnityEngine.Vector3 Doozy.Engine.Utils.ColorModels.HSL::Factorize()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 HSL_Factorize_m6B1515AB9BD10E9D28E2C62056E9F5964C621F71 (HSL_t3327B0EF464BCFB7B16C556396A8A31B7A90F5FD* __this, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		// return new Vector3
+		// {
+		//     x = FactorizeColor(h, H.MIN, H.MAX, H.F),
+		//     y = FactorizeColor(s, S.MIN, S.MAX, S.F),
+		//     z = FactorizeColor(l, L.MIN, L.MAX, L.F)
+		// };
+		il2cpp_codegen_initobj((&V_0), sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2));
+		float L_0 = __this->___h_0;
+		int32_t L_1;
+		L_1 = HSL_FactorizeColor_m5075BF339526ACA5E38136262B9987583215E48E(__this, L_0, (0.0f), (1.0f), (360.0f), NULL);
+		(&V_0)->___x_2 = ((float)L_1);
+		float L_2 = __this->___s_1;
+		int32_t L_3;
+		L_3 = HSL_FactorizeColor_m5075BF339526ACA5E38136262B9987583215E48E(__this, L_2, (0.0f), (1.0f), (100.0f), NULL);
+		(&V_0)->___y_3 = ((float)L_3);
+		float L_4 = __this->___l_2;
+		int32_t L_5;
+		L_5 = HSL_FactorizeColor_m5075BF339526ACA5E38136262B9987583215E48E(__this, L_4, (0.0f), (1.0f), (100.0f), NULL);
+		(&V_0)->___z_4 = ((float)L_5);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = V_0;
+		return L_6;
+	}
+}
+// System.Int32 Doozy.Engine.Utils.ColorModels.HSL::FactorizeColor(System.Single,System.Single,System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HSL_FactorizeColor_m5075BF339526ACA5E38136262B9987583215E48E (HSL_t3327B0EF464BCFB7B16C556396A8A31B7A90F5FD* __this, float ___value0, float ___min1, float ___max2, float ___f3, const RuntimeMethod* method) 
+{
+	{
+		// private int FactorizeColor(float value, float min, float max, float f) { return (int) Mathf.Max(min * f, Mathf.Min(max * f, Mathf.Round(value * f))); }
+		float L_0 = ___min1;
+		float L_1 = ___f3;
+		float L_2 = ___max2;
+		float L_3 = ___f3;
+		float L_4 = ___value0;
+		float L_5 = ___f3;
+		float L_6;
+		L_6 = bankers_roundf(((float)il2cpp_codegen_multiply(L_4, L_5)));
+		float L_7;
+		L_7 = Mathf_Min_m4F2A9C5128DC3F9E84865EE7ADA8DB5DA6B8B507_inline(((float)il2cpp_codegen_multiply(L_2, L_3)), L_6, NULL);
+		float L_8;
+		L_8 = Mathf_Max_mA9DCA91E87D6D27034F56ABA52606A9090406016_inline(((float)il2cpp_codegen_multiply(L_0, L_1)), L_7, NULL);
+		return il2cpp_codegen_cast_double_to_int<int32_t>(L_8);
+	}
+}
+// System.String Doozy.Engine.Utils.ColorModels.HSL::ToString(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HSL_ToString_m351855CD6E3C549A34440B317B86544B31DCF097 (HSL_t3327B0EF464BCFB7B16C556396A8A31B7A90F5FD* __this, bool ___factorize0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0D5B232DEE819BA77C49BE134C28781605C1D513);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral758733BDBED83CBFF4F635AC26CA92AAE477F75D);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB19170937BB19AE756B569F20FAA6D3EC8E752E0);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD0E990E1AF194BF4BB18C700DE189F114D6D4AC3);
+		s_Il2CppMethodInitialized = true;
+	}
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		// public string ToString(bool factorize = false) { return factorize ? "hsl(" + Factorize().x + ", " + Factorize().y + "%, " + Factorize().z + "%)" : "hsl(" + h + ", " + s + "%, " + l + "%)"; }
+		bool L_0 = ___factorize0;
+		if (L_0)
+		{
+			goto IL_0059;
+		}
+	}
+	{
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_1 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)7);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_2 = L_1;
+		NullCheck(L_2);
+		ArrayElementTypeCheck (L_2, _stringLiteral0D5B232DEE819BA77C49BE134C28781605C1D513);
+		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral0D5B232DEE819BA77C49BE134C28781605C1D513);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_3 = L_2;
+		float* L_4 = (&__this->___h_0);
+		String_t* L_5;
+		L_5 = Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972(L_4, NULL);
+		NullCheck(L_3);
+		ArrayElementTypeCheck (L_3, L_5);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_5);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_6 = L_3;
+		NullCheck(L_6);
+		ArrayElementTypeCheck (L_6, _stringLiteral758733BDBED83CBFF4F635AC26CA92AAE477F75D);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteral758733BDBED83CBFF4F635AC26CA92AAE477F75D);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_7 = L_6;
+		float* L_8 = (&__this->___s_1);
+		String_t* L_9;
+		L_9 = Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972(L_8, NULL);
+		NullCheck(L_7);
+		ArrayElementTypeCheck (L_7, L_9);
+		(L_7)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)L_9);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_10 = L_7;
+		NullCheck(L_10);
+		ArrayElementTypeCheck (L_10, _stringLiteralD0E990E1AF194BF4BB18C700DE189F114D6D4AC3);
+		(L_10)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)_stringLiteralD0E990E1AF194BF4BB18C700DE189F114D6D4AC3);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_11 = L_10;
+		float* L_12 = (&__this->___l_2);
+		String_t* L_13;
+		L_13 = Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972(L_12, NULL);
+		NullCheck(L_11);
+		ArrayElementTypeCheck (L_11, L_13);
+		(L_11)->SetAt(static_cast<il2cpp_array_size_t>(5), (String_t*)L_13);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_14 = L_11;
+		NullCheck(L_14);
+		ArrayElementTypeCheck (L_14, _stringLiteralB19170937BB19AE756B569F20FAA6D3EC8E752E0);
+		(L_14)->SetAt(static_cast<il2cpp_array_size_t>(6), (String_t*)_stringLiteralB19170937BB19AE756B569F20FAA6D3EC8E752E0);
+		String_t* L_15;
+		L_15 = String_Concat_m6B0734B65813C8EA093D78E5C2D16534EB6FE8C0(L_14, NULL);
+		return L_15;
+	}
+
+IL_0059:
+	{
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_16 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)7);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_17 = L_16;
+		NullCheck(L_17);
+		ArrayElementTypeCheck (L_17, _stringLiteral0D5B232DEE819BA77C49BE134C28781605C1D513);
+		(L_17)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral0D5B232DEE819BA77C49BE134C28781605C1D513);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_18 = L_17;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
+		L_19 = HSL_Factorize_m6B1515AB9BD10E9D28E2C62056E9F5964C621F71(__this, NULL);
+		V_0 = L_19;
+		float* L_20 = (&(&V_0)->___x_2);
+		String_t* L_21;
+		L_21 = Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972(L_20, NULL);
+		NullCheck(L_18);
+		ArrayElementTypeCheck (L_18, L_21);
+		(L_18)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_21);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_22 = L_18;
+		NullCheck(L_22);
+		ArrayElementTypeCheck (L_22, _stringLiteral758733BDBED83CBFF4F635AC26CA92AAE477F75D);
+		(L_22)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteral758733BDBED83CBFF4F635AC26CA92AAE477F75D);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_23 = L_22;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24;
+		L_24 = HSL_Factorize_m6B1515AB9BD10E9D28E2C62056E9F5964C621F71(__this, NULL);
+		V_0 = L_24;
+		float* L_25 = (&(&V_0)->___y_3);
+		String_t* L_26;
+		L_26 = Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972(L_25, NULL);
+		NullCheck(L_23);
+		ArrayElementTypeCheck (L_23, L_26);
+		(L_23)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)L_26);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_27 = L_23;
+		NullCheck(L_27);
+		ArrayElementTypeCheck (L_27, _stringLiteralD0E990E1AF194BF4BB18C700DE189F114D6D4AC3);
+		(L_27)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)_stringLiteralD0E990E1AF194BF4BB18C700DE189F114D6D4AC3);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_28 = L_27;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_29;
+		L_29 = HSL_Factorize_m6B1515AB9BD10E9D28E2C62056E9F5964C621F71(__this, NULL);
+		V_0 = L_29;
+		float* L_30 = (&(&V_0)->___z_4);
+		String_t* L_31;
+		L_31 = Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972(L_30, NULL);
+		NullCheck(L_28);
+		ArrayElementTypeCheck (L_28, L_31);
+		(L_28)->SetAt(static_cast<il2cpp_array_size_t>(5), (String_t*)L_31);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_32 = L_28;
+		NullCheck(L_32);
+		ArrayElementTypeCheck (L_32, _stringLiteralB19170937BB19AE756B569F20FAA6D3EC8E752E0);
+		(L_32)->SetAt(static_cast<il2cpp_array_size_t>(6), (String_t*)_stringLiteralB19170937BB19AE756B569F20FAA6D3EC8E752E0);
+		String_t* L_33;
+		L_33 = String_Concat_m6B0734B65813C8EA093D78E5C2D16534EB6FE8C0(L_32, NULL);
+		return L_33;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Doozy.Engine.Utils.ColorModels.HSL/H::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void H__ctor_m7EC52D806005E0F2E93B0648F6A90601984DCBB0 (H_t82F847487FD3143F609EF25C26167C9DE1941092* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Doozy.Engine.Utils.ColorModels.HSL/S::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void S__ctor_m1E9E8432D2AC8615F9CF6F5FDCBCA43ACE63CA07 (S_t23E7815ECE8FD02CCC02EC3C1AB86E4824776A24* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Doozy.Engine.Utils.ColorModels.HSL/L::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void L__ctor_m79DE7F7737B3C4240F4B9C304C4940C3502E6AB6 (L_t85860D9B80AD3CCE08D4406F32BFB857379FD017* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Doozy.Engine.Utils.ColorModels.HSV::.ctor(System.Single,System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HSV__ctor_mDB9DACC6422AA707FFC2F93C2E576D8920C31DDB (HSV_tB86BAE4210FCAEDE9F7D98511652DD97474AA2EF* __this, float ___H0, float ___S1, float ___V2, const RuntimeMethod* method) 
+{
+	{
+		// public HSV(float H, float S, float V)
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// h = H;
+		float L_0 = ___H0;
+		__this->___h_0 = L_0;
+		// s = S;
+		float L_1 = ___S1;
+		__this->___s_1 = L_1;
+		// v = V;
+		float L_2 = ___V2;
+		__this->___v_2 = L_2;
+		// }
+		return;
+	}
+}
+// Doozy.Engine.Utils.ColorModels.HSV Doozy.Engine.Utils.ColorModels.HSV::Copy()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HSV_tB86BAE4210FCAEDE9F7D98511652DD97474AA2EF* HSV_Copy_m741A953D3D2AB86F777570DCD0BE8E207F95AA88 (HSV_tB86BAE4210FCAEDE9F7D98511652DD97474AA2EF* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HSV_tB86BAE4210FCAEDE9F7D98511652DD97474AA2EF_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return new HSV(h, s, v);
+		float L_0 = __this->___h_0;
+		float L_1 = __this->___s_1;
+		float L_2 = __this->___v_2;
+		HSV_tB86BAE4210FCAEDE9F7D98511652DD97474AA2EF* L_3 = (HSV_tB86BAE4210FCAEDE9F7D98511652DD97474AA2EF*)il2cpp_codegen_object_new(HSV_tB86BAE4210FCAEDE9F7D98511652DD97474AA2EF_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		HSV__ctor_mDB9DACC6422AA707FFC2F93C2E576D8920C31DDB(L_3, L_0, L_1, L_2, NULL);
+		return L_3;
+	}
+}
+// UnityEngine.Color Doozy.Engine.Utils.ColorModels.HSV::Color(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F HSV_Color_m5C84B7B335C499873B908ED0B7573D50CF2A687B (HSV_tB86BAE4210FCAEDE9F7D98511652DD97474AA2EF* __this, float ___alpha0, const RuntimeMethod* method) 
+{
+	{
+		// return ColorUtils.HSVtoRGB(this).Validate().Color();
+		RGB_tE8C6BDBCB5880BDD803ABE551D057A3D76CB57D1* L_0;
+		L_0 = ColorUtils_HSVtoRGB_m60F0EF655397AE2D545E8E37E8F0D214BDC781D9(__this, NULL);
+		NullCheck(L_0);
+		RGB_tE8C6BDBCB5880BDD803ABE551D057A3D76CB57D1* L_1;
+		L_1 = RGB_Validate_mE4952A68E4756C48CBCFA42E424B97A487E5A7CF(L_0, NULL);
+		NullCheck(L_1);
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_2;
+		L_2 = RGB_Color_m4084DDCB3D9084438D1D7576596220F1B0CA96A2(L_1, (1.0f), NULL);
+		return L_2;
+	}
+}
+// Doozy.Engine.Utils.ColorModels.RGB Doozy.Engine.Utils.ColorModels.HSV::ToRGB()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RGB_tE8C6BDBCB5880BDD803ABE551D057A3D76CB57D1* HSV_ToRGB_m8CC8592FF6A2908660CF33372B2BDDA47C2E5E80 (HSV_tB86BAE4210FCAEDE9F7D98511652DD97474AA2EF* __this, const RuntimeMethod* method) 
+{
+	{
+		// return ColorUtils.HSVtoRGB(this);
+		RGB_tE8C6BDBCB5880BDD803ABE551D057A3D76CB57D1* L_0;
+		L_0 = ColorUtils_HSVtoRGB_m60F0EF655397AE2D545E8E37E8F0D214BDC781D9(__this, NULL);
+		return L_0;
+	}
+}
+// Doozy.Engine.Utils.ColorModels.HSV Doozy.Engine.Utils.ColorModels.HSV::Validate()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HSV_tB86BAE4210FCAEDE9F7D98511652DD97474AA2EF* HSV_Validate_m8F900A1B67C42B11746BFD895C2E575E9CA5464D (HSV_tB86BAE4210FCAEDE9F7D98511652DD97474AA2EF* __this, const RuntimeMethod* method) 
+{
+	{
+		// h = ValidateColor(h, H.MIN, H.MAX);
+		float L_0 = __this->___h_0;
+		float L_1;
+		L_1 = HSV_ValidateColor_mB5C1675568619C6C8067E1B17045FD3E3DC9166D(__this, L_0, (0.0f), (1.0f), NULL);
+		__this->___h_0 = L_1;
+		// s = ValidateColor(s, S.MIN, S.MAX);
+		float L_2 = __this->___s_1;
+		float L_3;
+		L_3 = HSV_ValidateColor_mB5C1675568619C6C8067E1B17045FD3E3DC9166D(__this, L_2, (0.0f), (1.0f), NULL);
+		__this->___s_1 = L_3;
+		// v = ValidateColor(v, V.MIN, V.MAX);
+		float L_4 = __this->___v_2;
+		float L_5;
+		L_5 = HSV_ValidateColor_mB5C1675568619C6C8067E1B17045FD3E3DC9166D(__this, L_4, (0.0f), (1.0f), NULL);
+		__this->___v_2 = L_5;
+		// return this;
+		return __this;
+	}
+}
+// System.Single Doozy.Engine.Utils.ColorModels.HSV::ValidateColor(System.Single,System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float HSV_ValidateColor_mB5C1675568619C6C8067E1B17045FD3E3DC9166D (HSV_tB86BAE4210FCAEDE9F7D98511652DD97474AA2EF* __this, float ___value0, float ___min1, float ___max2, const RuntimeMethod* method) 
+{
+	{
+		// return Mathf.Max(min, Mathf.Min(max, value));
+		float L_0 = ___min1;
+		float L_1 = ___max2;
+		float L_2 = ___value0;
+		float L_3;
+		L_3 = Mathf_Min_m4F2A9C5128DC3F9E84865EE7ADA8DB5DA6B8B507_inline(L_1, L_2, NULL);
+		float L_4;
+		L_4 = Mathf_Max_mA9DCA91E87D6D27034F56ABA52606A9090406016_inline(L_0, L_3, NULL);
+		return L_4;
+	}
+}
+// UnityEngine.Vector3 Doozy.Engine.Utils.ColorModels.HSV::Factorize()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 HSV_Factorize_mB767A93DC58B207BE77A9C3393495C4C788C9A49 (HSV_tB86BAE4210FCAEDE9F7D98511652DD97474AA2EF* __this, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		// return new Vector3
+		// {
+		//     x = FactorizeColor(h, H.MIN, H.MAX, H.F),
+		//     y = FactorizeColor(s, S.MIN, S.MAX, S.F),
+		//     z = FactorizeColor(v, V.MIN, V.MAX, V.F)
+		// };
+		il2cpp_codegen_initobj((&V_0), sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2));
+		float L_0 = __this->___h_0;
+		int32_t L_1;
+		L_1 = HSV_FactorizeColor_m5FD24B153F2D15545CAF07F37EC979F23736ADC0(__this, L_0, (0.0f), (1.0f), (360.0f), NULL);
+		(&V_0)->___x_2 = ((float)L_1);
+		float L_2 = __this->___s_1;
+		int32_t L_3;
+		L_3 = HSV_FactorizeColor_m5FD24B153F2D15545CAF07F37EC979F23736ADC0(__this, L_2, (0.0f), (1.0f), (100.0f), NULL);
+		(&V_0)->___y_3 = ((float)L_3);
+		float L_4 = __this->___v_2;
+		int32_t L_5;
+		L_5 = HSV_FactorizeColor_m5FD24B153F2D15545CAF07F37EC979F23736ADC0(__this, L_4, (0.0f), (1.0f), (100.0f), NULL);
+		(&V_0)->___z_4 = ((float)L_5);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = V_0;
+		return L_6;
+	}
+}
+// System.Int32 Doozy.Engine.Utils.ColorModels.HSV::FactorizeColor(System.Single,System.Single,System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HSV_FactorizeColor_m5FD24B153F2D15545CAF07F37EC979F23736ADC0 (HSV_tB86BAE4210FCAEDE9F7D98511652DD97474AA2EF* __this, float ___value0, float ___min1, float ___max2, float ___f3, const RuntimeMethod* method) 
+{
+	{
+		// return (int)Mathf.Max(min * f, Mathf.Min(max * f, Mathf.Round(value * f)));
+		float L_0 = ___min1;
+		float L_1 = ___f3;
+		float L_2 = ___max2;
+		float L_3 = ___f3;
+		float L_4 = ___value0;
+		float L_5 = ___f3;
+		float L_6;
+		L_6 = bankers_roundf(((float)il2cpp_codegen_multiply(L_4, L_5)));
+		float L_7;
+		L_7 = Mathf_Min_m4F2A9C5128DC3F9E84865EE7ADA8DB5DA6B8B507_inline(((float)il2cpp_codegen_multiply(L_2, L_3)), L_6, NULL);
+		float L_8;
+		L_8 = Mathf_Max_mA9DCA91E87D6D27034F56ABA52606A9090406016_inline(((float)il2cpp_codegen_multiply(L_0, L_1)), L_7, NULL);
+		return il2cpp_codegen_cast_double_to_int<int32_t>(L_8);
+	}
+}
+// System.String Doozy.Engine.Utils.ColorModels.HSV::ToString(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HSV_ToString_mB92D526A72EE6DEAA1F435AA233FD9372996AB42 (HSV_tB86BAE4210FCAEDE9F7D98511652DD97474AA2EF* __this, bool ___factorize0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3D3F616EB264B2919350E7EAA83340F5572E701E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral758733BDBED83CBFF4F635AC26CA92AAE477F75D);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB19170937BB19AE756B569F20FAA6D3EC8E752E0);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD0E990E1AF194BF4BB18C700DE189F114D6D4AC3);
+		s_Il2CppMethodInitialized = true;
+	}
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		// return factorize ? "hsv(" + Factorize().x + ", " + Factorize().y + "%, " + Factorize().z + "%)" : "hsv(" + h + ", " + s + "%, " + v + "%)";
+		bool L_0 = ___factorize0;
+		if (L_0)
+		{
+			goto IL_0059;
+		}
+	}
+	{
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_1 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)7);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_2 = L_1;
+		NullCheck(L_2);
+		ArrayElementTypeCheck (L_2, _stringLiteral3D3F616EB264B2919350E7EAA83340F5572E701E);
+		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral3D3F616EB264B2919350E7EAA83340F5572E701E);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_3 = L_2;
+		float* L_4 = (&__this->___h_0);
+		String_t* L_5;
+		L_5 = Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972(L_4, NULL);
+		NullCheck(L_3);
+		ArrayElementTypeCheck (L_3, L_5);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_5);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_6 = L_3;
+		NullCheck(L_6);
+		ArrayElementTypeCheck (L_6, _stringLiteral758733BDBED83CBFF4F635AC26CA92AAE477F75D);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteral758733BDBED83CBFF4F635AC26CA92AAE477F75D);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_7 = L_6;
+		float* L_8 = (&__this->___s_1);
+		String_t* L_9;
+		L_9 = Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972(L_8, NULL);
+		NullCheck(L_7);
+		ArrayElementTypeCheck (L_7, L_9);
+		(L_7)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)L_9);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_10 = L_7;
+		NullCheck(L_10);
+		ArrayElementTypeCheck (L_10, _stringLiteralD0E990E1AF194BF4BB18C700DE189F114D6D4AC3);
+		(L_10)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)_stringLiteralD0E990E1AF194BF4BB18C700DE189F114D6D4AC3);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_11 = L_10;
+		float* L_12 = (&__this->___v_2);
+		String_t* L_13;
+		L_13 = Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972(L_12, NULL);
+		NullCheck(L_11);
+		ArrayElementTypeCheck (L_11, L_13);
+		(L_11)->SetAt(static_cast<il2cpp_array_size_t>(5), (String_t*)L_13);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_14 = L_11;
+		NullCheck(L_14);
+		ArrayElementTypeCheck (L_14, _stringLiteralB19170937BB19AE756B569F20FAA6D3EC8E752E0);
+		(L_14)->SetAt(static_cast<il2cpp_array_size_t>(6), (String_t*)_stringLiteralB19170937BB19AE756B569F20FAA6D3EC8E752E0);
+		String_t* L_15;
+		L_15 = String_Concat_m6B0734B65813C8EA093D78E5C2D16534EB6FE8C0(L_14, NULL);
+		return L_15;
+	}
+
+IL_0059:
+	{
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_16 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)7);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_17 = L_16;
+		NullCheck(L_17);
+		ArrayElementTypeCheck (L_17, _stringLiteral3D3F616EB264B2919350E7EAA83340F5572E701E);
+		(L_17)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral3D3F616EB264B2919350E7EAA83340F5572E701E);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_18 = L_17;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
+		L_19 = HSV_Factorize_mB767A93DC58B207BE77A9C3393495C4C788C9A49(__this, NULL);
+		V_0 = L_19;
+		float* L_20 = (&(&V_0)->___x_2);
+		String_t* L_21;
+		L_21 = Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972(L_20, NULL);
+		NullCheck(L_18);
+		ArrayElementTypeCheck (L_18, L_21);
+		(L_18)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_21);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_22 = L_18;
+		NullCheck(L_22);
+		ArrayElementTypeCheck (L_22, _stringLiteral758733BDBED83CBFF4F635AC26CA92AAE477F75D);
+		(L_22)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteral758733BDBED83CBFF4F635AC26CA92AAE477F75D);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_23 = L_22;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24;
+		L_24 = HSV_Factorize_mB767A93DC58B207BE77A9C3393495C4C788C9A49(__this, NULL);
+		V_0 = L_24;
+		float* L_25 = (&(&V_0)->___y_3);
+		String_t* L_26;
+		L_26 = Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972(L_25, NULL);
+		NullCheck(L_23);
+		ArrayElementTypeCheck (L_23, L_26);
+		(L_23)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)L_26);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_27 = L_23;
+		NullCheck(L_27);
+		ArrayElementTypeCheck (L_27, _stringLiteralD0E990E1AF194BF4BB18C700DE189F114D6D4AC3);
+		(L_27)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)_stringLiteralD0E990E1AF194BF4BB18C700DE189F114D6D4AC3);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_28 = L_27;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_29;
+		L_29 = HSV_Factorize_mB767A93DC58B207BE77A9C3393495C4C788C9A49(__this, NULL);
+		V_0 = L_29;
+		float* L_30 = (&(&V_0)->___z_4);
+		String_t* L_31;
+		L_31 = Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972(L_30, NULL);
+		NullCheck(L_28);
+		ArrayElementTypeCheck (L_28, L_31);
+		(L_28)->SetAt(static_cast<il2cpp_array_size_t>(5), (String_t*)L_31);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_32 = L_28;
+		NullCheck(L_32);
+		ArrayElementTypeCheck (L_32, _stringLiteralB19170937BB19AE756B569F20FAA6D3EC8E752E0);
+		(L_32)->SetAt(static_cast<il2cpp_array_size_t>(6), (String_t*)_stringLiteralB19170937BB19AE756B569F20FAA6D3EC8E752E0);
+		String_t* L_33;
+		L_33 = String_Concat_m6B0734B65813C8EA093D78E5C2D16534EB6FE8C0(L_32, NULL);
+		return L_33;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -26486,70 +27235,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIPopup_U3CShowEnumeratorU3Eb__112_0_m25
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_m154E404AF275A3B2EC99ECAA3879B4CB9F0606DC_inline (float ___value0, float ___min1, float ___max2, const RuntimeMethod* method) 
-{
-	bool V_0 = false;
-	bool V_1 = false;
-	float V_2 = 0.0f;
-	{
-		float L_0 = ___value0;
-		float L_1 = ___min1;
-		V_0 = (bool)((((float)L_0) < ((float)L_1))? 1 : 0);
-		bool L_2 = V_0;
-		if (!L_2)
-		{
-			goto IL_000e;
-		}
-	}
-	{
-		float L_3 = ___min1;
-		___value0 = L_3;
-		goto IL_0019;
-	}
-
-IL_000e:
-	{
-		float L_4 = ___value0;
-		float L_5 = ___max2;
-		V_1 = (bool)((((float)L_4) > ((float)L_5))? 1 : 0);
-		bool L_6 = V_1;
-		if (!L_6)
-		{
-			goto IL_0019;
-		}
-	}
-	{
-		float L_7 = ___max2;
-		___value0 = L_7;
-	}
-
-IL_0019:
-	{
-		float L_8 = ___value0;
-		V_2 = L_8;
-		goto IL_001d;
-	}
-
-IL_001d:
-	{
-		float L_9 = V_2;
-		return L_9;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___r0, float ___g1, float ___b2, float ___a3, const RuntimeMethod* method) 
-{
-	{
-		float L_0 = ___r0;
-		__this->___r_0 = L_0;
-		float L_1 = ___g1;
-		__this->___g_1 = L_1;
-		float L_2 = ___b2;
-		__this->___b_2 = L_2;
-		float L_3 = ___a3;
-		__this->___a_3 = L_3;
-		return;
-	}
-}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Min_m4F2A9C5128DC3F9E84865EE7ADA8DB5DA6B8B507_inline (float ___a0, float ___b1, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -26620,6 +27305,70 @@ IL_000c:
 	{
 		float L_4 = V_0;
 		return L_4;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_m154E404AF275A3B2EC99ECAA3879B4CB9F0606DC_inline (float ___value0, float ___min1, float ___max2, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	float V_2 = 0.0f;
+	{
+		float L_0 = ___value0;
+		float L_1 = ___min1;
+		V_0 = (bool)((((float)L_0) < ((float)L_1))? 1 : 0);
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		float L_3 = ___min1;
+		___value0 = L_3;
+		goto IL_0019;
+	}
+
+IL_000e:
+	{
+		float L_4 = ___value0;
+		float L_5 = ___max2;
+		V_1 = (bool)((((float)L_4) > ((float)L_5))? 1 : 0);
+		bool L_6 = V_1;
+		if (!L_6)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		float L_7 = ___max2;
+		___value0 = L_7;
+	}
+
+IL_0019:
+	{
+		float L_8 = ___value0;
+		V_2 = L_8;
+		goto IL_001d;
+	}
+
+IL_001d:
+	{
+		float L_9 = V_2;
+		return L_9;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___r0, float ___g1, float ___b2, float ___a3, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = ___r0;
+		__this->___r_0 = L_0;
+		float L_1 = ___g1;
+		__this->___g_1 = L_1;
+		float L_2 = ___b2;
+		__this->___b_2 = L_2;
+		float L_3 = ___a3;
+		__this->___a_3 = L_3;
+		return;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Selectable_get_interactable_m17DD0484DC62DCB4467109488D7A599BC85EC112_inline (Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* __this, const RuntimeMethod* method) 

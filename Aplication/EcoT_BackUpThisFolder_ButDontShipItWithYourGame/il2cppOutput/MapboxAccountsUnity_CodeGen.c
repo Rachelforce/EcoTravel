@@ -66,7 +66,7 @@ static const int32_t s_InvokerIndices[13] =
 	6980,
 	6945,
 	7116,
-	10908,
+	10909,
 	0,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_MapboxAccountsUnity_CodeGenModule;
