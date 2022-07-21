@@ -558,6 +558,8 @@ struct U3CU3Ec__DisplayClass42_0_tAB751F51F6CB037CFEC0041F23B0276B05B3BC84;
 struct U3CU3Ec_t9E64D4A69C231CA074ED29E74436906817766BD1;
 // Doozy.Engine.Themes.ThemesDatabase/<>c__DisplayClass17_0
 struct U3CU3Ec__DisplayClass17_0_t93606D26CC84C8A7CFEF0715D1A994A10577800E;
+// Doozy.Engine.UI.Animation.UIAnimator/<>c__DisplayClass19_0
+struct U3CU3Ec__DisplayClass19_0_t5B9F679689B6ABB0661CF6228B048E54D7CC766D;
 // Doozy.Engine.UI.Animation.UIAnimator/<>c__DisplayClass20_0
 struct U3CU3Ec__DisplayClass20_0_t0F1FAF134B46D299DDF7D072B6A853888EC7D54E;
 // Doozy.Engine.UI.Animation.UIAnimator/<>c__DisplayClass21_0
@@ -1599,6 +1601,15 @@ struct U3CU3Ec__DisplayClass17_0_t93606D26CC84C8A7CFEF0715D1A994A10577800E  : pu
 {
 	// System.String Doozy.Engine.Themes.ThemesDatabase/<>c__DisplayClass17_0::themeName
 	String_t* ___themeName_0;
+};
+
+// Doozy.Engine.UI.Animation.UIAnimator/<>c__DisplayClass19_0
+struct U3CU3Ec__DisplayClass19_0_t5B9F679689B6ABB0661CF6228B048E54D7CC766D  : public RuntimeObject
+{
+	// UnityEngine.Events.UnityAction Doozy.Engine.UI.Animation.UIAnimator/<>c__DisplayClass19_0::onStartCallback
+	UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___onStartCallback_0;
+	// UnityEngine.Events.UnityAction Doozy.Engine.UI.Animation.UIAnimator/<>c__DisplayClass19_0::onCompleteCallback
+	UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___onCompleteCallback_1;
 };
 
 // Doozy.Engine.UI.Animation.UIAnimator/<>c__DisplayClass20_0
@@ -8881,6 +8892,70 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9C
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Array_Clear_m48B57EC27CADC3463CA98A33373D557DA587FF1B (RuntimeArray* ___array0, int32_t ___index1, int32_t ___length2, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Vector2::get_magnitude()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector2_get_magnitude_m5C59B4056420AEFDB291AD0914A3F675330A75CE_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, const RuntimeMethod* method) ;
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Doozy.Engine.UI.Animation.UIAnimator/<>c__DisplayClass19_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass19_0__ctor_m7C12726EADC26D9728A5AADFE3A111E709484730 (U3CU3Ec__DisplayClass19_0_t5B9F679689B6ABB0661CF6228B048E54D7CC766D* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+// System.Void Doozy.Engine.UI.Animation.UIAnimator/<>c__DisplayClass19_0::<Move>b__0()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass19_0_U3CMoveU3Eb__0_m10FA9181DCD62B2B6ECCC4350DE1B8A902F8E91A (U3CU3Ec__DisplayClass19_0_t5B9F679689B6ABB0661CF6228B048E54D7CC766D* __this, const RuntimeMethod* method) 
+{
+	{
+		// if (onStartCallback != null) onStartCallback.Invoke();
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_0 = __this->___onStartCallback_0;
+		if (!L_0)
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		// if (onStartCallback != null) onStartCallback.Invoke();
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_1 = __this->___onStartCallback_0;
+		NullCheck(L_1);
+		UnityAction_Invoke_m5CB9EE17CCDF64D00DE5D96DF3553CDB20D66F70_inline(L_1, NULL);
+	}
+
+IL_0013:
+	{
+		// })
+		return;
+	}
+}
+// System.Void Doozy.Engine.UI.Animation.UIAnimator/<>c__DisplayClass19_0::<Move>b__1()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass19_0_U3CMoveU3Eb__1_m91A2EE030B6BFD458160242094A502C60B7B7799 (U3CU3Ec__DisplayClass19_0_t5B9F679689B6ABB0661CF6228B048E54D7CC766D* __this, const RuntimeMethod* method) 
+{
+	{
+		// if (onCompleteCallback != null) onCompleteCallback.Invoke();
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_0 = __this->___onCompleteCallback_1;
+		if (!L_0)
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		// if (onCompleteCallback != null) onCompleteCallback.Invoke();
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_1 = __this->___onCompleteCallback_1;
+		NullCheck(L_1);
+		UnityAction_Invoke_m5CB9EE17CCDF64D00DE5D96DF3553CDB20D66F70_inline(L_1, NULL);
+	}
+
+IL_0013:
+	{
+		// })
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"

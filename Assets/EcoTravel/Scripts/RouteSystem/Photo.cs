@@ -1,29 +1,30 @@
 using UnityEngine;
 using System;
+using PhotoSystem;
 
 namespace routeSystem
 {
     [System.Serializable]
     
-    public class Photo 
+    public class Photo
     {
+        
         public string _url;
-        public string _path;
+        public string namePhoto;
+        public Texture2D texture { get => GetTextureFromStore(); }
 
         public Photo() { }
-        public Photo(string path)
+        public Photo(string _name, string url)
         {
-            _path = path;
-            GetTextureFromPath();
-        }
-        public Photo(string path, string url)
-        {
-            _path =path;
+            namePhoto =_name;
             _url = url;
+
         }
-        public Texture2D GetTextureFromPath()
+        public Texture2D GetTextureFromStore()
         {
-            return Resources.Load<Texture2D>(_path);
+            if(String.IsNullOrEmpty(namePhoto)) return null;
+            Texture2D texture = PhotoStore.LoadTextureFromDisk(namePhoto);
+            return texture;
         }
 
     }

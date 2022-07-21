@@ -20,7 +20,7 @@ public class UserManagment : MonoBehaviour
 
         var json = JsonUtility.ToJson(user, true);
         Debug.Log(json);
-        using UnityWebRequest www = new UnityWebRequest(WebConfig.url + "authenticate", "POST");
+        using UnityWebRequest www = new UnityWebRequest(WebConfig.url +  "user/authenticate", "POST");
         byte[] jsonToSend = new System.Text.UTF8Encoding().GetBytes(json);
         www.uploadHandler = (UploadHandler)new UploadHandlerRaw(jsonToSend);
         www.downloadHandler = (DownloadHandler)new DownloadHandlerBuffer();
@@ -52,7 +52,7 @@ public class UserManagment : MonoBehaviour
         var json = JsonUtility.ToJson(user, true);
         Debug.Log(json);
 
-        using UnityWebRequest www = new UnityWebRequest(WebConfig.url + "register", "POST");
+        using UnityWebRequest www = new UnityWebRequest(WebConfig.url + "user/register", "POST");
         byte[] jsonToSend = new System.Text.UTF8Encoding().GetBytes(json);
         www.uploadHandler = (UploadHandler)new UploadHandlerRaw(jsonToSend);
         www.downloadHandler = (DownloadHandler)new DownloadHandlerBuffer();

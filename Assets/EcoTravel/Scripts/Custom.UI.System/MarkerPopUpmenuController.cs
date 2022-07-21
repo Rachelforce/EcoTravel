@@ -43,7 +43,7 @@ namespace Custom.UI.System
         #endregion EventListener
 
         #region Open/Close
-        private void OpenShortPopUp(string _popUpName, string nameField, string descriptionField)
+        private void OpenShortPopUp(string _popUpName, string nameField, string descriptionField, Sprite[] sprites)
         {
             HideOldPopUp();
             OpenUIPopup = UIPopup.GetPopup(_popUpName);
@@ -52,12 +52,24 @@ namespace Custom.UI.System
             onPopupButtonClick[1] += SaveButtonClick;
             OpenUIPopup.Data.SetButtonsCallbacks(onPopupButtonClick);
             OpenUIPopup.Data.SetLabelsTexts(nameField, descriptionField);
+            if(sprites!=null) OpenUIPopup.Data.SetImagesSprites(sprites);
             OpenUIPopup.Show();
             GameObject obj = OpenUIPopup.gameObject;
         }
         private void OpenShortPopUp(ScreenInfo screenInfo)
         {
-            OpenShortPopUp(routePopUpName, screenInfo.title, screenInfo.description);
+            Sprite[] sprites = null;
+            List<Texture2D> texs = screenInfo.GetPhotosTexture();
+            if (texs != null)
+            {
+                sprites = new Sprite[texs.Count];
+                for (int i = 0; i < texs.Count; i++)
+                {
+                    sprites[i] = (Sprite.Create(texs[i], new Rect(0.0f, 0.0f, texs[i].width, texs[i].height), new Vector2(0.5f, 0.5f), 100.0f));
+                }
+            }
+            else Debug.Log("screenInfo photos is empty");
+            OpenShortPopUp(routePopUpName, screenInfo.title, screenInfo.description, sprites);
         }
 
         private void OpenLongPopUp(string _popUpName, string nameField, string descriptionField, 

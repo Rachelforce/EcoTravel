@@ -8,18 +8,21 @@ using UnityEngine.Networking;
 using System.Collections;
 using System.Collections.Generic;
 using Custom.UI.System;
+using PhotoSystem;
 
 namespace routeSystem
 {
 
     public class StoreUpdater : MonoBehaviour
     {
+        [SerializeField] PhotoStore photoStore;
         [SerializeField] MarkerMapManager markerMapManager;
         [SerializeField] string path;
         [SerializeField] string fileName;
         [SerializeField][TextArea] string startJsone;
-        bool roadLoad;
-        bool collectionLoad;
+        bool roadLoad = false;
+        bool collectionLoad = false;
+        bool photoLoad = false;
 
         private void Awake()
         {
@@ -94,13 +97,13 @@ namespace routeSystem
                     {
                         if (id == -1) PharseRouteList(webRequest.downloadHandler.text);
                         else PharseRoute(webRequest.downloadHandler.text);
-                        Debug.Log("LoadRoute");
+                        Debug.Log("Load Route done");
                     }
                     else
                     {
                         if (id == -1) PharseCollectionList(webRequest.downloadHandler.text);
                         else PharseCollection(webRequest.downloadHandler.text);
-                        Debug.Log("LoadCollection");
+                        Debug.Log("Load Collection done");
                     }
                 }
             }
@@ -112,7 +115,13 @@ namespace routeSystem
             foreach (Route route in routeList)
             {
                 RouteStore.SetRout(route);
+                if (!route.InitializePhotoList()) continue;
+                foreach (Photo photo in route.photos)
+                {
+                    photoStore.allPhoto.Add(photo);
+                }               
             }
+            Debug.Log("PharseRouteList done");
             roadLoad = true;
         }
         private void PharseRoute(string content)
@@ -126,9 +135,15 @@ namespace routeSystem
             List<Collection> collections = JsonSerializer.LoadFromString<List<Collection>>(content);
             foreach (Collection collection in collections)
             {
-                Debug.Log(collection.key);
+                if(!collection.InitializePhotoList()) continue;
+                foreach (Photo photo in collection.photos)
+                {
+                    photoStore.allPhoto.Add(photo);
+                }
+                
                 RouteStore.SetCollection(collection);     
             }
+            Debug.Log("PharseCollectionList done");
             collectionLoad = true;
         }
         private void PharseCollection(string content)
@@ -141,7 +156,10 @@ namespace routeSystem
         private IEnumerator LoadStartCollection()
         {
             yield return collectionLoad && roadLoad;
+            photoStore.SetTextureToAllPhoto(ref photoLoad);
+            yield return collectionLoad && roadLoad && photoLoad;
             markerMapManager.LoadColectionMarkers(3);
+            Debug.Log("Set start collection done");
         }
     }
 }

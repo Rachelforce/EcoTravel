@@ -673,6 +673,21 @@ struct __StaticArrayInitTypeSizeU3D24_t3464DA68B6CCAB9A0A43F94B3DB9AA7E7FDDB19A
 	};
 };
 
+// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=6
+struct __StaticArrayInitTypeSizeU3D6_t38FD8BCE7DBF33FCFABA6823EC6C9368D958290D 
+{
+	union
+	{
+		struct
+		{
+			union
+			{
+			};
+		};
+		uint8_t __StaticArrayInitTypeSizeU3D6_t38FD8BCE7DBF33FCFABA6823EC6C9368D958290D__padding[6];
+	};
+};
+
 // <PrivateImplementationDetails>
 struct U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA  : public RuntimeObject
 {
@@ -680,8 +695,10 @@ struct U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49
 
 struct U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA_StaticFields
 {
+	// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=6 <PrivateImplementationDetails>::AC6D4C529A1BA81F32EDDF8CF02B5BA9206FC2D09954F023C3020124F2B446B8
+	__StaticArrayInitTypeSizeU3D6_t38FD8BCE7DBF33FCFABA6823EC6C9368D958290D ___AC6D4C529A1BA81F32EDDF8CF02B5BA9206FC2D09954F023C3020124F2B446B8_0;
 	// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=24 <PrivateImplementationDetails>::FE78C65211DD0B56A97024FB61111E686EF1FE054AA132BA58E2891AC496F1EE
-	__StaticArrayInitTypeSizeU3D24_t3464DA68B6CCAB9A0A43F94B3DB9AA7E7FDDB19A ___FE78C65211DD0B56A97024FB61111E686EF1FE054AA132BA58E2891AC496F1EE_0;
+	__StaticArrayInitTypeSizeU3D24_t3464DA68B6CCAB9A0A43F94B3DB9AA7E7FDDB19A ___FE78C65211DD0B56A97024FB61111E686EF1FE054AA132BA58E2891AC496F1EE_1;
 };
 
 // Doozy.Engine.Events.BoolEvent
@@ -6022,6 +6039,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MinMaxRangeAttribute_set_Max_m3B5D287A61
 		return;
 	}
 }
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

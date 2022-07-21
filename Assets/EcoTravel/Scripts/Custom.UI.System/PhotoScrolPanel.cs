@@ -12,11 +12,11 @@ namespace Custom.UI.System
         public void OpenNewPopUp(ScreenInfo screenInfo)
         {
             Texture2D texture2Ds;
-            foreach(Photo photo in screenInfo.photos)
-            {
-                texture2Ds = photo.GetTextureFromPath();
-                CreatePanel(texture2Ds);
-            }
+            //foreach(Photo photo in screenInfo.photos)
+            //{
+            //    texture2Ds = photo.GetTextureFromPath();
+            //    CreatePanel(texture2Ds);
+            //}
         }
         private void CreatePanel(Texture2D texture2Ds)
         {
