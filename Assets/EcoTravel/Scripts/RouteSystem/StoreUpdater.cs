@@ -27,7 +27,7 @@ namespace routeSystem
         private void Awake()
         {
             path = Path.Combine(Application.persistentDataPath, fileName);
-            if (!Directory.Exists(path)) Directory.CreateDirectory(path);
+
 
             LoadFromWeb();
 

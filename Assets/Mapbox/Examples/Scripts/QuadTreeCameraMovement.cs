@@ -6,7 +6,7 @@
 	using UnityEngine;
 	using UnityEngine.EventSystems;
 	using System;
-
+	using Custom.UI.System;
 	public class QuadTreeCameraMovement : MonoBehaviour
 	{
 		[SerializeField]
@@ -24,6 +24,8 @@
 
 		[SerializeField]
 		bool _useDegreeMethod;
+		[SerializeField] MarkerMapManager markerMapManager;
+		[SerializeField] RotateWithLocationProvider rotateWithLocationProvider;
 
 		private Vector3 _origin;
 		private Vector3 _mousePosition;
@@ -74,6 +76,8 @@
 				{
 					HandleMouseAndKeyBoard();
 				}
+				markerMapManager.TransformMarkers();
+				rotateWithLocationProvider.TransformPlayer();
 			}
 		}
 

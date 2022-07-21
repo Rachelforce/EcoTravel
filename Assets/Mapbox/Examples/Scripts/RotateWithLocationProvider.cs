@@ -154,11 +154,11 @@ namespace Mapbox.Examples
 
 			return euler;
 		}
-
-
-		void Update()
-		{
+		public void TransformPlayer()
+        {
 			transform.localRotation = Quaternion.Lerp(transform.localRotation, _targetRotation, Time.deltaTime * _rotationFollowFactor);
 		}
+
+		
 	}
 }

@@ -32,6 +32,17 @@ struct VirtualActionInvoker1
 		((Action)invokeData.methodPtr)(obj, p1, invokeData.method);
 	}
 };
+template <typename T1, typename T2>
+struct VirtualActionInvoker2
+{
+	typedef void (*Action)(void*, T1, T2, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1, T2 p2)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		((Action)invokeData.methodPtr)(obj, p1, p2, invokeData.method);
+	}
+};
 template <typename T1, typename T2, typename T3, typename T4>
 struct VirtualActionInvoker4
 {
@@ -8129,10 +8140,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Application_get_persistentDataPath_m787EBC9B0862E7617DCD6CABD2147E61717EAC17 (const RuntimeMethod* method) ;
 // System.String System.IO.Path::Combine(System.String,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Path_Combine_m64754D4E08990CE1EBC41CDF197807EE4B115474 (String_t* ___path10, String_t* ___path21, const RuntimeMethod* method) ;
-// System.Boolean System.IO.Directory::Exists(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Directory_Exists_m1AC1A8910C9883BD4198ECF585C97F09E23C4702 (String_t* ___path0, const RuntimeMethod* method) ;
-// System.IO.DirectoryInfo System.IO.Directory::CreateDirectory(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2* Directory_CreateDirectory_mD89FECDFB25BC52F866DC0B1BB8552334FB249D2 (String_t* ___path0, const RuntimeMethod* method) ;
 // System.Boolean routeSystem.StoreUpdater::LoadFromWeb()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool StoreUpdater_LoadFromWeb_m16A54455CB90AD9D8010F7137CB965B1AA7A4B52 (StoreUpdater_t248D55063E32EB7FB7592D275ABB4DBBA81F91FE* __this, const RuntimeMethod* method) ;
 // System.Void routeSystem.StoreUpdater::SaveToFile()
@@ -8264,6 +8271,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotSupportedException__ctor_m1398D0CDE19
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PhotoStore_SetTextureToAllPhoto_m25FB74CD67B54C82FB688E7B46EDE474B2D13E54 (PhotoStore_t61DC4DD24E697346B0385A7E98DEECCA45250F28* __this, bool* ___state0, const RuntimeMethod* method) ;
 // System.Void Custom.UI.System.MarkerMapManager::LoadColectionMarkers(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MarkerMapManager_LoadColectionMarkers_m43FB3C2DBAD1FD6F1DC31C369AFDE732578B3512 (MarkerMapManager_tF42F0E5542D4C5C41EA6983FE1F2B7578E8436B7* __this, int32_t ___id0, const RuntimeMethod* method) ;
+// System.Boolean System.IO.Directory::Exists(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Directory_Exists_m1AC1A8910C9883BD4198ECF585C97F09E23C4702 (String_t* ___path0, const RuntimeMethod* method) ;
+// System.IO.DirectoryInfo System.IO.Directory::CreateDirectory(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2* Directory_CreateDirectory_mD89FECDFB25BC52F866DC0B1BB8552334FB249D2 (String_t* ___path0, const RuntimeMethod* method) ;
 // System.Collections.IEnumerator PhotoSystem.PhotoStore::DownloadTexture(System.String,routeSystem.Photo)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* PhotoStore_DownloadTexture_mFA542DDEDC277B9EF66DECFE654932F9E9BB1641 (PhotoStore_t61DC4DD24E697346B0385A7E98DEECCA45250F28* __this, String_t* ____path0, Photo_tC77B2674E70A0AF1BDA44C2CA120F1372F09A228* ___photo1, const RuntimeMethod* method) ;
 // System.Void PhotoSystem.PhotoStore/<DownloadTexture>d__4::.ctor(System.Int32)
@@ -8623,6 +8634,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OpenRoute__ctor_mEBDC72756BD5C3021A00A90
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrefadLinks_SetButtonsCallbacks_m953E480E5861069B6C5A09FAE0C6046A6C1DB4F4 (PrefadLinks_t408A7E5DB8098A8F0C51964DDC09C70CD0A1ACD4* __this, OpenRoute_tF4AE9B57A9C7052D6AA161D5431D83946DBD6717* ___callbacks0, int32_t ___index1, const RuntimeMethod* method) ;
 // System.Single Mapbox.Unity.Map.AbstractMap::get_Zoom()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float AbstractMap_get_Zoom_mD1255D6B8A219154BD81A605EEC64FDAD031393D (AbstractMap_tCDA6BE7D0C129D87C40C22F693361F9391AF2049* __this, const RuntimeMethod* method) ;
+// Mapbox.Utils.Vector2d Mapbox.Unity.Map.AbstractMap::get_CenterLatitudeLongitude()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2d_t56C00F875E7B711F76931D3FD85D1D47957349FB AbstractMap_get_CenterLatitudeLongitude_m37B8A441E469385BEF03974E47197BA04F529998_inline (AbstractMap_tCDA6BE7D0C129D87C40C22F693361F9391AF2049* __this, const RuntimeMethod* method) ;
 // System.Boolean Doozy.Engine.Coroutiner::get_ApplicationIsQuitting()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Coroutiner_get_ApplicationIsQuitting_m0557FEECC3900940EEA8476A8ED602C7E0BB671B_inline (const RuntimeMethod* method) ;
 // T UnityEngine.Object::FindObjectOfType<Doozy.Engine.Coroutiner>()
@@ -11842,27 +11855,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StoreUpdater_Awake_m68083F00E046C0926FFF
 		L_2 = Path_Combine_m64754D4E08990CE1EBC41CDF197807EE4B115474(L_0, L_1, NULL);
 		__this->___path_6 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___path_6), (void*)L_2);
-		// if (!Directory.Exists(path)) Directory.CreateDirectory(path);
-		String_t* L_3 = __this->___path_6;
-		bool L_4;
-		L_4 = Directory_Exists_m1AC1A8910C9883BD4198ECF585C97F09E23C4702(L_3, NULL);
-		if (L_4)
-		{
-			goto IL_002f;
-		}
-	}
-	{
-		// if (!Directory.Exists(path)) Directory.CreateDirectory(path);
-		String_t* L_5 = __this->___path_6;
-		DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2* L_6;
-		L_6 = Directory_CreateDirectory_mD89FECDFB25BC52F866DC0B1BB8552334FB249D2(L_5, NULL);
-	}
-
-IL_002f:
-	{
 		// LoadFromWeb();
-		bool L_7;
-		L_7 = StoreUpdater_LoadFromWeb_m16A54455CB90AD9D8010F7137CB965B1AA7A4B52(__this, NULL);
+		bool L_3;
+		L_3 = StoreUpdater_LoadFromWeb_m16A54455CB90AD9D8010F7137CB965B1AA7A4B52(__this, NULL);
 		// }
 		return;
 	}
@@ -15418,6 +15413,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MarkerMapManager_Awake_mA1788C5F0DD6704B
 // System.Void Custom.UI.System.MarkerMapManager::LateUpdate()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MarkerMapManager_LateUpdate_m40E42149B60575B8A63A903EE7743BE89299E51A (MarkerMapManager_tF42F0E5542D4C5C41EA6983FE1F2B7578E8436B7* __this, const RuntimeMethod* method) 
 {
+	{
+		// }
+		return;
+	}
+}
+// System.Void Custom.UI.System.MarkerMapManager::TransformMarkers()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MarkerMapManager_TransformMarkers_mE6424FDEAE3B5A9F6BBF6AB219AC845E85B3ECB2 (MarkerMapManager_tF42F0E5542D4C5C41EA6983FE1F2B7578E8436B7* __this, const RuntimeMethod* method) 
+{
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
@@ -17053,12 +17056,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ZoomButtons_ZoomIn_m7445BB3E479699A44D0D
 		float L_1;
 		L_1 = AbstractMap_get_Zoom_mD1255D6B8A219154BD81A605EEC64FDAD031393D(L_0, NULL);
 		V_0 = L_1;
-		// map.UpdateMap(value+ speed);
+		// map.UpdateMap(map.CenterLatitudeLongitude, value + speed);
 		AbstractMap_tCDA6BE7D0C129D87C40C22F693361F9391AF2049* L_2 = __this->___map_4;
-		float L_3 = V_0;
-		float L_4 = __this->___speed_5;
+		AbstractMap_tCDA6BE7D0C129D87C40C22F693361F9391AF2049* L_3 = __this->___map_4;
+		NullCheck(L_3);
+		Vector2d_t56C00F875E7B711F76931D3FD85D1D47957349FB L_4;
+		L_4 = AbstractMap_get_CenterLatitudeLongitude_m37B8A441E469385BEF03974E47197BA04F529998_inline(L_3, NULL);
+		float L_5 = V_0;
+		float L_6 = __this->___speed_5;
 		NullCheck(L_2);
-		VirtualActionInvoker1< float >::Invoke(31 /* System.Void Mapbox.Unity.Map.AbstractMap::UpdateMap(System.Single) */, L_2, ((float)il2cpp_codegen_add(L_3, L_4)));
+		VirtualActionInvoker2< Vector2d_t56C00F875E7B711F76931D3FD85D1D47957349FB, float >::Invoke(32 /* System.Void Mapbox.Unity.Map.AbstractMap::UpdateMap(Mapbox.Utils.Vector2d,System.Single) */, L_2, L_4, ((float)il2cpp_codegen_add(L_5, L_6)));
 		// }
 		return;
 	}
@@ -17074,12 +17081,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ZoomButtons_ZoomOut_mD0532D080C485A5D755
 		float L_1;
 		L_1 = AbstractMap_get_Zoom_mD1255D6B8A219154BD81A605EEC64FDAD031393D(L_0, NULL);
 		V_0 = L_1;
-		// map.UpdateMap(value - speed);
+		// map.UpdateMap(map.CenterLatitudeLongitude, value - speed);
 		AbstractMap_tCDA6BE7D0C129D87C40C22F693361F9391AF2049* L_2 = __this->___map_4;
-		float L_3 = V_0;
-		float L_4 = __this->___speed_5;
+		AbstractMap_tCDA6BE7D0C129D87C40C22F693361F9391AF2049* L_3 = __this->___map_4;
+		NullCheck(L_3);
+		Vector2d_t56C00F875E7B711F76931D3FD85D1D47957349FB L_4;
+		L_4 = AbstractMap_get_CenterLatitudeLongitude_m37B8A441E469385BEF03974E47197BA04F529998_inline(L_3, NULL);
+		float L_5 = V_0;
+		float L_6 = __this->___speed_5;
 		NullCheck(L_2);
-		VirtualActionInvoker1< float >::Invoke(31 /* System.Void Mapbox.Unity.Map.AbstractMap::UpdateMap(System.Single) */, L_2, ((float)il2cpp_codegen_subtract(L_3, L_4)));
+		VirtualActionInvoker2< Vector2d_t56C00F875E7B711F76931D3FD85D1D47957349FB, float >::Invoke(32 /* System.Void Mapbox.Unity.Map.AbstractMap::UpdateMap(Mapbox.Utils.Vector2d,System.Single) */, L_2, L_4, ((float)il2cpp_codegen_subtract(L_5, L_6)));
 		// }
 		return;
 	}
@@ -28175,6 +28186,14 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFF
 		float L_1 = ___y1;
 		__this->___y_1 = L_1;
 		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2d_t56C00F875E7B711F76931D3FD85D1D47957349FB AbstractMap_get_CenterLatitudeLongitude_m37B8A441E469385BEF03974E47197BA04F529998_inline (AbstractMap_tCDA6BE7D0C129D87C40C22F693361F9391AF2049* __this, const RuntimeMethod* method) 
+{
+	{
+		// return _centerLatitudeLongitude;
+		Vector2d_t56C00F875E7B711F76931D3FD85D1D47957349FB L_0 = __this->____centerLatitudeLongitude_18;
+		return L_0;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Coroutiner_get_ApplicationIsQuitting_m0557FEECC3900940EEA8476A8ED602C7E0BB671B_inline (const RuntimeMethod* method) 

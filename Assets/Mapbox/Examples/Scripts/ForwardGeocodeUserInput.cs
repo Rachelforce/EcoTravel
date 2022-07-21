@@ -69,6 +69,7 @@ namespace Mapbox.Examples
 			{
 				var center = res.Features[0].Center;
 				_coordinate = res.Features[0].Center;
+				
 			}
 			Response = res;
 			OnGeocoderResponse(res);

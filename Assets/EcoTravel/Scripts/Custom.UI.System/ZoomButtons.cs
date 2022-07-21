@@ -14,12 +14,15 @@ namespace Custom.UI.System
         public void ZoomIn()
         {
             float value = map.Zoom;
-            map.UpdateMap(value+ speed);
+            map.UpdateMap(map.CenterLatitudeLongitude, value + speed);
+
         }
         public void ZoomOut()
         {
             float value = map.Zoom;
-            map.UpdateMap(value - speed);
+            map.UpdateMap(map.CenterLatitudeLongitude, value - speed);
+
         }
+
     }
 }

@@ -6,6 +6,7 @@
 	using UnityEngine;
 	using System;
 	using System.Collections;
+	using Custom.UI.System;
 
 	public class ReloadMap : MonoBehaviour
 	{
@@ -18,6 +19,7 @@
 
 		[SerializeField]
 		Slider _zoomSlider;
+		[SerializeField] ZoomButtons zoomButtons;
 
 		private HeroBuildingSelectionUserInput[] _heroBuildingSelectionUserInput;
 
@@ -38,7 +40,7 @@
 			if (_zoomSlider != null)
 			{
 				_map.OnUpdated += () => { _zoomSlider.value = _map.Zoom; };
-				_zoomSlider.onValueChanged.AddListener(Reload);
+
 			}
 			if(_forwardGeocoder != null)
 			{

@@ -1674,6 +1674,8 @@ struct ReverseGeocodeUserInput_tA5388C316B141235F7C05076714CDB2325296107;
 struct Road_t08C9B967635751660ABCAC0DD983831935AFF50B;
 // Doozy.Engine.UI.Animation.Rotate
 struct Rotate_t7EF9D9BDC03D7119D4F0F3F4FEBCD90B4098398F;
+// Mapbox.Examples.RotateWithLocationProvider
+struct RotateWithLocationProvider_tCA6E9479A803DF2FD58695143DCC69B9E4FB2338;
 // routeSystem.Route
 struct Route_tD0AFEA458AB21893C42C2A45022164A61508AD03;
 // routeSystem.RouteEditor
@@ -2194,6 +2196,8 @@ struct XmlWriter_tCBC8D0C4891828A0A384C68D0414337F20E1A17F;
 struct XmlWriterSettings_t4C33BC8989A2AF592E88EAE69930915E6D960674;
 // System.Xml.XsdCachingReader
 struct XsdCachingReader_t367D521918E08F0DCF8275E20CE35BAEDE54DC43;
+// Custom.UI.System.ZoomButtons
+struct ZoomButtons_tAC10B0174F3CABB06A40852AF9C5CCDCDD5883C0;
 // System.Runtime.Serialization.Formatters.Binary.__BinaryWriter
 struct __BinaryWriter_t030DAE49A9AEB83F8C5E758B355C7F0D21A117BE;
 // System.Text.ASCIIEncoding/ASCIIEncodingSealed
@@ -10255,16 +10259,16 @@ struct U3CU3Ec__DisplayClass37_0_t47927A324164BEB09D34F6B22F671DA9F792701E  : pu
 	float ___y_1;
 };
 
-// Mapbox.Examples.ReloadMap/<ReloadAfterDelay>d__12
-struct U3CReloadAfterDelayU3Ed__12_tEB8CCF963C5A0003A7F8006FB78580A169FD5BFC  : public RuntimeObject
+// Mapbox.Examples.ReloadMap/<ReloadAfterDelay>d__13
+struct U3CReloadAfterDelayU3Ed__13_t184E17CD9B74FC1D0535D969F0A99B336E130DD6  : public RuntimeObject
 {
-	// System.Int32 Mapbox.Examples.ReloadMap/<ReloadAfterDelay>d__12::<>1__state
+	// System.Int32 Mapbox.Examples.ReloadMap/<ReloadAfterDelay>d__13::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object Mapbox.Examples.ReloadMap/<ReloadAfterDelay>d__12::<>2__current
+	// System.Object Mapbox.Examples.ReloadMap/<ReloadAfterDelay>d__13::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// Mapbox.Examples.ReloadMap Mapbox.Examples.ReloadMap/<ReloadAfterDelay>d__12::<>4__this
+	// Mapbox.Examples.ReloadMap Mapbox.Examples.ReloadMap/<ReloadAfterDelay>d__13::<>4__this
 	ReloadMap_t9CA8D411476589E80DB2996127037030C3339EE8* ___U3CU3E4__this_2;
-	// System.Int32 Mapbox.Examples.ReloadMap/<ReloadAfterDelay>d__12::zoom
+	// System.Int32 Mapbox.Examples.ReloadMap/<ReloadAfterDelay>d__13::zoom
 	int32_t ___zoom_3;
 };
 
@@ -40336,20 +40340,24 @@ struct QuadTreeCameraMovement_tD1A8AC90C9C625E2AFA67F5D9777B873CAF38D95  : publi
 	AbstractMap_tCDA6BE7D0C129D87C40C22F693361F9391AF2049* ____mapManager_7;
 	// System.Boolean Mapbox.Examples.QuadTreeCameraMovement::_useDegreeMethod
 	bool ____useDegreeMethod_8;
+	// Custom.UI.System.MarkerMapManager Mapbox.Examples.QuadTreeCameraMovement::markerMapManager
+	MarkerMapManager_tF42F0E5542D4C5C41EA6983FE1F2B7578E8436B7* ___markerMapManager_9;
+	// Mapbox.Examples.RotateWithLocationProvider Mapbox.Examples.QuadTreeCameraMovement::rotateWithLocationProvider
+	RotateWithLocationProvider_tCA6E9479A803DF2FD58695143DCC69B9E4FB2338* ___rotateWithLocationProvider_10;
 	// UnityEngine.Vector3 Mapbox.Examples.QuadTreeCameraMovement::_origin
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____origin_9;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____origin_11;
 	// UnityEngine.Vector3 Mapbox.Examples.QuadTreeCameraMovement::_mousePosition
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____mousePosition_10;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____mousePosition_12;
 	// UnityEngine.Vector3 Mapbox.Examples.QuadTreeCameraMovement::_mousePositionPrevious
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____mousePositionPrevious_11;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____mousePositionPrevious_13;
 	// System.Boolean Mapbox.Examples.QuadTreeCameraMovement::_shouldDrag
-	bool ____shouldDrag_12;
+	bool ____shouldDrag_14;
 	// System.Boolean Mapbox.Examples.QuadTreeCameraMovement::_isInitialized
-	bool ____isInitialized_13;
+	bool ____isInitialized_15;
 	// UnityEngine.Plane Mapbox.Examples.QuadTreeCameraMovement::_groundPlane
-	Plane_tB7D8CC6F7AACF5F3AA483AF005C1102A8577BC0C ____groundPlane_14;
+	Plane_tB7D8CC6F7AACF5F3AA483AF005C1102A8577BC0C ____groundPlane_16;
 	// System.Boolean Mapbox.Examples.QuadTreeCameraMovement::_dragStartedOnUI
-	bool ____dragStartedOnUI_15;
+	bool ____dragStartedOnUI_17;
 };
 
 // Mapbox.Examples.Playground.RasterTileExample
@@ -40393,12 +40401,14 @@ struct ReloadMap_t9CA8D411476589E80DB2996127037030C3339EE8  : public MonoBehavio
 	ForwardGeocodeUserInput_t31F4CBBCB4E2B30942645BB03DF08ADB95E88750* ____forwardGeocoder_7;
 	// UnityEngine.UI.Slider Mapbox.Examples.ReloadMap::_zoomSlider
 	Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* ____zoomSlider_8;
+	// Custom.UI.System.ZoomButtons Mapbox.Examples.ReloadMap::zoomButtons
+	ZoomButtons_tAC10B0174F3CABB06A40852AF9C5CCDCDD5883C0* ___zoomButtons_9;
 	// Mapbox.Examples.HeroBuildingSelectionUserInput[] Mapbox.Examples.ReloadMap::_heroBuildingSelectionUserInput
-	HeroBuildingSelectionUserInputU5BU5D_t6E4AD57487DD14BDFBB3975814FE367CDBE95F80* ____heroBuildingSelectionUserInput_9;
+	HeroBuildingSelectionUserInputU5BU5D_t6E4AD57487DD14BDFBB3975814FE367CDBE95F80* ____heroBuildingSelectionUserInput_10;
 	// UnityEngine.Coroutine Mapbox.Examples.ReloadMap::_reloadRoutine
-	Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* ____reloadRoutine_10;
+	Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* ____reloadRoutine_11;
 	// UnityEngine.WaitForSeconds Mapbox.Examples.ReloadMap::_wait
-	WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* ____wait_11;
+	WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* ____wait_12;
 };
 
 // Mapbox.Unity.MeshGeneration.Modifiers.ReplaceFeatureCollectionModifier
@@ -49453,15 +49463,15 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2207[1] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2208[6] = 
 {
 	static_cast<int32_t>(offsetof(PositionWithLocationProvider_tF68236ABE6CABFFA6B5860906488ABFCBA8CC3C0, ____map_4)),static_cast<int32_t>(offsetof(PositionWithLocationProvider_tF68236ABE6CABFFA6B5860906488ABFCBA8CC3C0, ____positionFollowFactor_5)),static_cast<int32_t>(offsetof(PositionWithLocationProvider_tF68236ABE6CABFFA6B5860906488ABFCBA8CC3C0, ____useTransformLocationProvider_6)),static_cast<int32_t>(offsetof(PositionWithLocationProvider_tF68236ABE6CABFFA6B5860906488ABFCBA8CC3C0, ____isInitialized_7)),static_cast<int32_t>(offsetof(PositionWithLocationProvider_tF68236ABE6CABFFA6B5860906488ABFCBA8CC3C0, ____locationProvider_8)),static_cast<int32_t>(offsetof(PositionWithLocationProvider_tF68236ABE6CABFFA6B5860906488ABFCBA8CC3C0, ____targetPosition_9)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2209[12] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2209[14] = 
 {
-	static_cast<int32_t>(offsetof(QuadTreeCameraMovement_tD1A8AC90C9C625E2AFA67F5D9777B873CAF38D95, ____panSpeed_4)),static_cast<int32_t>(offsetof(QuadTreeCameraMovement_tD1A8AC90C9C625E2AFA67F5D9777B873CAF38D95, ____zoomSpeed_5)),static_cast<int32_t>(offsetof(QuadTreeCameraMovement_tD1A8AC90C9C625E2AFA67F5D9777B873CAF38D95, ____referenceCamera_6)),static_cast<int32_t>(offsetof(QuadTreeCameraMovement_tD1A8AC90C9C625E2AFA67F5D9777B873CAF38D95, ____mapManager_7)),static_cast<int32_t>(offsetof(QuadTreeCameraMovement_tD1A8AC90C9C625E2AFA67F5D9777B873CAF38D95, ____useDegreeMethod_8)),static_cast<int32_t>(offsetof(QuadTreeCameraMovement_tD1A8AC90C9C625E2AFA67F5D9777B873CAF38D95, ____origin_9)),static_cast<int32_t>(offsetof(QuadTreeCameraMovement_tD1A8AC90C9C625E2AFA67F5D9777B873CAF38D95, ____mousePosition_10)),static_cast<int32_t>(offsetof(QuadTreeCameraMovement_tD1A8AC90C9C625E2AFA67F5D9777B873CAF38D95, ____mousePositionPrevious_11)),static_cast<int32_t>(offsetof(QuadTreeCameraMovement_tD1A8AC90C9C625E2AFA67F5D9777B873CAF38D95, ____shouldDrag_12)),static_cast<int32_t>(offsetof(QuadTreeCameraMovement_tD1A8AC90C9C625E2AFA67F5D9777B873CAF38D95, ____isInitialized_13)),static_cast<int32_t>(offsetof(QuadTreeCameraMovement_tD1A8AC90C9C625E2AFA67F5D9777B873CAF38D95, ____groundPlane_14)),static_cast<int32_t>(offsetof(QuadTreeCameraMovement_tD1A8AC90C9C625E2AFA67F5D9777B873CAF38D95, ____dragStartedOnUI_15)),};
+	static_cast<int32_t>(offsetof(QuadTreeCameraMovement_tD1A8AC90C9C625E2AFA67F5D9777B873CAF38D95, ____panSpeed_4)),static_cast<int32_t>(offsetof(QuadTreeCameraMovement_tD1A8AC90C9C625E2AFA67F5D9777B873CAF38D95, ____zoomSpeed_5)),static_cast<int32_t>(offsetof(QuadTreeCameraMovement_tD1A8AC90C9C625E2AFA67F5D9777B873CAF38D95, ____referenceCamera_6)),static_cast<int32_t>(offsetof(QuadTreeCameraMovement_tD1A8AC90C9C625E2AFA67F5D9777B873CAF38D95, ____mapManager_7)),static_cast<int32_t>(offsetof(QuadTreeCameraMovement_tD1A8AC90C9C625E2AFA67F5D9777B873CAF38D95, ____useDegreeMethod_8)),static_cast<int32_t>(offsetof(QuadTreeCameraMovement_tD1A8AC90C9C625E2AFA67F5D9777B873CAF38D95, ___markerMapManager_9)),static_cast<int32_t>(offsetof(QuadTreeCameraMovement_tD1A8AC90C9C625E2AFA67F5D9777B873CAF38D95, ___rotateWithLocationProvider_10)),static_cast<int32_t>(offsetof(QuadTreeCameraMovement_tD1A8AC90C9C625E2AFA67F5D9777B873CAF38D95, ____origin_11)),static_cast<int32_t>(offsetof(QuadTreeCameraMovement_tD1A8AC90C9C625E2AFA67F5D9777B873CAF38D95, ____mousePosition_12)),static_cast<int32_t>(offsetof(QuadTreeCameraMovement_tD1A8AC90C9C625E2AFA67F5D9777B873CAF38D95, ____mousePositionPrevious_13)),static_cast<int32_t>(offsetof(QuadTreeCameraMovement_tD1A8AC90C9C625E2AFA67F5D9777B873CAF38D95, ____shouldDrag_14)),static_cast<int32_t>(offsetof(QuadTreeCameraMovement_tD1A8AC90C9C625E2AFA67F5D9777B873CAF38D95, ____isInitialized_15)),static_cast<int32_t>(offsetof(QuadTreeCameraMovement_tD1A8AC90C9C625E2AFA67F5D9777B873CAF38D95, ____groundPlane_16)),static_cast<int32_t>(offsetof(QuadTreeCameraMovement_tD1A8AC90C9C625E2AFA67F5D9777B873CAF38D95, ____dragStartedOnUI_17)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2210[4] = 
 {
-	static_cast<int32_t>(offsetof(U3CReloadAfterDelayU3Ed__12_tEB8CCF963C5A0003A7F8006FB78580A169FD5BFC, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CReloadAfterDelayU3Ed__12_tEB8CCF963C5A0003A7F8006FB78580A169FD5BFC, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CReloadAfterDelayU3Ed__12_tEB8CCF963C5A0003A7F8006FB78580A169FD5BFC, ___U3CU3E4__this_2)),static_cast<int32_t>(offsetof(U3CReloadAfterDelayU3Ed__12_tEB8CCF963C5A0003A7F8006FB78580A169FD5BFC, ___zoom_3)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2211[8] = 
+	static_cast<int32_t>(offsetof(U3CReloadAfterDelayU3Ed__13_t184E17CD9B74FC1D0535D969F0A99B336E130DD6, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CReloadAfterDelayU3Ed__13_t184E17CD9B74FC1D0535D969F0A99B336E130DD6, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CReloadAfterDelayU3Ed__13_t184E17CD9B74FC1D0535D969F0A99B336E130DD6, ___U3CU3E4__this_2)),static_cast<int32_t>(offsetof(U3CReloadAfterDelayU3Ed__13_t184E17CD9B74FC1D0535D969F0A99B336E130DD6, ___zoom_3)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2211[9] = 
 {
-	static_cast<int32_t>(offsetof(ReloadMap_t9CA8D411476589E80DB2996127037030C3339EE8, ____camera_4)),static_cast<int32_t>(offsetof(ReloadMap_t9CA8D411476589E80DB2996127037030C3339EE8, ____cameraStartPos_5)),static_cast<int32_t>(offsetof(ReloadMap_t9CA8D411476589E80DB2996127037030C3339EE8, ____map_6)),static_cast<int32_t>(offsetof(ReloadMap_t9CA8D411476589E80DB2996127037030C3339EE8, ____forwardGeocoder_7)),static_cast<int32_t>(offsetof(ReloadMap_t9CA8D411476589E80DB2996127037030C3339EE8, ____zoomSlider_8)),static_cast<int32_t>(offsetof(ReloadMap_t9CA8D411476589E80DB2996127037030C3339EE8, ____heroBuildingSelectionUserInput_9)),static_cast<int32_t>(offsetof(ReloadMap_t9CA8D411476589E80DB2996127037030C3339EE8, ____reloadRoutine_10)),static_cast<int32_t>(offsetof(ReloadMap_t9CA8D411476589E80DB2996127037030C3339EE8, ____wait_11)),};
+	static_cast<int32_t>(offsetof(ReloadMap_t9CA8D411476589E80DB2996127037030C3339EE8, ____camera_4)),static_cast<int32_t>(offsetof(ReloadMap_t9CA8D411476589E80DB2996127037030C3339EE8, ____cameraStartPos_5)),static_cast<int32_t>(offsetof(ReloadMap_t9CA8D411476589E80DB2996127037030C3339EE8, ____map_6)),static_cast<int32_t>(offsetof(ReloadMap_t9CA8D411476589E80DB2996127037030C3339EE8, ____forwardGeocoder_7)),static_cast<int32_t>(offsetof(ReloadMap_t9CA8D411476589E80DB2996127037030C3339EE8, ____zoomSlider_8)),static_cast<int32_t>(offsetof(ReloadMap_t9CA8D411476589E80DB2996127037030C3339EE8, ___zoomButtons_9)),static_cast<int32_t>(offsetof(ReloadMap_t9CA8D411476589E80DB2996127037030C3339EE8, ____heroBuildingSelectionUserInput_10)),static_cast<int32_t>(offsetof(ReloadMap_t9CA8D411476589E80DB2996127037030C3339EE8, ____reloadRoutine_11)),static_cast<int32_t>(offsetof(ReloadMap_t9CA8D411476589E80DB2996127037030C3339EE8, ____wait_12)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable2212[7] = 
 {
 	static_cast<int32_t>(offsetof(ReverseGeocodeUserInput_tA5388C316B141235F7C05076714CDB2325296107, ____inputField_4)),static_cast<int32_t>(offsetof(ReverseGeocodeUserInput_tA5388C316B141235F7C05076714CDB2325296107, ____resource_5)),static_cast<int32_t>(offsetof(ReverseGeocodeUserInput_tA5388C316B141235F7C05076714CDB2325296107, ____geocoder_6)),static_cast<int32_t>(offsetof(ReverseGeocodeUserInput_tA5388C316B141235F7C05076714CDB2325296107, ____coordinate_7)),static_cast<int32_t>(offsetof(ReverseGeocodeUserInput_tA5388C316B141235F7C05076714CDB2325296107, ____hasResponse_8)),static_cast<int32_t>(offsetof(ReverseGeocodeUserInput_tA5388C316B141235F7C05076714CDB2325296107, ___U3CResponseU3Ek__BackingField_9)),static_cast<int32_t>(offsetof(ReverseGeocodeUserInput_tA5388C316B141235F7C05076714CDB2325296107, ___OnGeocoderResponse_10)),};

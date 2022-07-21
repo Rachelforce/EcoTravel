@@ -58,7 +58,7 @@ namespace Custom.UI.System
 			ResetLists();
 
 			changeTo?.Invoke(route.locationString);
-
+			
 			List<Marker> markers = new List<Marker>();
 			foreach (Point point in route.points)
             {
@@ -91,6 +91,10 @@ namespace Custom.UI.System
 		}
         private void LateUpdate()
 		{
+			
+		}
+		public void TransformMarkers()
+        {
 			int count = _spawnedObjects.Count;
 			for (int i = 0; i < count; i++)
 			{
@@ -103,7 +107,6 @@ namespace Custom.UI.System
 				_lineRenderer.SetPositions(pos);
 			}
 		}
-		
 
 		
 		private void DestroyMarkers()
